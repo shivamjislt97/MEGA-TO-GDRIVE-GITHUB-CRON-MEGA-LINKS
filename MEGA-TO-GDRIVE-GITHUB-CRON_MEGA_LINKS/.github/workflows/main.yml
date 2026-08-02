@@ -49,9 +49,29 @@ jobs:
           echo "=== Testing gdrive access ==="
           rclone lsd gdrive:MEGA_Transfer/ 2>&1 || echo "WARNING: gdrive remote not accessible - check RCLONE_CONF secret"
 
+      - name: Merge MEGA links parts
+        env:
+          MEGA_LINKS_PART1: ${{ secrets.MEGA_LINKS_PART1 }}
+          MEGA_LINKS_PART2: ${{ secrets.MEGA_LINKS_PART2 }}
+          MEGA_LINKS_PART3: ${{ secrets.MEGA_LINKS_PART3 }}
+          MEGA_LINKS_PART4: ${{ secrets.MEGA_LINKS_PART4 }}
+          MEGA_LINKS_PART5: ${{ secrets.MEGA_LINKS_PART5 }}
+          MEGA_LINKS_PART6: ${{ secrets.MEGA_LINKS_PART6 }}
+        run: |
+          python -c "
+import os, json
+parts = [os.environ.get(f'MEGA_LINKS_PART{i}') for i in range(1, 7)]
+parts = [p for p in parts if p]
+merged = {}
+for p in parts:
+    merged.update(json.loads(p))
+with open('MEGA_LINKS_merged.json', 'w') as f:
+    json.dump(merged, f)
+print(f'Merged {len(merged)} folders from {len(parts)} parts')
+"
+
       - name: Run transfer
         env:
-          MEGA_LINKS: ${{ secrets.MEGA_LINKS }}
           RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
         run: python mega_to_gdrive.py
 
