@@ -1,0 +1,8 @@
+mega_temp/
+chunk_*.bin
+chunk_*.bin.enc
+*.part
+__pycache__/
+*.pyc
+plan for over sized handing.md
+scan_cache/

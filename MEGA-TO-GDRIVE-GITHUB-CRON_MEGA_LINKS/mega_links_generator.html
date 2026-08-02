@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEGA TO GDRIVE — Setup Workstation</title>
+<script src="https://cdn.jsdelivr.net/npm/libsodium-wrappers-sumo@0.7.15/dist/libsodium-wrappers-sumo.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;background:#0d1117;color:#c9d1d9;min-height:100vh;padding:20px}
+.container{max-width:860px;margin:0 auto}
+.card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:32px;margin-bottom:16px}
+h1{font-size:24px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h1 span{background:#1f6feb;font-size:12px;padding:2px 8px;border-radius:999px;font-weight:500}
+.subtitle{color:#8b949e;font-size:14px;margin-bottom:24px}
+.section-title{font-size:16px;font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.section-title .badge{background:#21262d;font-size:11px;padding:1px 7px;border-radius:999px;color:#8b949e;font-weight:400}
+label{display:block;font-size:13px;font-weight:500;margin-bottom:4px;color:#c9d1d9}
+input,textarea{width:100%;padding:8px 12px;background:#0d1117;border:1px solid #30363d;border-radius:6px;color:#c9d1d9;font-size:14px;font-family:inherit;transition:border-color .2s}
+input:focus,textarea:focus{outline:none;border-color:#1f6feb}
+textarea{resize:vertical;min-height:80px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:13px}
+.form-row{margin-bottom:12px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border:1px solid #30363d;border-radius:6px;font-size:14px;font-weight:500;cursor:pointer;transition:all .2s;background:#21262d;color:#c9d1d9;text-decoration:none}
+.btn:hover{background:#30363d;border-color:#8b949e}
+.btn-primary{background:#238636;border-color:#2ea043;color:#fff}
+.btn-primary:hover{background:#2ea043}
+.btn-danger{background:#da3633;border-color:#f85149;color:#fff}
+.btn-danger:hover{background:#f85149}
+.btn-github{background:#1f6feb;border-color:#58a6ff;color:#fff}
+.btn-github:hover{background:#58a6ff}
+.btn-google{background:#0d1117;border-color:#8b949e;color:#fff}
+.btn-google:hover{background:#21262d}
+.btn-stop{background:#da3633;border-color:#f85149;color:#fff}
+.btn-stop:hover{background:#f85149}
+.btn-start{background:#238636;border-color:#2ea043;color:#fff}
+.btn-start:hover{background:#2ea043}
+.btn-sm{padding:4px 12px;font-size:12px}
+.btn-copy{background:transparent;border:1px solid #30363d;color:#8b949e;padding:4px 12px;font-size:12px;border-radius:6px;cursor:pointer;transition:all .2s}
+.btn-copy:hover{background:#21262d;color:#c9d1d9;border-color:#8b949e}
+.btn-icon{background:none;border:none;color:#8b949e;cursor:pointer;padding:2px 6px;font-size:16px}
+.btn-icon:hover{color:#f85149}
+.folder-item{display:flex;align-items:center;justify-content:space-between;background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:10px 14px;margin-bottom:6px}
+.folder-item .info{display:flex;align-items:center;gap:10px;font-size:14px}
+.folder-item .info .name{color:#c9d1d9}
+.folder-item .info .path{color:#8b949e;font-size:11px}
+.folder-item .info .count{color:#8b949e;font-size:12px;background:#21262d;padding:1px 8px;border-radius:999px}
+.folder-item .info .oversized-badge{color:#f0883e;font-size:11px;background:#21262d;padding:1px 6px;border-radius:999px}
+.empty-msg{color:#8b949e;font-size:13px;text-align:center;padding:16px 0}
+.output-box{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:14px;margin-top:8px;position:relative}
+.output-box pre{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:12px;line-height:1.5;color:#7ee787;white-space:pre-wrap;word-break:break-all;max-height:200px;overflow:auto;margin:0;padding-right:60px}
+.output-box .top-right{position:absolute;top:10px;right:10px;display:flex;gap:4px}
+.output-box .label{font-size:11px;color:#8b949e;font-weight:600;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#238636;color:#fff;padding:10px 24px;border-radius:8px;font-size:14px;font-weight:500;opacity:0;transition:opacity .3s;pointer-events:none;z-index:999}
+.toast.show{opacity:1}
+.toast.error{background:#da3633}
+.toast.warn{background:#f0883e}
+.guide-box{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:16px 20px;margin-bottom:20px}
+.guide-box summary{cursor:pointer;font-weight:600;font-size:14px;color:#c9d1d9;padding:4px 0}
+.guide-box summary:hover{color:#58a6ff}
+.guide-steps{margin-top:12px}
+.guide-step{display:flex;gap:10px;margin-bottom:10px;font-size:13px;line-height:1.5}
+.guide-step .num{flex-shrink:0;width:22px;height:22px;background:#21262d;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:#58a6ff;margin-top:1px}
+.guide-step .text{color:#c9d1d9}
+.guide-step .text .hi{color:#8b949e;display:block;font-size:12px;margin-top:1px}
+.guide-step .text strong{color:#58a6ff}
+hr{border:none;border-top:1px solid #21262d;margin:16px 0}
+.divider{border:none;border-top:1px solid #21262d;margin:20px 0}
+.hidden{display:none!important}
+.status-line{font-size:12px;margin-top:4px;min-height:18px}
+.status-ok{color:#3fb950}
+.status-err{color:#f85149}
+.status-warn{color:#f0883e}
+.status-idle{color:#8b949e}
+.status-busy{color:#58a6ff}
+.progress-section{margin:16px 0}
+.progress-bar-wrap{background:#0d1117;border-radius:999px;height:20px;overflow:hidden;position:relative;border:1px solid #30363d}
+.progress-bar-fill{height:100%;background:linear-gradient(90deg,#238636,#2ea043);border-radius:999px;transition:width .5s ease;position:relative}
+.progress-bar-fill.oversized{background:linear-gradient(90deg,#1f6feb,#58a6ff)}
+.progress-bar-text{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#fff}
+.folder-progress{margin:6px 0;padding:8px 12px;background:#0d1117;border-radius:8px;border:1px solid #21262d}
+.folder-progress-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;font-size:13px}
+.folder-progress-bar{background:#21262d;border-radius:999px;height:8px;overflow:hidden}
+.folder-progress-fill{height:100%;border-radius:999px;transition:width .5s ease}
+.folder-progress-fill.active{background:#238636}
+.folder-progress-fill.wait{background:#30363d}
+.folder-progress-fill.done{background:#3fb950}
+.folder-progress-fill.oversized-progress{background:#1f6feb}
+.workflow-run{padding:6px 0;font-size:13px;display:flex;align-items:center;gap:8px}
+.workflow-status-dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.workflow-status-dot.completed{background:#3fb950}
+.workflow-status-dot.in_progress{background:#f0883e;animation:pulse 1.5s infinite}
+.workflow-status-dot.queued{background:#8b949e}
+.workflow-status-dot.failure{background:#f85149}
+@keyframes pulse{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
+.control-btn-wrap{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #21262d;gap:12px;flex-wrap:wrap}
+.control-btn-wrap:last-child{border-bottom:none}
+.control-label{font-size:13px;flex:1;min-width:160px}
+.control-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;z-index:1000;opacity:0;transition:opacity .2s;pointer-events:none}
+.modal-overlay.show{opacity:1;pointer-events:auto}
+.modal-box{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:24px;max-width:440px;width:90%;text-align:center}
+.modal-box h3{margin-bottom:8px}
+.modal-box p{font-size:14px;color:#8b949e;margin-bottom:16px}
+.modal-actions{display:flex;gap:8px;justify-content:center}
+.scan-tree{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:12px;line-height:1.6;background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:12px;margin:8px 0;max-height:300px;overflow:auto;color:#c9d1d9}
+.scan-tree .folder{color:#58a6ff}
+.scan-tree .file{color:#c9d1d9}
+.scan-tree .oversized{color:#f0883e}
+.scan-tree .size{color:#8b949e;font-size:11px}
+.token-display{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:12px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:12px;word-break:break-all;color:#7ee787;margin:8px 0}
+.login-section{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:16px;margin-top:12px}
+.workstation-panel{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:16px;margin-top:12px}
+.step-progress{display:flex;gap:4px;margin:8px 0;flex-wrap:wrap}
+.step-item{padding:4px 12px;border-radius:6px;font-size:12px;background:#21262d;color:#8b949e}
+.step-item.done{background:#238636;color:#fff}
+.step-item.active{background:#1f6feb;color:#fff;animation:pulse 1s infinite}
+.step-item.fail{background:#da3633;color:#fff}
+.scroll-log{max-height:200px;overflow:auto;background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:10px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;line-height:1.5;margin:8px 0}
+.scroll-log .log-line{color:#8b949e}
+.scroll-log .log-ok{color:#3fb950}
+.scroll-log .log-err{color:#f85149}
+.scroll-log .log-info{color:#58a6ff}
+.mega-login-section details{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:10px 14px}
+.mega-login-section summary{color:#58a6ff;font-weight:600;font-size:13px;cursor:pointer;padding:4px 0}
+.mega-login-section summary:hover{color:#79c0ff}
+.skeleton{background:linear-gradient(90deg,#21262d 25%,#30363d 50%,#21262d 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:6px}
+.skeleton-line{height:14px;margin:8px 0;border-radius:6px}
+.skeleton-line.w20{width:20%}.skeleton-line.w40{width:40%}.skeleton-line.w60{width:60%}.skeleton-line.w80{width:80%}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.scan-progress-box{background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:16px;margin:12px 0}
+.scan-detail{font-size:12px;color:#8b949e;margin-top:8px}
+.scan-log{max-height:150px;overflow:auto;background:#0d1117;border:1px solid #21262d;border-radius:6px;padding:8px;margin-top:8px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;line-height:1.5;display:none}
+.scan-log .sl-line{color:#8b949e}.scan-log .sl-ok{color:#3fb950}.scan-log .sl-err{color:#f85149}.scan-log .sl-info{color:#58a6ff}
+@media(max-width:600px){.card{padding:20px}.control-btn-wrap{flex-direction:column;align-items:stretch}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="card">
+<h1>⚡ MEGA TO GDRIVE <span>BY SHIVAM SLT</span></h1>
+<p class="subtitle">GitHub Actions workflow setup — Add MEGA folders, generate secret, sign up/login, and control your transfer pipeline.</p>
+
+<details class="guide-box" open>
+<summary>📖 User Guide — Step by Step</summary>
+<div class="guide-steps">
+<div class="guide-step"><span class="num">1</span><div class="text"><strong>Auto Scan</strong> (easy) ya <strong>Manual Entry</strong> — MEGA links add karein<span class="hi">Scan your MEGA folder link or paste URLs manually</span></div></div>
+<div class="guide-step"><span class="num">2</span><div class="text">[🚀 Generate Secret] click karein — <strong>MEGA_LINKS</strong> JSON ban jayega<span class="hi">Creates the secret that tells the workflow which files to transfer</span></div></div>
+<div class="guide-step"><span class="num">3</span><div class="text"><strong>[🔑 SIGN UP WITH GITHUB]</strong> — Naya repo automatically banega, secrets setup honge<span class="hi">New user? Sign up creates repo + stores secrets in one click</span></div></div>
+<div class="guide-step"><span class="num">4</span><div class="text"><strong>[🔗 Connect Google Drive]</strong> — Rclone config auto-generate hoga<span class="hi">Authorize Google Drive access — no software needed</span></div></div>
+<div class="guide-step"><span class="num">5</span><div class="text"><strong>[🚀 START Workflow]</strong> — Transfer shuru ho jayega!<span class="hi">Click to start. Har 15 min auto-chalta rahega jab tak sab complete na ho</span></div></div>
+</div>
+</details>
+
+<hr>
+
+<div class="section-title"><span>🔍 MEGA Folder Auto Scan</span></div>
+<div class="form-row">
+<label for="megaFolderLink">MEGA Folder Links (Public) — ek line per URL</label>
+<textarea id="megaFolderLink" rows="4" placeholder="https://mega.nz/folder/ABC123#key1&#10;https://mega.nz/folder/DEF456#key2&#10;https://mega.nz/file/ghi#key3"></textarea>
+</div>
+<button class="btn btn-primary" onclick="scanMegaFolder()">🔍 SCAN & GENERATE</button>
+<span class="status-line status-idle" id="scanStatus"></span>
+
+<div class="scan-progress-box" id="scanProgressBox" style="display:none">
+  <div class="scan-detail" id="scanDetail">Initializing scan…</div>
+  <div style="margin:10px 0;height:8px;background:#21262d;border-radius:4px;overflow:hidden">
+    <div id="scanProgressBar" style="height:100%;width:0%;background:#58a6ff;border-radius:4px;transition:width .5s"></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;color:#8b949e">
+    <span id="scanProgressText">0%</span>
+    <span id="scanElapsed">00:00</span>
+  </div>
+  <div class="scan-log" id="scanLog"></div>
+</div>
+
+<!-- MEGA Login (server-side) -->
+<style>
+#megaScanTree{max-height:400px;overflow-y:auto;background:#0d1117;border:1px solid #30363d;border-radius:8px;padding:10px;margin-top:8px;font-family:monospace;font-size:12px;line-height:1.6}
+#megaScanTree .folder{color:#58a6ff}
+#megaScanTree .file{color:#c9d1d9}
+</style>
+<div class="mega-login-section" style="margin:10px 0">
+  <details>
+    <summary style="cursor:pointer;color:#58a6ff;font-weight:600;font-size:13px">🔐 MEGA Login &amp; Scan Account</summary>
+    <div style="padding:12px;background:#0d1117;border:1px solid #30363d;border-radius:8px;margin-top:8px">
+      <div class="form-row" style="margin-bottom:8px">
+        <label for="megaEmail">MEGA Email</label>
+        <input type="email" id="megaEmail" value="masterslt297+apr5@gmail.com" />
+      </div>
+      <div class="form-row" style="margin-bottom:8px">
+        <label for="megaPassword">MEGA Password</label>
+        <input type="password" id="megaPassword" />
+      </div>
+      <button class="btn btn-primary" onclick="megaLoginScan()">🔑 Login &amp; Scan</button>
+      <span class="status-line status-idle" id="megaLoginStatus" style="margin-left:8px"></span>
+      <div id="megaScanTree"></div>
+    </div>
+  </details>
+</div>
+
+<hr>
+
+<!-- Rclone / Google Drive Connect -->
+<style>
+#rcloneStatus{font-size:12px;margin-left:8px}
+</style>
+<div class="mega-login-section" style="margin:10px 0">
+  <details>
+    <summary style="cursor:pointer;color:#58a6ff;font-weight:600;font-size:13px">☁️ Google Drive / rclone Setup</summary>
+    <div style="padding:12px;background:#0d1117;border:1px solid #30363d;border-radius:8px;margin-top:8px">
+      <p style="color:#8b949e;font-size:13px;margin:0 0 8px 0">
+        Authenticate with Google Drive to generate rclone config and save it as a GitHub secret.
+      </p>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <button class="btn btn-google" onclick="rcloneConnect()">☁️ Connect Google Drive</button>
+        <span class="status-line status-idle" id="rcloneStatus">Not connected</span>
+      </div>
+      <div id="rcloneSteps" style="display:none;margin-top:8px;padding:8px;background:#0d1117;border:1px solid #30363d;border-radius:6px;font-size:13px"></div>
+    </div>
+  </details>
+</div>
+
+<hr>
+
+<div class="section-title"><span>📝 Manual Entry</span> <span class="badge" id="manualBadge">OR</span></div>
+<div class="form-row">
+<label for="folderName">Folder Name (use / for subfolders, e.g. "Movies/Hollywood")</label>
+<input type="text" id="folderName" placeholder='e.g. "Movies" or "Movies/Hollywood/2024"' />
+</div>
+<div class="form-row">
+<label for="links">MEGA Links <span style="color:#8b949e;font-weight:400;">(one URL per line)</span></label>
+<textarea id="links" placeholder="https://mega.nz/file/abc123#key1&#10;https://mega.nz/file/def456#key2&#10;https://mega.nz/file/ghi789#key3"></textarea>
+<div class="status-line status-idle" id="folderError"></div>
+</div>
+<button class="btn btn-primary" onclick="addFolder()">➕ Add Folder</button>
+
+<hr>
+
+<div class="section-title"><span>📂 Added Folders</span> <span class="badge" id="folderCount">0</span></div>
+<div id="folderList"><div class="empty-msg">No folders added yet. Use SCAN or Manual entry above.</div></div>
+
+<button class="btn btn-primary" onclick="generateSecret()" style="margin-top:12px;">🚀 Generate Secret</button>
+
+<div id="outputSection" class="hidden" style="margin-top:16px">
+<hr>
+<div class="section-title"><span>🔑 MEGA_LINKS Secret Generated</span></div>
+<div class="output-box">
+<div class="top-right">
+<button class="btn-copy" onclick="copyOutput('secretOutput')">📋 Copy</button>
+<button class="btn-copy" onclick="downloadJson()">⬇ .json</button>
+</div>
+<pre id="secretOutput"></pre>
+</div>
+
+<div id="accountSetupSection" class="login-section">
+<div class="section-title"><span>🔓 Account Setup</span></div>
+<p style="font-size:13px;color:#8b949e;margin-bottom:12px">Naya user? <strong>SIGN UP</strong> se directly repo + secrets setup ho jayega. Pehle se repo hai? <strong>LOGIN</strong> karein.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<button class="btn btn-github" onclick="signUpWithGitHub()">🔑 SIGN UP WITH GITHUB</button>
+<button class="btn" onclick="showLoginPanel()">🔑 LOGIN TO WORKSTATION</button>
+</div>
+<div id="signUpProgress" class="hidden">
+<div class="step-progress" id="signUpSteps"></div>
+<div class="scroll-log" id="signUpLog"></div>
+</div>
+</div>
+
+<div id="loginPanel" class="hidden login-section">
+<div class="section-title"><span>🔑 Login to Existing Repo</span></div>
+<div class="form-row">
+<label for="loginRepoUrl">Repo URL</label>
+<input type="text" id="loginRepoUrl" placeholder="https://github.com/your-username/MEGA-TO-GDRIVE-BY-Shivam-SLT" />
+</div>
+<div class="form-row">
+<label for="loginPat">GH PAT (Personal Access Token with repo + workflow scopes)</label>
+<input type="password" id="loginPat" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" />
+</div>
+<button class="btn btn-primary" onclick="loginToWorkstation()">🔗 CONNECT</button>
+<span class="status-line" id="loginStatus"></span>
+</div>
+</div>
+
+</div>
+
+<div id="workstationPanel" class="card hidden">
+<div class="section-title"><span>🖥️ Workstation</span> <span class="badge" id="wsRepoName"></span></div>
+
+<div class="workstation-panel">
+<div class="section-title" style="margin-bottom:8px"><span>ℹ️ Repo Status</span></div>
+<div id="wsRepoStatus"></div>
+<div class="section-title" style="margin-top:16px;margin-bottom:8px"><span>📊 Transfer Progress</span> <span class="badge" id="progressTime"></span></div>
+<div id="wsProgressDashboard"><p style="color:#8b949e;font-size:13px">No transfer data yet. Start a workflow to see progress.</p></div>
+<div class="section-title" style="margin-top:16px;margin-bottom:8px"><span>🔄 Workflow Activity</span></div>
+<div id="wsWorkflowRuns"><p style="color:#8b949e;font-size:13px">No workflow runs yet.</p></div>
+
+<div class="section-title" style="margin-top:16px;margin-bottom:8px"><span>🎮 Controls</span></div>
+<div id="wsControls">
+<div class="control-btn-wrap">
+<span class="control-label">📤 Push MEGA_LINKS to Secrets</span>
+<div class="control-actions">
+<button class="btn btn-primary btn-sm" onclick="confirmAction('pushSecrets')">Push</button>
+<span class="status-line status-idle" id="st_pushSecrets" style="margin:0">—</span>
+</div>
+</div>
+<div class="control-btn-wrap">
+<span class="control-label">🔗 Re-push RCLONE_CONF to Secrets</span>
+<div class="control-actions">
+<button class="btn btn-google btn-sm" onclick="connectGoogleDrive()">🔄 Re-connect</button>
+<span class="status-line status-idle" id="st_rcloneConf" style="margin:0">—</span>
+</div>
+</div>
+<div class="control-btn-wrap">
+<span class="control-label">🗑 Delete completed_links.json</span>
+<div class="control-actions">
+<button class="btn btn-danger btn-sm" onclick="confirmAction('deleteCompleted')">Delete</button>
+<span class="status-line status-idle" id="st_deleteCompleted" style="margin:0">—</span>
+</div>
+</div>
+<div class="control-btn-wrap">
+<span class="control-label">🗑 Delete chunks_history.json</span>
+<div class="control-actions">
+<button class="btn btn-danger btn-sm" onclick="confirmAction('deleteChunks')">Delete</button>
+<span class="status-line status-idle" id="st_deleteChunks" style="margin:0">—</span>
+</div>
+</div>
+<div class="control-btn-wrap">
+<span class="control-label">🗑 Delete Both Files</span>
+<div class="control-actions">
+<button class="btn btn-danger btn-sm" onclick="confirmAction('deleteBoth')">Delete All</button>
+<span class="status-line status-idle" id="st_deleteBoth" style="margin:0">—</span>
+</div>
+</div>
+<div class="control-btn-wrap">
+<span class="control-label">🚀 START Workflow</span>
+<div class="control-actions">
+<button class="btn btn-start btn-sm" onclick="confirmAction('startWorkflow')">START</button>
+<span class="status-line status-idle" id="st_startWorkflow" style="margin:0">—</span>
+</div>
+</div>
+<div class="control-btn-wrap">
+<span class="control-label">🛑 STOP Workflow</span>
+<div class="control-actions">
+<button class="btn btn-stop btn-sm" onclick="confirmAction('stopWorkflow')">STOP</button>
+<span class="status-line status-idle" id="st_stopWorkflow" style="margin:0">—</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="modal-overlay" id="modalOverlay">
+<div class="modal-box">
+<h3 id="modalTitle">Confirm</h3>
+<p id="modalDesc">Are you sure?</p>
+<div class="modal-actions">
+<button class="btn btn-primary" id="modalConfirmBtn" onclick="executeConfirmed()">✅ Confirm</button>
+<button class="btn" onclick="closeModal()">❌ Cancel</button>
+</div>
+</div>
+</div>
+
+<script>
+// ============================================================
+// STATE
+// ============================================================
+const folders = {};
+let generatedSecret = '';
+let workstationConnected = false;
+let wsOwner = '', wsRepo = '';
+let wsPat = '';
+let pendingAction = null;
+let dashboardTimer = null;
+let googleDriveToken = null;
+
+// === CONFIG (SET THESE) ===
+const GITHUB_CLIENT_ID = 'YOUR_GITHUB_CLIENT_ID'; // Set this
+const GOOGLE_CLIENT_ID = 'YOUR_GOOGLE_CLIENT_ID'; // Set this
+const GOOGLE_CLIENT_SECRET = ''; // Set if using Google device flow
+const REPO_NAME = 'MEGA-TO-GDRIVE-BY-Shivam-SLT';
+const TEMPLATE_REPO = 'shivamjislt97/MEGA-TO-GDRIVE-GITHUB-CRON';
+const MEGA_SCAN_API = ''; // Set to your backend URL e.g. 'https://your-api.onrender.com'
+
+// ============================================================
+// UI HELPERS
+// ============================================================
+function $(id) {return document.getElementById(id)}
+function showToast(msg, isError) {
+  const t = $('toast'); t.textContent = msg;
+  t.className = 'toast'+(isError?' error':'')+' show';
+  clearTimeout(t._hide); t._hide = setTimeout(()=>t.classList.remove('show'),3000);
+}
+function setStatus(id, text, type) {
+  const el = $(id); if(!el)return;
+  el.textContent = text || '—';
+  el.className = 'status-line status-'+type;
+}
+function escHtml(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function fmtSize(b){if(!b)return'0 B';const u=['B','KB','MB','GB','TB'];let i=0;while(b>=1024&&i<4){b/=1024;i++}return b.toFixed(1)+' '+u[i]}
+function sleep(ms){return new Promise(r=>setTimeout(r,ms))}
+function copyOutput(id){const t=$(id).textContent;if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(()=>showToast('📋 Copied!')).catch(()=>fallbackCopy(t))}else{fallbackCopy(t)}}
+function fallbackCopy(t){const ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);showToast('📋 Copied!')}
+function downloadJson(){const t=$('secretOutput').textContent;if(!t){showToast('❌ Nothing to download',true);return}
+const blob=new Blob([t],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='MEGA_LINKS.json';document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(a.href)}
+
+// ============================================================
+// FOLDER MANAGEMENT
+// ============================================================
+function addFolder(name, links) {
+  if(name && links && Array.isArray(links)) {
+    folders[name] = links;
+    updateFolderList();
+    $('outputSection').classList.add('hidden');
+    showToast(`✅ "${name}" added (${links.length} links)`);
+    return;
+  }
+  const nameEl=$('folderName'),linksEl=$('links'),errEl=$('folderError');
+  errEl.textContent='';errEl.className='status-line status-idle';
+  const n=nameEl.value.trim();if(!n){errEl.textContent='❌ Enter folder name';errEl.className='status-line status-err';nameEl.focus();return}
+  const raw=linksEl.value.trim();if(!raw){errEl.textContent='❌ Paste MEGA links';errEl.className='status-line status-err';linksEl.focus();return}
+  const lines=raw.split('\n').map(l=>l.trim()).filter(l=>l);
+  const valid=[],invalid=[];
+  for(const line of lines){
+    if(/^https:\/\/mega\.nz\/(file|folder|#)/.test(line))valid.push(line);
+    else invalid.push(line);
+  }
+  if(!valid.length){errEl.textContent='❌ No valid MEGA links';errEl.className='status-line status-err';return}
+  if(invalid.length)showToast(`⚠ ${invalid.length} invalid lines skipped`,true);
+  folders[n]=valid;updateFolderList();nameEl.value='';linksEl.value='';
+  $('outputSection').classList.add('hidden');
+  showToast(`✅ "${n}" added (${valid.length} links)!`);
+}
+function removeFolder(index){const keys=Object.keys(folders);delete folders[keys[index]];updateFolderList();$('outputSection').classList.add('hidden')}
+function updateFolderList(){
+  const list=$('folderList'),keys=Object.keys(folders);
+  $('folderCount').textContent=keys.length;
+  if(!keys.length){list.innerHTML='<div class="empty-msg">No folders added yet.</div>';return}
+  list.innerHTML=keys.map((name,i)=>{
+    const c=folders[name].length,ov=folders[name].filter(u=>u._oversized).length;
+    return `<div class="folder-item"><div class="info"><span>📁</span><span class="name">${escHtml(name)}</span><span class="count">${c} link${c!==1?'s':''}</span>${ov?`<span class="oversized-badge">${ov} oversized</span>`:''}</div><button class="btn-icon" onclick="removeFolder(${i})">✕</button></div>`;
+  }).join('');
+}
+
+// ============================================================
+// MEGA LOGIN + SCAN (server-side)
+// ============================================================
+async function megaLoginScan(){
+  const email=$('megaEmail').value.trim();
+  const pass=$('megaPassword').value;
+  const st=$('megaLoginStatus');
+  const tree=$('megaScanTree');
+  if(!email||!pass){st.textContent='❌ Enter email and password';st.className='status-line status-err';return}
+  st.textContent='⏳ Logging in & scanning...';st.className='status-line status-busy';tree.innerHTML='';
+  try{
+    const resp=await fetch('/api/mega-login-scan',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email,password:pass})});
+    const d=await resp.json();
+    if(d.ok){
+      const scannedCnt=d.scannedFiles||d.totalFiles;
+      let msg=`✅ ${d.totalFiles} files in ${d.totalFolders} folders`;
+      if(scannedCnt<d.totalFiles)msg+=` (showing first ${scannedCnt})`;
+      st.textContent=msg;st.className='status-line status-ok';
+      tree.innerHTML=d.treeHtml||'';
+      for(let[folderName,urls]of Object.entries(d.folders||{})){
+        if(!folderName)folderName='(Root)';
+        if(!folders[folderName])folders[folderName]=[];
+        for(const u of urls){if(!folders[folderName].includes(u))folders[folderName].push(u)}
+      }
+      updateFolderList();
+      showToast(msg);
+    }else{
+      st.textContent='❌ '+d.error;st.className='status-line status-err';
+      tree.innerHTML='<div style="color:#f85149">Error: '+d.error+'</div>';
+    }
+  }catch(e){
+    st.textContent='❌ '+e.message;st.className='status-line status-err';
+  }
+}
+
+// ============================================================
+// MEGA FOLDER SCAN
+// ============================================================
+async function scanMegaFolder(){
+  const raw=$('megaFolderLink').value.trim();
+  const st=$('scanStatus');
+  if(!raw){st.textContent='❌ Paste MEGA folder or file links';st.className='status-line status-err';return}
+  const links=raw.split('\n').map(l=>l.trim()).filter(l=>l);
+  if(links.length===0){st.textContent='❌ No valid links found';st.className='status-line status-err';return}
+  if(signUpAccessToken&&GITHUB_REPO){
+    await dispatchScanWorkflow(links[0]);
+    return;
+  }
+  st.textContent=`⏳ Scanning ${links.length} link(s)...`;st.className='status-line status-busy';
+  let totalFiles=0,totalFolders=0,allOk=true;
+  for(let i=0;i<links.length;i++){
+    const link=links[i];
+    if(link.includes('/file/')){
+      const m=link.match(/\/file\/([^#]+)#(.+)/);
+      if(m){
+        if(!folders['Scanned'])folders['Scanned']=[];
+        if(!folders['Scanned'].includes(link))folders['Scanned'].push(link);
+        totalFiles++;
+      }else{st.textContent=`❌ Invalid link: ${link.slice(0,60)}`;st.className='status-line status-err';allOk=false;continue}
+    }else if(link.includes('/folder/')){
+      const result=await scanFolderViaServer(link,true);
+      if(result.ok){
+        totalFiles+=result.totalFiles||0;
+        totalFolders+=result.totalFolders||0;
+      }else{allOk=false}
+    }else{
+      st.textContent=`❌ Invalid format: ${link.slice(0,60)}`;st.className='status-line status-err';allOk=false
+    }
+    if(i<links.length-1)st.textContent=`⏳ Scanned ${i+1}/${links.length}...`;
+  }
+  updateFolderList();
+  if(allOk)st.textContent=`✅ ${totalFiles} files from ${totalFolders} folders scanned`;st.className='status-line status-ok';
+  if(totalFiles)showToast(`✅ ${totalFiles} MEGA files added!`);
+}
+  }
+async function scanFolderViaServer(link,returnResult){
+  const st=$('scanStatus');
+  if(!returnResult)st.textContent='⏳ Scanning folder via server...';st.className='status-line status-busy';
+  try{
+    const resp=await fetch('/api/scan',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({url:link})
+    });
+    if(!resp.ok){
+      const err=await resp.json().catch(()=>({}));
+      throw new Error(err.detail||`Server error ${resp.status}`);
+    }
+    const data=await resp.json();
+    const allFolders=data.folders||{};
+    const urls=Object.values(allFolders).flat();
+    if(urls.length){
+      for(const[folderName,urlList]of Object.entries(allFolders)){
+        if(!folders[folderName])folders[folderName]=[];
+        for(const u of urlList){if(!folders[folderName].includes(u))folders[folderName].push(u)}
+      }
+      if(!returnResult){
+        updateFolderList();$('outputSection').classList.add('hidden');
+        st.textContent=`✅ Scanned: ${urls.length} files in folder`;st.className='status-line status-ok';
+        showToast(`✅ ${urls.length} files found!`);
+      }
+      return{ok:true,totalFiles:data.totalFiles||urls.length,totalFolders:data.totalFolders||Object.keys(allFolders).length};
+    }else{
+      if(!returnResult){st.textContent='❌ No files found in folder';st.className='status-line status-err'}
+      return{ok:false,totalFiles:0,totalFolders:0};
+    }
+  }catch(e){
+    if(!returnResult){st.textContent='❌ Scan error: '+e.message;st.className='status-line status-err';showToast('❌ MEGA scan failed. Try Manual Entry instead.',true)}
+    return{ok:false,totalFiles:0,totalFolders:0};
+  }
+}
+function showScanTree(html){const d=document.createElement('div');d.innerHTML=`<div class="scan-tree">${html}</div>`;$('folderList').before(d);setTimeout(()=>d.remove(),15000)}
+
+
+
+// ============================================================
+// SCAN SKELETON / PROGRESS
+// ============================================================
+function showSkeleton(){
+  const box=$('scanProgressBox');box.style.display='block';
+  $('scanProgressBar').style.width='0%';
+  $('scanProgressText').textContent='0%';
+  $('scanElapsed').textContent='00:00';
+  $('scanLog').style.display='none';$('scanLog').innerHTML='';
+  const d=$('scanDetail');
+  d.innerHTML='<div class="skeleton" style="height:14px;width:60%;margin:0"></div>';
+}
+function hideSkeleton(){
+  $('scanProgressBox').style.display='none';
+}
+function appendScanLog(text,cls='line'){
+  const log=$('scanLog');
+  log.style.display='block';
+  const d=document.createElement('div');d.className='sl-'+cls;d.textContent=text;
+  log.appendChild(d);log.scrollTop=log.scrollHeight;
+}
+function updateScanProgress(pct,text,elapsed){
+  $('scanProgressBar').style.width=Math.min(pct,100)+'%';
+  $('scanProgressText').textContent=Math.round(pct)+'%';
+  if(text)$('scanDetail').textContent=text;
+  if(elapsed)$('scanElapsed').textContent=elapsed;
+}
+
+// ============================================================
+// GITHUB ACTIONS WORKFLOW DISPATCH FOR MEGA SCAN
+// ============================================================
+async function dispatchScanWorkflow(link){
+  showSkeleton();
+  const st=$('scanStatus');
+  const startTime=Date.now();
+  const elapsedInterval=setInterval(()=>{
+    const s=Math.floor((Date.now()-startTime)/1000);
+    const mm=String(Math.floor(s/60)).padStart(2,'0'),ss=String(s%60).padStart(2,'0');
+    $('scanElapsed').textContent=mm+':'+ss;
+  },1000);
+  try{
+    updateScanProgress(5,'Dispatching workflow...');
+    const [owner,repo]=GITHUB_REPO.split('/').slice(-2);
+    const dispatchRes=await fetch(`https://api.github.com/repos/${owner}/${repo}/actions/workflows/scan_mega.yml/dispatches`,{
+      method:'POST',
+      headers:{'Accept':'application/vnd.github+json','Authorization':'Bearer '+signUpAccessToken},
+      body:JSON.stringify({ref:'main',inputs:{url:link}})
+    });
+    if(!dispatchRes.ok){
+      const errText=await dispatchRes.text();
+      throw new Error('Dispatch failed ('+dispatchRes.status+'): '+errText);
+    }
+    appendScanLog('Workflow dispatched ✓','ok');
+    updateScanProgress(15,'Workflow dispatched. Waiting for runner to start...');
+    // wait a few seconds then poll
+    await new Promise(r=>setTimeout(r,8000));
+    const result=await pollScanResult(owner,repo,startTime,elapsedInterval);
+    if(!result)throw new Error('Scan timed out or failed');
+    updateScanProgress(100,'Scan complete!');
+    appendScanLog('Scan result received ✓','ok');
+    // parse the result artifact / check commit
+    // The workflow pushes result to scan_cache/scan_result.json in the repo
+    // Fetch it via raw.githubusercontent.com
+    await new Promise(r=>setTimeout(r,3000)); // wait for push to propagate
+    const rawRes=await fetch(`https://raw.githubusercontent.com/${owner}/${repo}/main/scan_cache/scan_result.json`);
+    if(rawRes.ok){
+      const data=await rawRes.json();
+      for(const [name,urls] of Object.entries(data.folders||{})){
+        folders[name]=urls;folders[name]._scanned=true;
+      }
+      updateFolderList();$('outputSection').classList.add('hidden');
+      const totalFiles=Object.values(data.folders||{}).reduce((a,b)=>a+b.length,0);
+      st.textContent=`✅ Scanned: ${Object.keys(data.folders||{}).length} folders, ${totalFiles} files`;st.className='status-line status-ok';
+      if(data.treeHtml)showScanTree(data.treeHtml);
+    }else{
+      // Try getting from latest commit's artifact or just show link to scan cache
+      st.textContent='⚠️ Scan completed but result fetch failed. Check Actions tab.';st.className='status-line status-warn';
+    }
+  }catch(e){
+    appendScanLog('Error: '+e.message,'err');
+    st.textContent='❌ Scan error: '+e.message;st.className='status-line status-err';
+    updateScanProgress(0,'Scan failed');
+  }finally{
+    clearInterval(elapsedInterval);
+  }
+}
+
+async function pollScanResult(owner,repo,startTime,elapsedInterval,timeout=120000){
+  const pollInterval=5000;
+  const maxAttempts=Math.floor(timeout/pollInterval);
+  for(let i=0;i<maxAttempts;i++){
+    updateScanProgress(20+Math.min(i*3,60),'Checking workflow status...');
+    try{
+      const runsRes=await fetch(`https://api.github.com/repos/${owner}/${repo}/actions/runs?event=workflow_dispatch&per_page=1`,{
+        headers:{'Accept':'application/vnd.github+json','Authorization':'Bearer '+signUpAccessToken}
+      });
+      if(runsRes.ok){
+        const runs=await runsRes.json();
+        if(runs.workflow_runs&&runs.workflow_runs.length){
+          const run=runs.workflow_runs[0];
+          const status=run.status,conclusion=run.conclusion;
+          appendScanLog(`Run #${run.run_number}: ${status} ${conclusion||''}`.trim());
+          if(conclusion==='success')return run;
+          if(conclusion==='failure')throw new Error('Workflow run failed');
+          if(conclusion==='cancelled')throw new Error('Workflow was cancelled');
+        }
+      }
+    }catch(e){
+      if(e.message.includes('Workflow'))throw e;
+      appendScanLog('Poll check: '+e.message,'warn');
+    }
+    await new Promise(r=>setTimeout(r,pollInterval));
+  }
+  throw new Error('Polling timed out after '+(timeout/1000)+'s');
+}
+
+// ============================================================
+// GENERATE SECRET
+// ============================================================
+function generateSecret(){
+  const keys=Object.keys(folders);
+  if(!keys.length){showToast('❌ Add at least one folder',true);return}
+  const out={};
+  for(const key of keys){
+    out[key]=folders[key].filter(u=>typeof u==='string');
+  }
+  const json=JSON.stringify(out);
+  generatedSecret=json;
+  $('secretOutput').textContent=json;
+  $('outputSection').classList.remove('hidden');
+  $('accountSetupSection').classList.remove('hidden');
+  $('outputSection').scrollIntoView({behavior:'smooth',block:'start'});
+  showToast(`✅ Secret generated (${keys.length} folders)!`);
+}
+
+// ============================================================
+// GITHUB DEVICE FLOW — SIGN UP
+// ============================================================
+let signUpAccessToken = null;
+
+async function signUpWithGitHub(){
+  if(GITHUB_CLIENT_ID==='YOUR_GITHUB_CLIENT_ID'){
+    showToast('❌ Set GITHUB_CLIENT_ID in the HTML first',true);
+    return;
+  }
+  $('signUpProgress').classList.remove('hidden');
+  const steps=$('signUpSteps'),log=$('signUpLog');
+  function addStep(text,status){const d=document.createElement('span');d.className='step-item '+status;d.textContent=text;steps.appendChild(d);steps.scrollTop=steps.scrollHeight}
+  function addLog(text,cls='log-line'){const d=document.createElement('div');d.className='log-'+cls;d.textContent=text;log.appendChild(d);log.scrollTop=log.scrollHeight}
+  steps.innerHTML='';log.innerHTML='';
+  addLog('Starting SIGN UP...','info');
+  try{
+    addLog('Requesting device code from GitHub...','info');
+    addStep('GitHub Auth','active');
+    const dcResp=await fetch('https://github.com/login/device/code',{
+      method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({client_id:GITHUB_CLIENT_ID,scope:'repo workflow'})
+    });
+    if(!dcResp.ok)throw new Error('Device code request failed: '+dcResp.status);
+    const dc=await dcResp.json();
+    addLog(`Go to ${dc.verification_uri} and enter code: ${dc.user_code}`,'info');
+    showToast(`🔐 Code: ${dc.user_code} — Enter at github.com/login/device`);
+    const pollInterval=dc.interval||5;
+    let token=null;let elapsed=0;
+    while(!token&&elapsed<600){
+      await sleep(pollInterval*1000);elapsed+=pollInterval;
+      const trResp=await fetch('https://github.com/login/oauth/access_token',{
+        method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify({client_id:GITHUB_CLIENT_ID,device_code:dc.device_code,grant_type:'urn:ietf:params:oauth:grant-type:device_code'})
+      });
+      const tr=await trResp.json();
+      if(tr.access_token){token=tr.access_token;break}
+      if(tr.error==='authorization_pending'){addLog(`⏳ Waiting... (${elapsed}s)`,'info')}
+      else if(tr.error==='slow_down'){addLog('⏳ Slowing down...','info')}
+      else if(tr.error==='expired_token'){throw new Error('Device code expired. Please try again.')}
+      else if(tr.error!=='authorization_pending'){addLog(`⚠️ ${tr.error}: ${tr.error_description||''}`,'info')}
+    }
+    if(!token)throw new Error('Authorization timed out');
+    signUpAccessToken=token;
+    addLog('✅ GitHub authorized!','ok');
+    addStep('GitHub Auth','done');
+    await createRepoAndSetup(token,log,addStep,addLog);
+  }catch(e){addLog('❌ '+e.message,'err');addStep('Failed','fail');showToast('❌ SIGN UP failed: '+e.message,true)}
+}
+
+async function createRepoAndSetup(token,log,addStep,addLog){
+  addLog('Creating repo...','info');
+  addStep('Repo Create','active');
+  const crResp=await fetch('https://api.github.com/user/repos',{
+    method:'POST',headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},
+    body:JSON.stringify({name:REPO_NAME,private:false,auto_init:false,description:'MEGA to Google Drive Transfer — Auto-setup by MEGA-TO-GDRIVE-BY-Shivam-SLT'})
+  });
+  if(!crResp.ok){const e=await crResp.json();throw new Error('Repo create: '+(e.errors?.[0]?.message||e.message||crResp.status))}
+  const repo=await crResp.json();
+  const repoFullName=repo.full_name;
+  addLog(`✅ Repo created: ${repo.full_name}`,'ok');
+  addStep('Repo Create','done');
+  signUpAccessToken=token;
+  wsOwner=repo.owner.login;wsRepo=repo.name;wsPat=token;
+  await pushCoreFiles(token,repoFullName,log,addStep,addLog);
+  await setupSecrets(token,repoFullName,log,addStep,addLog);
+  addLog('🎉 SIGN UP complete!','ok');
+  addStep('Complete','done');
+  showToast('🎉 Repo + Secrets setup complete!');
+  connectWorkstation(repoFullName,token);
+  $('accountSetupSection').classList.add('hidden');
+}
+
+async function pushCoreFiles(token,repoFullName,log,addStep,addLog){
+  addStep('Push Files','active');
+  const files=[
+    'mega_to_gdrive.py','oversized_processor.py','auto_trigger.py','test_oversized.py',
+    'mega_links_generator.html','.github/workflows/mega_gdrive_transfer.yml'
+  ];
+  const completedJson=JSON.stringify({"folders":{}});
+  const allFiles=[...files,{name:'completed_links.json',content:completedJson}];
+  for(const f of allFiles){
+    const fName=typeof f==='string'?f:f.name;
+    addLog(`Pushing ${fName}...`,'info');
+    let content;
+    if(typeof f==='string'){
+      try{
+        const resp=await fetch(`https://raw.githubusercontent.com/${TEMPLATE_REPO}/main/${fName}`);
+        if(!resp.ok)throw new Error('Not found in template repo');
+        content=await resp.text();
+      }catch(e){
+        addLog(`⚠️ Skipping ${fName}: ${e.message}`,'info');
+        continue;
+      }
+    }else{
+      content=f.content;
+    }
+    const path=fName;
+    const b64=btoa(unescape(encodeURIComponent(content)));
+    const putResp=await fetch(`https://api.github.com/repos/${repoFullName}/contents/${path}`,{
+      method:'PUT',headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},
+      body:JSON.stringify({message:'initial commit [skip ci]',content:b64,branch:'main'})
+    });
+    if(!putResp.ok){const e=await putResp.json();addLog(`⚠️ ${fName}: ${e.errors?.[0]?.message||'failed'} (may already exist)`,'info')}
+    else{addLog(`✅ ${fName}`,'ok')}
+  }
+  addLog('✅ All core files pushed','ok');
+  addStep('Push Files','done');
+}
+
+async function setupSecrets(token,repoFullName,log,addStep,addLog){
+  addStep('Secrets Setup','active');
+  await sleep(1000);
+  const pkResp=await fetch(`https://api.github.com/repos/${repoFullName}/actions/secrets/public-key`,{
+    headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json'}
+  });
+  if(!pkResp.ok)throw new Error('Failed to get public key');
+  const pk=await pkResp.json();
+  await sodium.ready;
+  const secrets={
+    GH_PAT:token,
+    MEGA_LINKS:generatedSecret||'{}'
+  };
+  for(const [name,value] of Object.entries(secrets)){
+    addLog(`Storing ${name}...`,'info');
+    const binkey=sodium.from_base64(pk.key,sodium.base64_variants.ORIGINAL);
+    const encBytes=sodium.crypto_box_seal(new TextEncoder().encode(value),binkey);
+    const encrypted=sodium.to_base64(encBytes,sodium.base64_variants.ORIGINAL);
+    const sResp=await fetch(`https://api.github.com/repos/${repoFullName}/actions/secrets/${name}`,{
+      method:'PUT',headers:{'Authorization':'Bearer '+token,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},
+      body:JSON.stringify({encrypted_value:encrypted,key_id:pk.key_id})
+    });
+    if(!sResp.ok){const e=await sResp.json();addLog(`⚠️ ${name}: ${e.message||'failed'}`,'err')}
+    else{addLog(`✅ ${name} stored`,'ok')}
+  }
+  addLog('✅ Secrets configured','ok');
+  addStep('Secrets Setup','done');
+}
+
+// ============================================================
+// LOGIN
+// ============================================================
+function showLoginPanel(){$('loginPanel').classList.toggle('hidden')}
+async function loginToWorkstation(){
+  const url=$('loginRepoUrl').value.trim();
+  const pat=$('loginPat').value.trim();
+  const st=$('loginStatus');
+  if(!url||!pat){st.textContent='❌ Fill in URL and PAT';st.className='status-line status-err';return}
+  let owner,repo;
+  try{
+    const m=url.match(/(?:github\.com\/)?([^\/\s]+)\/([^\/\s]+?)(?:\.git|\/|$)/);
+    if(!m)throw new Error('Invalid URL');
+    owner=m[1];repo=m[2].replace('.git','');
+  }catch(e){st.textContent='❌ Invalid repo URL';st.className='status-line status-err';return}
+  st.textContent='⏳ Connecting...';st.className='status-line status-busy';
+  try{
+    const resp=await fetch(`https://api.github.com/repos/${owner}/${repo}`,{
+      headers:{'Authorization':'Bearer '+pat,'Accept':'application/vnd.github.v3+json'}
+    });
+    if(!resp.ok){if(resp.status===401)throw new Error('Invalid PAT');if(resp.status===404)throw new Error('Repo not found');throw new Error('Access denied')}
+    const d=await resp.json();
+    if(!d.permissions||!d.permissions.push)throw new Error('PAT needs push access');
+    wsOwner=owner;wsRepo=repo;wsPat=pat;
+    connectWorkstation(`${owner}/${repo}`,pat);
+    st.textContent=`✅ Connected to ${owner}/${repo}`;st.className='status-line status-ok';
+    $('loginPanel').classList.add('hidden');
+    $('accountSetupSection').classList.add('hidden');
+    showToast(`✅ Connected to ${owner}/${repo}`);
+  }catch(e){st.textContent='❌ '+e.message;st.className='status-line status-err'}
+}
+
+function connectWorkstation(fullName,pat){
+  workstationConnected=true;
+  $('workstationPanel').classList.remove('hidden');
+  $('wsRepoName').textContent=fullName;
+  $('workstationPanel').scrollIntoView({behavior:'smooth',block:'start'});
+  refreshDashboard();
+  if(dashboardTimer)clearInterval(dashboardTimer);
+  dashboardTimer=setInterval(refreshDashboard,10000);
+}
+
+// ============================================================
+// DASHBOARD
+// ============================================================
+async function refreshDashboard(){
+  if(!workstationConnected)return;
+  try{
+    await Promise.all([fetchRepoStatus(),fetchProgress(),fetchWorkflowRuns()]);
+  }catch(e){/* silent */}
+}
+
+async function fetchRepoStatus(){
+  const el=$('wsRepoStatus');
+  try{
+    const [cResp,chResp]=await Promise.all([
+      fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/contents/completed_links.json`,{headers:{'Authorization':'Bearer '+wsPat,'Accept':'application/vnd.github.v3+json'}}),
+      fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/contents/chunks_history.json`,{headers:{'Authorization':'Bearer '+wsPat,'Accept':'application/vnd.github.v3+json'}})
+    ]);
+    const cExists=cResp.ok?'✅ Exists':'❌ Not found';
+    const chExists=chResp.ok?'✅ Exists':'❌ Not found';
+    el.innerHTML=`<div style="font-size:13px"><div>📄 completed_links.json → ${cExists}</div><div>📄 chunks_history.json → ${chExists}</div></div>`;
+  }catch(e){el.innerHTML=`<div style="font-size:13px;color:#f85149">❌ Failed to check: ${e.message}</div>`}
+}
+
+async function fetchProgress(){
+  const el=$('wsProgressDashboard');
+  try{
+    const resp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/contents/completed_links.json`,{
+      headers:{'Authorization':'Bearer '+wsPat,'Accept':'application/vnd.github.v3+json'}
+    });
+    if(!resp.ok){el.innerHTML='<p style="color:#8b949e;font-size:13px">No completed_links.json found. Empty state.</p>';return}
+    const data=await resp.json();
+    const content=JSON.parse(decodeURIComponent(escape(atob(data.content))));
+    const folders=content.folders||{};
+    const keys=Object.keys(folders);
+    if(!keys.length){el.innerHTML='<p style="color:#8b949e;font-size:13px">No folders configured yet.</p>';return}
+    let allDone=0,allTotal=0;
+    let html='';
+    for(const name of keys){
+      const fd=folders[name];
+      const done=fd.done||0,total=fd.total||1,ov=fd.oversized_count||0;
+      const pct=Math.round(done*100/total);
+      allDone+=done;allTotal+=total;
+      const status=fd.status||'pending';
+      let label,nameDisplay;
+      if(status==='completed'){label='folder-progress-fill done';nameDisplay='✅ '+escHtml(name)}
+      else if(status==='active'){label='folder-progress-fill active';nameDisplay='🔄 '+escHtml(name)}
+      else{label='folder-progress-fill wait';nameDisplay='⏳ '+escHtml(name)}
+      html+=`<div class="folder-progress"><div class="folder-progress-header"><span>${nameDisplay}</span><span>${done}/${total}${ov?` (${ov} oversized)`:''} | ${pct}%</span></div><div class="folder-progress-bar"><div class="${label}" style="width:${pct}%"></div></div></div>`;
+    }
+    const overallPct=allTotal?Math.round(allDone*100/allTotal):0;
+    const overallHtml=`<div class="progress-section"><div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${overallPct}%"><span class="progress-bar-text">${overallPct}% — ${allDone}/${allTotal} files</span></div></div></div>`;
+    el.innerHTML=overallHtml+html;
+    $('progressTime').textContent=allDone+'/'+allTotal+' done';
+  }catch(e){el.innerHTML=`<p style="color:#f85149;font-size:13px">❌ Progress: ${e.message}</p>`}
+}
+
+async function fetchWorkflowRuns(){
+  const el=$('wsWorkflowRuns');
+  try{
+    const resp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/actions/runs?per_page=5&branch=main`,{
+      headers:{'Authorization':'Bearer '+wsPat,'Accept':'application/vnd.github.v3+json'}
+    });
+    if(!resp.ok){el.innerHTML='<p style="color:#8b949e;font-size:13px">Failed to fetch runs</p>';return}
+    const data=await resp.json();
+    const runs=data.workflow_runs||[];
+    if(!runs.length){el.innerHTML='<p style="color:#8b949e;font-size:13px">No workflow runs yet.</p>';return}
+    el.innerHTML=runs.map(r=>{
+      const status=r.conclusion||r.status;
+      return `<div class="workflow-run"><span class="workflow-status-dot ${status}"></span><span>#${r.run_number} — ${r.display_title?.substring(0,50)||r.event||'?'} — <strong>${status}</strong></span><span style="color:#8b949e;font-size:11px">${new Date(r.created_at).toLocaleString()}</span></div>`;
+    }).join('');
+  }catch(e){el.innerHTML=`<p style="color:#f85149;font-size:13px">❌ ${e.message}</p>`}
+}
+
+// ============================================================
+// CONTROL ACTIONS WITH CONFIRMATION
+// ============================================================
+function confirmAction(action){
+  const titles={pushSecrets:'Push MEGA_LINKS?',deleteCompleted:'Delete completed_links.json?',deleteChunks:'Delete chunks_history.json?',deleteBoth:'Delete Both Files?',startWorkflow:'START Workflow?',stopWorkflow:'STOP Workflow?'};
+  const descs={pushSecrets:'Push the generated MEGA_LINKS JSON to GitHub Secrets?',deleteCompleted:'This will reset the transfer state. All progress info will be lost?',deleteChunks:'This will reset oversized video processing state?',deleteBoth:'Delete BOTH completed_links.json AND chunks_history.json? This resets everything!',startWorkflow:'Trigger a new workflow run on main branch?',stopWorkflow:'Cancel the currently running workflow?'};
+  const confirmLabels={pushSecrets:'✅ PUSH',deleteCompleted:'✅ DELETE',deleteChunks:'✅ DELETE',deleteBoth:'✅ DELETE ALL',startWorkflow:'✅ START',stopWorkflow:'✅ STOP'};
+  pendingAction=action;
+  $('modalTitle').textContent=titles[action]||'Confirm';
+  $('modalDesc').textContent=descs[action]||'Are you sure?';
+  $('modalConfirmBtn').textContent=confirmLabels[action]||'✅ Confirm';
+  $('modalOverlay').classList.add('show');
+}
+function closeModal(){$('modalOverlay').classList.remove('show');pendingAction=null}
+async function executeConfirmed(){
+  closeModal();
+  const action=pendingAction;pendingAction=null;
+  if(!action||!workstationConnected)return;
+  const setSt=(id,text,type)=>{const el=$(id);if(el){el.textContent=text;el.className='status-line status-'+type}};
+  try{
+    if(action==='pushSecrets'){
+      setSt('st_pushSecrets','⏳ Encrypting...','busy');
+      const pkResp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/actions/secrets/public-key`,{
+        headers:{'Authorization':'Bearer '+wsPat,'Accept':'application/vnd.github.v3+json'}
+      });
+      if(!pkResp.ok)throw new Error('Failed to get public key');
+      const pk=await pkResp.json();
+      await sodium.ready;
+      const value=generatedSecret||'{}';
+      const binkey=sodium.from_base64(pk.key,sodium.base64_variants.ORIGINAL);
+      const encBytes=sodium.crypto_box_seal(new TextEncoder().encode(value),binkey);
+      const encrypted=sodium.to_base64(encBytes,sodium.base64_variants.ORIGINAL);
+      const sResp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/actions/secrets/MEGA_LINKS`,{
+        method:'PUT',headers:{'Authorization':'Bearer '+wsPat,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},
+        body:JSON.stringify({encrypted_value:encrypted,key_id:pk.key_id})
+      });
+      if(!sResp.ok)throw new Error('Failed to store secret');
+      setSt('st_pushSecrets','✅ MEGA_LINKS updated!','ok');
+      showToast('✅ MEGA_LINKS secret updated!');
+    }else if(action==='deleteCompleted'){await deleteFile('completed_links.json','st_deleteCompleted')
+    }else if(action==='deleteChunks'){await deleteFile('chunks_history.json','st_deleteChunks')
+    }else if(action==='deleteBoth'){
+      await deleteFile('completed_links.json','st_deleteBoth');
+      await deleteFile('chunks_history.json','st_deleteBoth');
+      setSt('st_deleteBoth','✅ Both processed','ok');
+    }else if(action==='startWorkflow'){
+      setSt('st_startWorkflow','⏳ Triggering...','busy');
+      const wResp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/actions/workflows/mega_gdrive_transfer.yml/dispatches`,{
+        method:'POST',headers:{'Authorization':'Bearer '+wsPat,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},
+        body:JSON.stringify({ref:'main'})
+      });
+      if(!wResp.ok&&wResp.status!==204)throw new Error('Trigger failed');
+      setSt('st_startWorkflow','✅ Workflow triggered!','ok');
+      showToast('✅ Workflow triggered!');
+      setTimeout(fetchWorkflowRuns,3000);
+    }else if(action==='stopWorkflow'){
+      setSt('st_stopWorkflow','⏳ Finding running workflow...','busy');
+      const rResp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/actions/runs?status=in_progress&per_page=1`,{
+        headers:{'Authorization':'Bearer '+wsPat,'Accept':'application/vnd.github.v3+json'}
+      });
+      if(!rResp.ok)throw new Error('Failed to list runs');
+      const rData=await rResp.json();
+      const runs=rData.workflow_runs||[];
+      if(!runs.length){setSt('st_stopWorkflow','❌ No running workflow','err');return}
+      const runId=runs[0].id;
+      setSt('st_stopWorkflow','⏳ Cancelling...','busy');
+      const cResp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/actions/runs/${runId}/cancel`,{
+        method:'POST',headers:{'Authorization':'Bearer '+wsPat,'Accept':'application/vnd.github.v3+json'}
+      });
+      if(!cResp.ok)throw new Error('Cancel failed');
+      setSt('st_stopWorkflow',`✅ Run #${runs[0].run_number} cancelled!`,'ok');
+      showToast(`🛑 Run #${runs[0].run_number} cancelled!`);
+      setTimeout(fetchWorkflowRuns,3000);
+    }
+  }catch(e){const id='st_'+action;setSt(id,'❌ '+e.message,'err');showToast('❌ '+e.message,true)}
+}
+
+async function deleteFile(path,statusId){
+  const setSt=(text,type)=>{const el=$(statusId);if(el){el.textContent=text;el.className='status-line status-'+type}};
+  setSt('⏳ Fetching...','busy');
+  const gResp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/contents/${path}`,{
+    headers:{'Authorization':'Bearer '+wsPat,'Accept':'application/vnd.github.v3+json'}
+  });
+  if(!gResp.ok){setSt('❌ Not found','err');return}
+  const gData=await gResp.json();
+  setSt('⏳ Deleting...','busy');
+  const dResp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/contents/${path}`,{
+    method:'DELETE',headers:{'Authorization':'Bearer '+wsPat,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},
+    body:JSON.stringify({message:`reset ${path} [skip ci]`,sha:gData.sha,branch:'main'})
+  });
+  if(!dResp.ok)throw new Error('Delete failed');
+  setSt('✅ Deleted!','ok');
+  showToast(`🗑 ${path} deleted!`);
+  setTimeout(fetchRepoStatus,2000);
+}
+
+// ============================================================
+// GOOGLE DRIVE DEVICE FLOW (RCLONE_CONF)
+// ============================================================
+async function connectGoogleDrive(){
+  if(GOOGLE_CLIENT_ID==='YOUR_GOOGLE_CLIENT_ID'){
+    showToast('❌ Set GOOGLE_CLIENT_ID in the HTML first',true);
+    return;
+  }
+  const st=$('st_rcloneConf');
+  if(!st){showToast('Please connect from workstation panel',true);return}
+  st.textContent='⏳ Starting Google Drive auth...';st.className='status-line status-busy';
+  try{
+    const dcResp=await fetch('https://oauth2.googleapis.com/device/code',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({client_id:GOOGLE_CLIENT_ID,scope:'https://www.googleapis.com/auth/drive.file'})
+    });
+    if(!dcResp.ok)throw new Error('Google device code failed');
+    const dc=await dcResp.json();
+    showToast(`🔐 Code: ${dc.user_code} — Enter at google.com/device`);
+    let token=null;let elapsed=0;
+    while(!token&&elapsed<600){
+      await sleep((dc.interval||5)*1000);elapsed+=dc.interval||5;
+      const trResp=await fetch('https://oauth2.googleapis.com/token',{
+        method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body:new URLSearchParams({client_id:GOOGLE_CLIENT_ID,device_code:dc.device_code,grant_type:'urn:ietf:params:oauth:grant-type:device_code'})
+      });
+      const tr=await trResp.json();
+      if(tr.access_token){token=tr;break}
+      if(tr.error!=='authorization_pending'&&tr.error!=='slow_down')throw new Error(tr.error_description||tr.error);
+    }
+    if(!token)throw new Error('Google auth timed out');
+    const rcloneConf=`[gdrive]\ntype = drive\nscope = drive.file\ntoken = {"access_token":"${token.access_token}","refresh_token":"${token.refresh_token||''}","scope":"https://www.googleapis.com/auth/drive.file","token_type":"Bearer","expiry":"${new Date(Date.now()+token.expires_in*1000).toISOString()}"}`;
+    st.textContent='✅ Google Drive connected!';st.className='status-line status-ok';
+    await sodium.ready;
+    const pkResp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/actions/secrets/public-key`,{
+      headers:{'Authorization':'Bearer '+wsPat,'Accept':'application/vnd.github.v3+json'}
+    });
+    if(!pkResp.ok)throw new Error('Failed to get public key');
+    const pk=await pkResp.json();
+    const binkey=sodium.from_base64(pk.key,sodium.base64_variants.ORIGINAL);
+    const encBytes=sodium.crypto_box_seal(new TextEncoder().encode(rcloneConf),binkey);
+    const encrypted=sodium.to_base64(encBytes,sodium.base64_variants.ORIGINAL);
+    const sResp=await fetch(`https://api.github.com/repos/${wsOwner}/${wsRepo}/actions/secrets/RCLONE_CONF`,{
+      method:'PUT',headers:{'Authorization':'Bearer '+wsPat,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'},
+      body:JSON.stringify({encrypted_value:encrypted,key_id:pk.key_id})
+    });
+    if(!sResp.ok){st.textContent='⚠️ Connected but push failed. Try again.';st.className='status-line status-warn';return}
+    st.textContent='✅ RCLONE_CONF configured!','ok';
+    showToast('✅ Google Drive connected + RCLONE_CONF stored!');
+  }catch(e){st.textContent='❌ '+e.message;st.className='status-line status-err';showToast('❌ '+e.message,true)}
+}
+
+// ============================================================
+// RCLONE / GOOGLE DRIVE CONNECT (server-side proxy)
+// ============================================================
+async function rcloneConnect(){
+  const st=$('rcloneStatus');
+  const steps=$('rcloneSteps');
+  st.textContent='⏳ Starting...';st.className='status-line status-busy';steps.style.display='block';
+  steps.innerHTML='<div>⏳ Connecting to Google...</div>';
+  try{
+    const dResp=await fetch('/api/rclone/connect',{method:'POST'});
+    const d=await dResp.json();
+    if(!d.ok){st.textContent='❌ '+d.error;st.className='status-line status-err';steps.innerHTML='<div style="color:#f85149">Error: '+d.error+'</div>';return}
+    steps.innerHTML=`<div>🔑 <b>Code:</b> ${d.user_code}</div><div>🔗 Open <a href="${d.verification_url}" target="_blank">${d.verification_url}</a> and enter the code</div><div>⏳ Waiting for you to authorize...</div>`;
+    st.textContent='⏳ Waiting for authorization...';st.className='status-line status-busy';
+    let conf=null;
+    while(!conf){
+      await new Promise(r=>setTimeout(r,(d.interval||5)*1000));
+      const cResp=await fetch('/api/rclone/check',{method:'POST'});
+      const c=await cResp.json();
+      if(c.ok&&c.status==='success'){conf=c.rclone_conf;break}
+      if(!c.ok){st.textContent='❌ '+c.error;st.className='status-line status-err';steps.innerHTML='<div style="color:#f85149">Error: '+c.error+'</div>';return}
+    }
+    steps.innerHTML='<div style="color:#3fb950">✅ Google Drive connected! Saving to GitHub secrets...</div>';
+    st.textContent='⏳ Saving to GitHub...';st.className='status-line status-busy';
+    // Try to save using server endpoint (uses stored PAT if available)
+    const pat=wsPat||'';
+    const sResp=await fetch('/api/rclone/save-secret',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({pat,conf})});
+    const s=await sResp.json();
+    if(s.ok){
+      st.textContent='✅ RCLONE_CONF saved!';st.className='status-line status-ok';
+      steps.innerHTML='<div style="color:#3fb950">✅ RCLONE_CONF configured in GitHub secrets!</div>';
+      showToast('✅ Google Drive connected & RCLONE_CONF saved!');
+    }else{
+      // Fallback: show config for manual copy
+      st.textContent='⚠️ Save failed, copy manually';st.className='status-line status-warn';
+      steps.innerHTML=`<div style="color:#f0883e">Save to GitHub failed: ${s.error}. Copy config manually:</div><textarea readonly rows="6" style="width:100%;margin-top:8px;font-size:11px">${conf}</textarea>`;
+      showToast('⚠️ Copy rclone config manually',true);
+    }
+  }catch(e){
+    st.textContent='❌ '+e.message;st.className='status-line status-err';
+    steps.innerHTML='<div style="color:#f85149">Error: '+e.message+'</div>';
+  }
+}
+
+// ============================================================
+// INIT
+// ============================================================
+console.log('MEGA TO GDRIVE Workstation loaded');
+
+// Override addFolder from manual button
+document.querySelector('[onclick="addFolder()"]')?.addEventListener('click',function(e){
+  if(e.isTrusted)addFolder();
+});
+</script>
+</body>
+</html>

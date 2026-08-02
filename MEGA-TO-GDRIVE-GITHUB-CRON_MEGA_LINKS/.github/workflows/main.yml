@@ -1,0 +1,110 @@
+name: MEGA to Google Drive Transfer
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *'
+
+concurrency:
+  group: mega-transfer-single
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install megatools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y megatools -qq
+
+      - name: Install mega.py
+        run: pip install async-mega.py --break-system-packages -q
+
+      - name: Install rclone
+        run: curl -s https://rclone.org/install.sh | sudo bash
+
+      - name: Debug rclone config
+        run: |
+          echo "=== rclone version ==="
+          rclone version
+          echo "=== rclone remotes ==="
+          rclone listremotes
+          echo "=== Testing gdrive access ==="
+          rclone lsd gdrive:MEGA_Transfer/ 2>&1 || echo "WARNING: gdrive remote not accessible - check RCLONE_CONF secret"
+
+      - name: Run transfer
+        env:
+          MEGA_LINKS: ${{ secrets.MEGA_LINKS }}
+          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+        run: python mega_to_gdrive.py
+
+      - name: Upload artifact (completed list)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: completed-links
+          path: completed_links.json
+          retention-days: 90
+
+      - name: Install ffmpeg
+        if: always()
+        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+
+      - name: Process oversized videos
+        id: oversized
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: python oversized_processor.py
+
+      - name: Upload chunks history
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: chunks_history
+          path: chunks_history.json
+          retention-days: 90
+
+      - name: Upload chunk data
+        if: steps.oversized.outputs.chunk_artifact != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.oversized.outputs.chunk_artifact }}
+          path: ${{ steps.oversized.outputs.chunk_path }}
+          retention-days: 90
+
+      - name: Save state to repo (backup)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add completed_links.json 2>/dev/null || true
+          [ -f chunks_history.json ] && git add chunks_history.json || true
+          if ! git diff --staged --quiet; then
+            git commit -m "update state [skip ci]"
+          fi
+          git pull --rebase origin main || true
+          git push || echo "git push failed (non-fatal)"
+
+      - name: Auto-trigger next if files remain
+        if: success() || failure()
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: python auto_trigger.py
