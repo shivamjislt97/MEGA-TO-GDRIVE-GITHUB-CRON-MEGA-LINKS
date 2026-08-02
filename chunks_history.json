@@ -1,0 +1,72 @@
+{
+  "videos": [
+    {
+      "url": "https://mega.nz/file/kUU0wQ6Q#3cKudXCvFerCY1eZDTG6zJ1X7Nc1m4B0xcANpOIny8I",
+      "filename": "Blackmailing The Nanny 3 Streaming Video On Demand Adult Empire.mp4",
+      "target_folder": "adultdvdempire 1",
+      "file_id": "kUU0wQ6Q",
+      "total_size": 5630307273,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334937,
+          "expected_size": 5261334938,
+          "status": "pending",
+          "artifact_name": "ck_kuu0wq6q_01"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334938,
+          "end_byte": 5630307272,
+          "expected_size": 368972335,
+          "status": "done",
+          "artifact_name": "ck_kuu0wq6q_02",
+          "actual_size": 368972335,
+          "sha256": "499ef4869ba106fe95cd703af92aae39c2e68975539dc3d43d71ca584dc5b4a8"
+        }
+      ],
+      "status": "downloading",
+      "gdrive_status": "pending"
+    },
+    {
+      "url": "https://mega.nz/file/BZtmnA5Q#3cKudXCvFerCY1eZDTG6zJ1X7Nc1m4B0xcANpOIny8I",
+      "filename": "Blackmailing The Nanny 3 Streaming Video On Demand Adult Empire.mp4",
+      "target_folder": "adultdvdempire 1",
+      "file_id": "BZtmnA5Q",
+      "total_size": 5630307273,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334937,
+          "expected_size": 5261334938,
+          "status": "pending",
+          "artifact_name": "ck_bztmna5q_01"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334938,
+          "end_byte": 5630307272,
+          "expected_size": 368972335,
+          "status": "pending",
+          "artifact_name": "ck_bztmna5q_02"
+        }
+      ],
+      "status": "pending",
+      "gdrive_status": "pending"
+    }
+  ],
+  "current_index": 0,
+  "version": 2,
+  "summary": {
+    "total": 2,
+    "gdrive_uploaded": 0,
+    "concat_ready": 0,
+    "downloading": 1,
+    "pending": 1,
+    "status": "in_progress"
+  }
+}
