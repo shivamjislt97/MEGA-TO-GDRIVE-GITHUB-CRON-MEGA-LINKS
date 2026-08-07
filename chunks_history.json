@@ -13,19 +13,18 @@
           "start_byte": 0,
           "end_byte": 5261334937,
           "expected_size": 5261334938,
-          "status": "done",
-          "artifact_name": "ck_kuu0wq6q_01",
-          "sha256": "381c5f26a778347b7b90f3ef24ae764524d7127e444cd7b50c9ea73f83baacfe",
-          "actual_size": 5261334938
+          "status": "pending",
+          "artifact_name": "ck_kuu0wq6q_01"
         },
         {
           "index": 2,
           "start_byte": 5261334938,
           "end_byte": 5630307272,
           "expected_size": 368972335,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_kuu0wq6q_02",
-          "sha256": "499ef4869ba106fe95cd703af92aae39c2e68975539dc3d43d71ca584dc5b4a8"
+          "sha256": "499ef4869ba106fe95cd703af92aae39c2e68975539dc3d43d71ca584dc5b4a8",
+          "actual_size": 368972335
         }
       ],
       "status": "downloading",
