@@ -13,9 +13,10 @@
           "start_byte": 0,
           "end_byte": 5261334937,
           "expected_size": 5261334938,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_kuu0wq6q_01",
-          "sha256": "381c5f26a778347b7b90f3ef24ae764524d7127e444cd7b50c9ea73f83baacfe"
+          "sha256": "381c5f26a778347b7b90f3ef24ae764524d7127e444cd7b50c9ea73f83baacfe",
+          "actual_size": 5261334938
         },
         {
           "index": 2,
