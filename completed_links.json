@@ -12,13 +12,13 @@
     },
     "adultdvdempire 5": {
       "total": 18,
-      "done": 17,
-      "status": "active"
+      "done": 18,
+      "status": "completed"
     },
     "adultdvdempire 6": {
       "total": 26,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "adultdvdempire 7": {
       "total": 21,
@@ -303,9 +303,17 @@
       "target_folder": "adultdvdempire 5",
       "completed_at": "2026-08-08T21:21:41Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wINVFKhZ#g9CeUUnQ6Y7zVMYttedfkflnSiLKWiDtzrj1o_rX3EI",
+      "filename": "Adult Empire Award-Winning Retailer of Streaming Porn Videos on .mp4",
+      "size": 2718215463,
+      "target_folder": "adultdvdempire 5",
+      "completed_at": "2026-08-08T21:28:31Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "adultdvdempire 5",
+  "current_folder": "adultdvdempire 6",
   "oversized": {
     "total": 0,
     "done": 0,
