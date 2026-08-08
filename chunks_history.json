@@ -13,8 +13,10 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
-          "artifact_name": "ck_kuu0wq6q_01"
+          "status": "done",
+          "artifact_name": "ck_kuu0wq6q_01",
+          "actual_size": 5261334928,
+          "sha256": "d044f3694a0d339344490f55fa36604ed677bcad666a163d105f2ae0b221de36"
         },
         {
           "index": 2,
@@ -25,7 +27,7 @@
           "artifact_name": "ck_kuu0wq6q_02"
         }
       ],
-      "status": "pending",
+      "status": "downloading",
       "gdrive_status": "pending"
     },
     {
@@ -63,8 +65,8 @@
     "total": 2,
     "gdrive_uploaded": 0,
     "concat_ready": 0,
-    "downloading": 0,
-    "pending": 2,
+    "downloading": 1,
+    "pending": 1,
     "status": "in_progress"
   }
 }
