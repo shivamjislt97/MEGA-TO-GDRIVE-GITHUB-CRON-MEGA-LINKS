@@ -2,7 +2,7 @@
   "folders": {
     "adultdvdempire 1": {
       "total": 2,
-      "done": 0,
+      "done": 1,
       "status": "active"
     },
     "adultdvdempire 2": {
@@ -82,8 +82,8 @@
       "filename": "Blackmailing The Nanny 3 Streaming Video On Demand Adult Empire.mp4",
       "size": 5630307273,
       "target_folder": "adultdvdempire 1",
-      "completed_at": "2026-08-02T14:55:41Z",
-      "status": "unupload",
+      "completed_at": "2026-08-08T19:11:58Z",
+      "status": "uploaded",
       "oversized": true
     },
     {
