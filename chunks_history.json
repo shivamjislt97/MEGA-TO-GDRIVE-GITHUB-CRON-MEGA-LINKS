@@ -13,23 +13,19 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
-          "artifact_name": "ck_kuu0wq6q_01",
-          "actual_size": 5261334928,
-          "sha256": "d044f3694a0d339344490f55fa36604ed677bcad666a163d105f2ae0b221de36"
+          "status": "pending",
+          "artifact_name": "ck_kuu0wq6q_01"
         },
         {
           "index": 2,
           "start_byte": 5261334928,
           "end_byte": 5630307272,
           "expected_size": 368972345,
-          "status": "done",
-          "artifact_name": "ck_kuu0wq6q_02",
-          "actual_size": 368972345,
-          "sha256": "4fb5423b640a6b2b143fd438172263ca33ee3cd8dc1b71131b08c39cdd3cfce4"
+          "status": "pending",
+          "artifact_name": "ck_kuu0wq6q_02"
         }
       ],
-      "status": "gdrive_uploaded",
+      "status": "downloading",
       "gdrive_status": "uploaded",
       "concat_fail_count": 0
     },
@@ -46,8 +42,10 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
-          "artifact_name": "ck_bztmna5q_01"
+          "status": "done",
+          "artifact_name": "ck_bztmna5q_01",
+          "actual_size": 5261334928,
+          "sha256": "d044f3694a0d339344490f55fa36604ed677bcad666a163d105f2ae0b221de36"
         },
         {
           "index": 2,
