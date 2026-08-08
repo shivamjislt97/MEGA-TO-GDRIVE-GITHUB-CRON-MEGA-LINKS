@@ -23,12 +23,15 @@
           "start_byte": 5261334928,
           "end_byte": 5630307272,
           "expected_size": 368972345,
-          "status": "pending",
-          "artifact_name": "ck_kuu0wq6q_02"
+          "status": "done",
+          "artifact_name": "ck_kuu0wq6q_02",
+          "actual_size": 368972345,
+          "sha256": "4fb5423b640a6b2b143fd438172263ca33ee3cd8dc1b71131b08c39cdd3cfce4"
         }
       ],
-      "status": "downloading",
-      "gdrive_status": "pending"
+      "status": "gdrive_uploaded",
+      "gdrive_status": "uploaded",
+      "concat_fail_count": 0
     },
     {
       "url": "https://mega.nz/file/BZtmnA5Q#3cKudXCvFerCY1eZDTG6zJ1X7Nc1m4B0xcANpOIny8I",
@@ -55,18 +58,18 @@
           "artifact_name": "ck_bztmna5q_02"
         }
       ],
-      "status": "pending",
+      "status": "downloading",
       "gdrive_status": "pending"
     }
   ],
-  "current_index": 0,
+  "current_index": 1,
   "version": 3,
   "summary": {
     "total": 2,
-    "gdrive_uploaded": 0,
+    "gdrive_uploaded": 1,
     "concat_ready": 0,
     "downloading": 1,
-    "pending": 1,
+    "pending": 0,
     "status": "in_progress"
   }
 }
