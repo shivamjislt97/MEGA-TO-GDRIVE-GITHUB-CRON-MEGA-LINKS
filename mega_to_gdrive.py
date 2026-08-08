@@ -321,37 +321,35 @@ def verify_upload(filename, file_size, folder_name):
 
 
 def cleanup_gdrive_temps():
-    """Remove rclone temp files (tmp*) from all GDrive folders."""
+    """Remove rclone temp files (tmp*) from all GDrive folders — single recursive scan."""
     log("  Cleaning up rclone temporary files...")
     try:
         result = subprocess.run(
-            ["rclone", "lsd", f"{GDRIVE_REMOTE}:{BASE_FOLDER}/"],
-            capture_output=True, text=True, timeout=120
+            ["rclone", "lsjson", "-R", "--include", "tmp*", "--min-age", "1m",
+             f"{GDRIVE_REMOTE}:{BASE_FOLDER}/"],
+            capture_output=True, text=True, timeout=180
         )
-        if result.returncode == 0:
-            lines = [l for l in result.stdout.strip().split("\n") if l.strip()]
-            folders = [l.strip().split()[-1] for l in lines if l.strip().split()]
-            total = len(folders)
-            if total == 0:
-                log("  No folders found, cleanup skipped")
-                return
-            log(f"  Found {total} folders, checking for temp files...")
-            for i, folder in enumerate(folders, 1):
-                target = f"{GDRIVE_REMOTE}:{BASE_FOLDER}/{folder}/"
-                try:
-                    subprocess.run(
-                        ["rclone", "delete", target, "--include", "tmp*", "--min-age", "1m"],
-                        capture_output=True, timeout=60
-                    )
-                except Exception:
-                    pass
-                if i % 50 == 0 or i == total:
-                    log(f"  Cleanup progress: {i}/{total} folders checked")
-            log(f"  Cleanup complete")
+        if result.returncode == 0 and result.stdout.strip():
+            files = json.loads(result.stdout)
+            if files:
+                log(f"  Found {len(files)} temp file(s), removing...")
+                for f in files:
+                    p = f.get("Path", "")
+                    if p:
+                        try:
+                            subprocess.run(
+                                ["rclone", "deletefile", f"{GDRIVE_REMOTE}:{BASE_FOLDER}/{p}"],
+                                capture_output=True, timeout=60
+                            )
+                        except Exception:
+                            pass
+                log(f"  Cleanup complete ({len(files)} file(s) removed)")
+            else:
+                log("  No temp files found, cleanup skipped")
         else:
-            log(f"  Cleanup: rclone lsd returned code {result.returncode}")
+            log("  No temp files found, cleanup skipped")
     except subprocess.TimeoutExpired:
-        log("  Cleanup: rclone lsd timed out (non-fatal)")
+        log("  Cleanup: rclone scan timed out (non-fatal)")
     except Exception as e:
         log(f"  Cleanup warning: {e}")
 

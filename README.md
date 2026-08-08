@@ -127,7 +127,7 @@ encrypted bytes --> chunk_02.enc              (decrypted)
 
 | Decision | Why |
 |----------|-----|
-| **4.5 GB chunk size** (`CHUNK_MAX = 4831838208`) | Safe margin under 5GB MEGA quota limit per run |
+| **4.9 GB chunk size** (`CHUNK_MAX = 5261334928`, 16-byte aligned) | Safe margin under 5GB MEGA quota limit per run; alignment keeps chunk decryption IVs valid |
 | **AES-128-CTR** | MEGA uses AES-128-CTR for file data (not CBC). CBC is only for metadata attribute decryption |
 | **Range requests** | `urllib` with `Range:` header fetches only the chunk's byte range from MEGA CDN — no need to download entire file |
 | **SHA256 per chunk** | Stored in `chunks_history.json` when chunk is downloaded. Verified again before concat to detect artifact corruption |

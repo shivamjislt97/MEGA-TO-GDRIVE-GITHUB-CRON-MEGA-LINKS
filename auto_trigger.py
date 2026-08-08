@@ -45,12 +45,29 @@ try:
     for v in ch.get('videos', []):
         if v.get('status') not in ('gdrive_uploaded', 'done'):
             all_done = False
+            remaining += 1
 except Exception:
     pass
 
 # --- Progress tracking to prevent infinite loops ---
 PROGRESS_FILE = '.auto_trigger_progress'
 uploaded_count = sum(1 for item in d.get('completed', []) if item.get('status') == 'uploaded')
+
+# Progress metric also counts oversized chunk downloads so that active chunk
+# processing (while no regular files upload) is not treated as "no progress"
+def progress_metric():
+    metric = uploaded_count
+    try:
+        ch = json.load(open('chunks_history.json'))
+        for v in ch.get('videos', []):
+            for c in v.get('chunks', []):
+                if c.get('status') == 'done':
+                    metric += 1
+            if v.get('gdrive_status') == 'uploaded':
+                metric += 100
+    except Exception:
+        pass
+    return metric
 
 try:
     prev = json.load(open(PROGRESS_FILE))
@@ -60,14 +77,14 @@ except Exception:
     prev_uploaded = 0
     no_progress_count = 0
 
-if uploaded_count > prev_uploaded:
+if progress_metric() > prev_uploaded:
     no_progress_count = 0
 else:
     no_progress_count += 1
 
 try:
     with open(PROGRESS_FILE, 'w') as f:
-        json.dump({'uploaded_count': uploaded_count, 'no_progress_count': no_progress_count}, f)
+        json.dump({'uploaded_count': progress_metric(), 'no_progress_count': no_progress_count}, f)
 except Exception:
     pass
 

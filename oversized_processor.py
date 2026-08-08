@@ -20,11 +20,11 @@ COMPLETED_FILE = os.path.join(WORKSPACE, "completed_links.json")
 CHUNKS_HISTORY_FILE = os.path.join(WORKSPACE, "chunks_history.json")
 GDRIVE_REMOTE = "gdrive"
 BASE_FOLDER = "MEGA_Transfer"
-CHUNK_MAX = 5261334938  # 4.9 GB
+CHUNK_MAX = 5261334928  # 4.9 GB, aligned to 16 bytes so chunk decryption IVs stay valid
 QUOTA_SAFE = 4.5 * 1024 * 1024 * 1024
 MAX_RETRIES = 3
 API_URL = "https://g.api.mega.co.nz/cs"
-PROCESSOR_VERSION = 2
+PROCESSOR_VERSION = 3
 
 
 def log(msg, end="\n"):
@@ -281,6 +281,9 @@ def find_artifact_id(artifact_name):
             ids = [x.strip() for x in r.stdout.strip().split("\n") if x.strip() and x.strip() != "null"]
             if ids:
                 return ids[0]
+            log(f"  warn: find artifact {artifact_name}: API ok but no match (artifact may be deleted/expired)")
+        else:
+            log(f"  warn: find artifact {artifact_name}: gh api failed: {r.stderr.strip()[:200]}")
         log(f"  [retry {attempt+1}/{MAX_RETRIES}] find artifact {artifact_name}")
         time.sleep(5)
     return None
@@ -561,12 +564,27 @@ def process_concat_run(video, video_idx, state):
 
     chunk_files = []
     for ch in video["chunks"]:
-        aname = ch["artifact_name"]
-        log(f"  Downloading artifact: {aname}...")
-        ok = download_artifact(aname)
         expected_fname = f"chunk_{ch['index']:02d}.bin"
+        # Prefer local chunk file when present and hash matches (e.g. freshly
+        # downloaded in this same run) — avoids re-downloading the artifact.
+        if Path(expected_fname).exists() and ch.get("sha256"):
+            sha = hashlib.sha256()
+            with open(expected_fname, "rb") as sf:
+                while True:
+                    buf = sf.read(65536)
+                    if not buf:
+                        break
+                    sha.update(buf)
+            if sha.hexdigest() == ch["sha256"]:
+                log(f"  Using local chunk {expected_fname} (hash OK)")
+                chunk_files.append(expected_fname)
+                continue
+            log(f"  Local chunk {expected_fname} hash mismatch, downloading artifact...")
+        else:
+            log(f"  Downloading artifact: {ch['artifact_name']}...")
+        ok = download_artifact(ch["artifact_name"])
         if not ok or not Path(expected_fname).exists():
-            log(f"  Artifact {aname} unavailable — resetting to download mode")
+            log(f"  Artifact {ch['artifact_name']} unavailable — resetting to download mode")
             ch["status"] = "pending"
             ch.pop("actual_size", None)
             ch.pop("sha256", None)
@@ -618,6 +636,17 @@ def process_concat_run(video, video_idx, state):
 
     if total_size != expected:
         log(f"  ERROR: Size mismatch {total_size} vs {expected}")
+        video["concat_fail_count"] = video.get("concat_fail_count", 0) + 1
+        if video["concat_fail_count"] >= 3:
+            log(f"  Concat failed {video['concat_fail_count']} times — resetting chunks for full re-download")
+            for ch in video["chunks"]:
+                ch["status"] = "pending"
+                ch.pop("actual_size", None)
+                ch.pop("sha256", None)
+                delete_artifact(ch["artifact_name"])
+            video["status"] = "pending"
+            video["concat_fail_count"] = 0
+            save_chunks_history(state)
         return False
 
     hash_sha256 = hashlib.sha256()
@@ -641,12 +670,22 @@ def process_concat_run(video, video_idx, state):
                 os.remove(cf)
         if os.path.exists(output_path):
             os.remove(output_path)
-        for ch in video["chunks"]:
-            ch["status"] = "pending"
-            ch.pop("actual_size", None)
-            ch.pop("sha256", None)
-            delete_artifact(ch["artifact_name"])
-        video["status"] = "pending"
+        # Keep artifacts and done-chunk state: retry concat from artifacts
+        # without re-downloading from MEGA (saves quota, avoids 509 loop).
+        # If it keeps failing, force a full re-download after 3 attempts.
+        video["concat_fail_count"] = video.get("concat_fail_count", 0) + 1
+        if video["concat_fail_count"] >= 3:
+            log(f"  Concat failed {video['concat_fail_count']} times — resetting chunks for full re-download")
+            for ch in video["chunks"]:
+                ch["status"] = "pending"
+                ch.pop("actual_size", None)
+                ch.pop("sha256", None)
+                delete_artifact(ch["artifact_name"])
+            video["status"] = "pending"
+            video["concat_fail_count"] = 0
+        else:
+            video["status"] = "concat_ready"
+            log(f"  Will retry concat from artifacts next run")
         save_chunks_history(state)
         return False
 
@@ -704,6 +743,7 @@ def process_concat_run(video, video_idx, state):
     log(f"  State updated + git pushed")
 
     state["videos"][video_idx]["status"] = "gdrive_uploaded"
+    state["videos"][video_idx]["concat_fail_count"] = 0
     save_chunks_history(state)
     log(f"  Video complete: {clean_filename(video['filename'])}")
     return True
@@ -830,37 +870,35 @@ def print_summary(state):
 
 
 def cleanup_gdrive_temps():
-    """Remove rclone temp files (tmp*) from all GDrive folders."""
+    """Remove rclone temp files (tmp*) from all GDrive folders — single recursive scan."""
     log("  Cleaning up rclone temporary files...")
     try:
         result = subprocess.run(
-            ["rclone", "lsd", f"{GDRIVE_REMOTE}:{BASE_FOLDER}/"],
-            capture_output=True, text=True, timeout=120
+            ["rclone", "lsjson", "-R", "--include", "tmp*", "--min-age", "1m",
+             f"{GDRIVE_REMOTE}:{BASE_FOLDER}/"],
+            capture_output=True, text=True, timeout=180
         )
-        if result.returncode == 0:
-            lines = [l for l in result.stdout.strip().split("\n") if l.strip()]
-            folders = [l.strip().split()[-1] for l in lines if l.strip().split()]
-            total = len(folders)
-            if total == 0:
-                log("  No folders found, cleanup skipped")
-                return
-            log(f"  Found {total} folders, checking for temp files...")
-            for i, folder in enumerate(folders, 1):
-                target = f"{GDRIVE_REMOTE}:{BASE_FOLDER}/{folder}/"
-                try:
-                    subprocess.run(
-                        ["rclone", "delete", target, "--include", "tmp*", "--min-age", "1m"],
-                        capture_output=True, timeout=60
-                    )
-                except Exception:
-                    pass
-                if i % 50 == 0 or i == total:
-                    log(f"  Cleanup progress: {i}/{total} folders checked")
-            log(f"  Cleanup complete")
+        if result.returncode == 0 and result.stdout.strip():
+            files = json.loads(result.stdout)
+            if files:
+                log(f"  Found {len(files)} temp file(s), removing...")
+                for f in files:
+                    p = f.get("Path", "")
+                    if p:
+                        try:
+                            subprocess.run(
+                                ["rclone", "deletefile", f"{GDRIVE_REMOTE}:{BASE_FOLDER}/{p}"],
+                                capture_output=True, timeout=60
+                            )
+                        except Exception:
+                            pass
+                log(f"  Cleanup complete ({len(files)} file(s) removed)")
+            else:
+                log("  No temp files found, cleanup skipped")
         else:
-            log(f"  Cleanup: rclone lsd returned code {result.returncode}")
+            log("  No temp files found, cleanup skipped")
     except subprocess.TimeoutExpired:
-        log("  Cleanup: rclone lsd timed out (non-fatal)")
+        log("  Cleanup: rclone scan timed out (non-fatal)")
     except Exception as e:
         log(f"  Cleanup warning: {e}")
 
@@ -919,6 +957,7 @@ def main():
                             log(f"  fix: Artifact {aname} missing — resetting chunk {ch['index']} to pending")
                             ch["status"] = "pending"
                             ch.pop("actual_size", None)
+                            ch.pop("sha256", None)
                             fixed = True
             if v.get("gdrive_status") == "uploaded" and v.get("status") not in ("gdrive_uploaded", "done"):
                 log(f"  fix: {clean_filename(v['filename'])} already uploaded to GDrive, cleaning up")

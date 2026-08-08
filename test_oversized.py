@@ -34,11 +34,14 @@ class TestHelperFunctions(unittest.TestCase):
         self.assertEqual(len(chunks), 2)
         self.assertEqual(chunks[0]["index"], 1)
         self.assertEqual(chunks[0]["start_byte"], 0)
-        self.assertEqual(chunks[0]["end_byte"], 4_831_838_207)
+        self.assertEqual(chunks[0]["end_byte"], ov.CHUNK_MAX - 1)
         self.assertEqual(chunks[0]["status"], "pending")
         self.assertEqual(chunks[1]["index"], 2)
-        self.assertEqual(chunks[1]["start_byte"], 4_831_838_208)
+        self.assertEqual(chunks[1]["start_byte"], ov.CHUNK_MAX)
         self.assertEqual(chunks[1]["status"], "pending")
+        # All chunk boundaries must be 16-byte aligned so MEGA decryption IVs stay valid
+        for ch in chunks:
+            self.assertEqual(ch["start_byte"] % 16, 0)
         # Small file -> 1 chunk
         chunks = ov.calculate_chunks(1_000_000)
         self.assertEqual(len(chunks), 1)
@@ -48,6 +51,11 @@ class TestHelperFunctions(unittest.TestCase):
         # 1 byte over -> 2 chunks
         chunks = ov.calculate_chunks(ov.CHUNK_MAX + 1)
         self.assertEqual(len(chunks), 2)
+        # Real 5.63GB video -> both chunk boundaries aligned
+        chunks = ov.calculate_chunks(5_630_307_273)
+        self.assertEqual(len(chunks), 2)
+        for ch in chunks:
+            self.assertEqual(ch["start_byte"] % 16, 0)
 
     def test_parse_mega_url_standard(self):
         fid, key = ov.parse_mega_url("https://mega.nz/file/ABC123#keymaterial")
@@ -165,24 +173,26 @@ class TestStateValidation(unittest.TestCase):
 
     def test_validate_all_artifacts_exist(self):
         """All artifacts exist -> no change."""
+        from unittest import mock
         self._make_completed()
         state = self._make_state(
             [("done", "ck_qxjcsapl_01"), ("done", "ck_qxjcsapl_02")],
             video_status="concat_ready"
         )
-        for v in state.get("videos", []):
-            fixed = False
-            for ch in v.get("chunks", []):
-                if ch.get("status") == "done":
-                    aname = ch.get("artifact_name", "")
-                    if aname:
-                        aid = ov.find_artifact_id(aname)
-                        if not aid:
-                            ch["status"] = "pending"
-                            fixed = True
-            if fixed:
-                v["status"] = "downloading"
-                ov.save_chunks_history(state)
+        with mock.patch.object(ov, "find_artifact_id", return_value="12345"):
+            for v in state.get("videos", []):
+                fixed = False
+                for ch in v.get("chunks", []):
+                    if ch.get("status") == "done":
+                        aname = ch.get("artifact_name", "")
+                        if aname:
+                            aid = ov.find_artifact_id(aname)
+                            if not aid:
+                                ch["status"] = "pending"
+                                fixed = True
+                if fixed:
+                    v["status"] = "downloading"
+                    ov.save_chunks_history(state)
         # Both chunks still done because artifacts exist
         v = state["videos"][0]
         self.assertEqual(v["status"], "concat_ready")
@@ -262,40 +272,75 @@ class TestStateValidation(unittest.TestCase):
 
 
 class TestFindArtifactId(unittest.TestCase):
-    """Tests that require GitHub API access."""
+    """Unit tests for find_artifact_id with mocked gh api."""
+
+    def setUp(self):
+        os.environ["GITHUB_REPOSITORY"] = "shivamjislt97/MEGA-TO-GDRIVE-GITHUB-CRON-MEGA-LINKS"
+        self._orig_subprocess = ov.subprocess
+
+    def tearDown(self):
+        ov.subprocess = self._orig_subprocess
+
+    def _fake_run(self, ids, returncode=0):
+        from types import SimpleNamespace
+        out = "\n".join(ids) if ids else ""
+        err = "boom" if returncode != 0 else ""
+        def fake_run(cmd, capture_output=False, text=False, timeout=None):
+            return SimpleNamespace(returncode=returncode, stdout=out, stderr=err)
+        return fake_run
 
     def test_find_existing_artifact(self):
-        aid = ov.find_artifact_id("ck_qxjcsapl_01")
-        self.assertIsNotNone(aid, "ck_qxjcsapl_01 should exist")
-        self.assertTrue(aid.isdigit())
+        ov.subprocess.run = self._fake_run(["9025628069", "9025172856"])
+        aid = ov.find_artifact_id("ck_kuu0wq6q_01")
+        self.assertEqual(aid, "9025628069")
 
     def test_find_nonexistent_artifact(self):
+        ov.subprocess.run = self._fake_run([])
         aid = ov.find_artifact_id("ck_nonexistent_99")
         self.assertIsNone(aid)
 
-    def test_find_artifact_02(self):
-        aid = ov.find_artifact_id("ck_qxjcsapl_02")
-        self.assertIsNotNone(aid, "ck_qxjcsapl_02 should exist")
-        self.assertTrue(aid.isdigit())
+    def test_find_gh_api_error(self):
+        ov.subprocess.run = self._fake_run([], returncode=1)
+        aid = ov.find_artifact_id("ck_kuu0wq6q_01")
+        self.assertIsNone(aid)
+
+    def test_find_no_repo_env(self):
+        os.environ.pop("GITHUB_REPOSITORY", None)
+        self.assertIsNone(ov.find_artifact_id("ck_kuu0wq6q_01"))
 
 
 class TestDownloadArtifact(unittest.TestCase):
-    """Tests downloading actual GitHub artifacts."""
+    """Unit tests for download_artifact with mocked gh api."""
 
     def setUp(self):
         self.tmpdir = tempfile.mkdtemp()
+        os.environ["GITHUB_REPOSITORY"] = "shivamjislt97/MEGA-TO-GDRIVE-GITHUB-CRON-MEGA-LINKS"
+        self._orig_find = ov.find_artifact_id
+        self._orig_subprocess = ov.subprocess
 
     def tearDown(self):
         import shutil
+        ov.find_artifact_id = self._orig_find
+        ov.subprocess = self._orig_subprocess
         shutil.rmtree(self.tmpdir, ignore_errors=True)
 
-    def test_download_existing_chunk_artifact(self):
-        """Verify ck_qxjcsapl_01 artifact exists (no full download)."""
-        aid = ov.find_artifact_id("ck_qxjcsapl_01")
-        self.assertIsNotNone(aid)
-
-    def test_download_nonexistent_artifact(self):
+    def test_download_artifact_not_found(self):
+        ov.find_artifact_id = lambda name: None
         result = ov.download_artifact("ck_nonexistent_99", self.tmpdir)
+        self.assertFalse(result)
+
+    def test_download_artifact_no_signed_url(self):
+        from unittest import mock
+        ov.find_artifact_id = lambda name: "12345"
+        def fake_run(cmd, capture_output=False, text=False, timeout=None):
+            class FakeResult:
+                returncode = 1
+                stdout = ""
+                stderr = "no location header"
+            return FakeResult()
+        ov.subprocess.run = fake_run
+        with mock.patch.object(ov.time, "sleep"):
+            result = ov.download_artifact("ck_kuu0wq6q_01", self.tmpdir)
         self.assertFalse(result)
 
 
