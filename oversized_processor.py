@@ -873,35 +873,47 @@ def cleanup_gdrive_temps():
     """Remove rclone temp files (tmp*) from all GDrive folders — single recursive delete."""
     log("  Cleaning up rclone temporary files...")
     try:
-        scan = subprocess.run(
-            ["rclone", "lsjson", "-R", "--include", "tmp*", "--min-age", "1m",
-             f"{GDRIVE_REMOTE}:{BASE_FOLDER}/"],
-            capture_output=True, text=True, timeout=180
-        )
-        count = 0
-        if scan.returncode == 0 and scan.stdout.strip():
-            count = len(json.loads(scan.stdout))
-        if count == 0:
-            log("  No temp files found, cleanup skipped")
+        def scan_temps():
+            r = subprocess.run(
+                ["rclone", "lsjson", "-R", "--include", "tmp*", "--min-age", "1m",
+                 f"{GDRIVE_REMOTE}:{BASE_FOLDER}/"],
+                capture_output=True, text=True, timeout=180
+            )
+            if r.returncode != 0 or not r.stdout.strip():
+                return [], r.returncode
+            return json.loads(r.stdout), r.returncode
+
+        entries, rc = scan_temps()
+        if not entries:
+            log(f"  No temp files found (rc={rc}), cleanup skipped")
             return
-        log(f"  Found {count} temp file(s), removing (single pass)...")
+        files = [e for e in entries if not e.get("IsDir")]
+        dirs = [e for e in entries if e.get("IsDir")]
+        log(f"  Found {len(files)} file(s) + {len(dirs)} dir(s) matching tmp*")
+        if files:
+            log(f"    sample: {[f.get('Path') for f in files[:4]]}")
+        if not files:
+            log("  Entries are directories only — nothing to delete")
+            return
+        log(f"  Removing {len(files)} temp file(s) (single pass)...")
         result = subprocess.run(
             ["rclone", "delete", "--include", "tmp*", "--min-age", "1m",
              f"{GDRIVE_REMOTE}:{BASE_FOLDER}/"],
             capture_output=True, text=True, timeout=300
         )
+        stderr_tail = result.stderr.strip()[-400:] if result.stderr else ""
         if result.returncode != 0:
-            log(f"  Cleanup warning: rclone delete rc={result.returncode}: {result.stderr.strip()[:200]}")
+            log(f"  Cleanup warning: delete rc={result.returncode}: {stderr_tail}")
             return
-        left = 0
-        recheck = subprocess.run(
-            ["rclone", "lsjson", "-R", "--include", "tmp*", "--min-age", "1m",
-             f"{GDRIVE_REMOTE}:{BASE_FOLDER}/"],
-            capture_output=True, text=True, timeout=180
-        )
-        if recheck.returncode == 0 and recheck.stdout.strip():
-            left = len(json.loads(recheck.stdout))
-        log(f"  Cleanup complete: {count} removed, {left} remaining")
+        if stderr_tail:
+            log(f"    delete stderr: {stderr_tail}")
+        left, left_rc = scan_temps()
+        left_files = [e for e in left if not e.get("IsDir")]
+        left_dirs = [e for e in left if e.get("IsDir")]
+        if left_files:
+            log(f"  WARNING: {len(left_files)} file(s) still remaining (rc={left_rc})")
+            log(f"    leftover sample: {[f.get('Path') for f in left_files[:4]]}")
+        log(f"  Cleanup complete: {len(files)} file(s) removed, {len(left_files)} file(s) + {len(left_dirs)} dir(s) remaining")
     except subprocess.TimeoutExpired:
         log("  Cleanup: rclone timed out (non-fatal)")
     except Exception as e:
