@@ -13,7 +13,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_kuu0wq6q_01"
         },
         {
@@ -21,11 +21,11 @@
           "start_byte": 5261334928,
           "end_byte": 5630307272,
           "expected_size": 368972345,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_kuu0wq6q_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "gdrive_status": "uploaded",
       "concat_fail_count": 0
     },
@@ -42,7 +42,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_bztmna5q_01"
         },
         {
@@ -50,11 +50,11 @@
           "start_byte": 5261334928,
           "end_byte": 5630307272,
           "expected_size": 368972345,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_bztmna5q_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "gdrive_status": "uploaded",
       "concat_fail_count": 0
     },
@@ -71,20 +71,49 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
-          "artifact_name": "ck_kmv3tzbb_01",
-          "actual_size": 5261334928,
-          "sha256": "bd854364deab098301f8a7d7048a275526f50701d07c83d47b096e23f47a4d87"
+          "status": "pending",
+          "artifact_name": "ck_kmv3tzbb_01"
         },
         {
           "index": 2,
           "start_byte": 5261334928,
           "end_byte": 6349697148,
           "expected_size": 1088362221,
+          "status": "pending",
+          "artifact_name": "ck_kmv3tzbb_02"
+        }
+      ],
+      "status": "downloading",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/IMthhIJB#3idxL17U28nn7k39sAWNvTih2yqeGpWn82mXCrImUvQ",
+      "filename": "Elsa Jean Creampie Vacation 2019 ATKingdom Adult DVD Empire.mp4",
+      "target_folder": "adultdvdempire 8",
+      "file_id": "IMthhIJB",
+      "total_size": 5872569075,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
           "status": "done",
-          "artifact_name": "ck_kmv3tzbb_02",
-          "actual_size": 1088362221,
-          "sha256": "2ef1cdd2602e77537c2923f349e4ea077d528065456a20f27fb7fb3a0777a638"
+          "artifact_name": "ck_imthhijb_01",
+          "actual_size": 5261334928,
+          "sha256": "067fe07ad1b937f95814172708f35e8621cb3b0c9b567509a729c3c375643d4d"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 5872569074,
+          "expected_size": 611234147,
+          "status": "done",
+          "artifact_name": "ck_imthhijb_02",
+          "actual_size": 611234147,
+          "sha256": "91701450758c4223e90be1f574fe078f4d7a8765c982c25fbd9c7bf7acc9331f"
         }
       ],
       "status": "gdrive_uploaded",
@@ -92,11 +121,11 @@
       "gdrive_status": "uploaded"
     }
   ],
-  "current_index": 3,
+  "current_index": 4,
   "version": 3,
   "summary": {
-    "total": 3,
-    "gdrive_uploaded": 3,
+    "total": 4,
+    "gdrive_uploaded": 4,
     "concat_ready": 0,
     "downloading": 0,
     "pending": 0,
