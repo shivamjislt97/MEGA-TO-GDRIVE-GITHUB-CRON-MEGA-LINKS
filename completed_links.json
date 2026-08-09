@@ -32,13 +32,13 @@
     },
     "adultdvdempire 9": {
       "total": 28,
-      "done": 27,
-      "status": "active"
+      "done": 28,
+      "status": "completed"
     },
     "adultdvdempire 10": {
       "total": 11,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "adultdvdempire 11": {
       "total": 15,
@@ -1072,9 +1072,17 @@
       "target_folder": "adultdvdempire 9",
       "completed_at": "2026-08-09T05:58:01Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/tBtiABJb#8YwMEPMwl3LcWpW60aVuGIdv5USNBYoxzVD8eFtWCVg",
+      "filename": "Adult DVD Empire Award-Winning Retailer of Adult DVDs Porn Video.mp4",
+      "size": 2814678934,
+      "target_folder": "adultdvdempire 9",
+      "completed_at": "2026-08-09T07:42:35Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "adultdvdempire 9",
+  "current_folder": "adultdvdempire 10",
   "oversized": {
     "total": 0,
     "done": 0,
