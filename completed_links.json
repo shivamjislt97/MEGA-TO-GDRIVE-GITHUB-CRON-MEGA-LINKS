@@ -62,7 +62,7 @@
     },
     "e1": {
       "total": 47,
-      "done": 11,
+      "done": 12,
       "status": "active"
     },
     "e2": {
@@ -1557,6 +1557,14 @@
       "size": 5186096224,
       "target_folder": "e1",
       "completed_at": "2026-08-09T15:18:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pBUQEQ4Y#I2gt67mzzPxiRFQCG6_gc-TN5k7xfMP7j4hqOloKha8",
+      "filename": "elsa-jean-blacks-on-blondes-in-4k_2160p.mp4",
+      "size": 4838351797,
+      "target_folder": "e1",
+      "completed_at": "2026-08-09T15:24:56Z",
       "status": "uploaded"
     }
   ],
