@@ -62,7 +62,7 @@
     },
     "e1": {
       "total": 47,
-      "done": 44,
+      "done": 45,
       "status": "active"
     },
     "e2": {
@@ -1806,8 +1806,8 @@
       "filename": "quality-time-elsa-jean_2160p.mp4",
       "size": 6386618271,
       "target_folder": "e1",
-      "completed_at": "2026-08-09T17:38:52Z",
-      "status": "unupload",
+      "completed_at": "2026-08-09T18:01:53Z",
+      "status": "uploaded",
       "oversized": true
     },
     {
