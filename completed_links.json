@@ -52,13 +52,13 @@
     },
     "E SPELCIAL": {
       "total": 6,
-      "done": 5,
-      "status": "active"
+      "done": 6,
+      "status": "completed"
     },
     "E-New": {
       "total": 13,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "e1": {
       "total": 47,
@@ -1356,9 +1356,17 @@
       "target_folder": "E SPELCIAL",
       "completed_at": "2026-08-09T13:49:38Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ocNDHYpS#yIK1f26MP4CMYeHtkLHkoEJ3ztm9koR16mwrBBH_2Jg",
+      "filename": "EPORNER.COM - [pll1OjVrGv9] Elsa Bratty (2160).mp4",
+      "size": 3188442884,
+      "target_folder": "E SPELCIAL",
+      "completed_at": "2026-08-09T13:53:48Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "E SPELCIAL",
+  "current_folder": "E-New",
   "oversized": {
     "total": 0,
     "done": 0,
