@@ -62,7 +62,7 @@
     },
     "e1": {
       "total": 47,
-      "done": 33,
+      "done": 36,
       "status": "active"
     },
     "e2": {
@@ -1736,6 +1736,30 @@
       "completed_at": "2026-08-09T16:44:42Z",
       "status": "uploaded",
       "oversized": true
+    },
+    {
+      "url": "https://mega.nz/file/pEcClJAL#fY8BNuA2kjN9SOHSu3vnD8IMwWx616f0ehNJVCG9dPY",
+      "filename": "elsa-jean-trillium-sisters-know-just-how-to-please_720p.mp4",
+      "size": 330483262,
+      "target_folder": "e1",
+      "completed_at": "2026-08-09T16:47:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/YF1mEBiY#lNl2x_GiP3T1zBbm2J1goemvNvh1bn_Z5RliBk97ZvQ",
+      "filename": "elsa-jean-vacation_2160p.mp4",
+      "size": 4297129464,
+      "target_folder": "e1",
+      "completed_at": "2026-08-09T16:51:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RVl1EThJ#Ay2OV5eM5fYUQQfJP7pSGjGv6bDh5SOrzWAd0vuRqKw",
+      "filename": "elsa-jean-who-s-banging-the-babysitter-scene-1_720p.mp4",
+      "size": 306306807,
+      "target_folder": "e1",
+      "completed_at": "2026-08-09T16:52:44Z",
+      "status": "uploaded"
     }
   ],
   "current_folder": "e1",
