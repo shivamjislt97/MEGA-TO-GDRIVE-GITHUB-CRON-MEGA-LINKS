@@ -62,7 +62,7 @@
     },
     "e1": {
       "total": 47,
-      "done": 9,
+      "done": 10,
       "status": "active"
     },
     "e2": {
@@ -1541,6 +1541,14 @@
       "size": 2334319657,
       "target_folder": "e1",
       "completed_at": "2026-08-09T15:00:30Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZZlxGRCb#z0hFQKoM-BNZ8Ykqi4Seo4WJgBLxSi2AMuyrO6kzz2g",
+      "filename": "elsa-jean-bath-for-two_1080p.mp4",
+      "size": 1399745389,
+      "target_folder": "e1",
+      "completed_at": "2026-08-09T15:07:28Z",
       "status": "uploaded"
     }
   ],
