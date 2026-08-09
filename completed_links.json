@@ -62,7 +62,7 @@
     },
     "e1": {
       "total": 47,
-      "done": 10,
+      "done": 11,
       "status": "active"
     },
     "e2": {
@@ -1549,6 +1549,14 @@
       "size": 1399745389,
       "target_folder": "e1",
       "completed_at": "2026-08-09T15:07:28Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/NckDiayD#5t654CdWjmKYrNu3OF43njJFVpm72ICpAw_u5nsmK60",
+      "filename": "elsa-jean-black-meat-white-feet-in-4k_2160p.mp4",
+      "size": 5186096224,
+      "target_folder": "e1",
+      "completed_at": "2026-08-09T15:18:51Z",
       "status": "uploaded"
     }
   ],
