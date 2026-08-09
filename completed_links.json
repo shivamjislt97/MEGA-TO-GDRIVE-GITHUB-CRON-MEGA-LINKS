@@ -62,13 +62,13 @@
     },
     "e1": {
       "total": 47,
-      "done": 46,
-      "status": "active"
+      "done": 47,
+      "status": "completed"
     },
     "e2": {
       "total": 16,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "e3 Elsa 1080p": {
       "total": 28,
@@ -1841,9 +1841,17 @@
       "target_folder": "e1",
       "completed_at": "2026-08-09T18:04:52Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/JNdAgIpK#hxP_YBV4pgP_y-AILkRunvlF0FBlAytUiCZQAIe0lfU",
+      "filename": "stair-case-fuck_1080p.mp4",
+      "size": 1029053130,
+      "target_folder": "e1",
+      "completed_at": "2026-08-09T23:51:42Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "e1",
+  "current_folder": "e2",
   "oversized": {
     "total": 0,
     "done": 0,
