@@ -57,13 +57,13 @@
     },
     "E-New": {
       "total": 13,
-      "done": 12,
-      "status": "active"
+      "done": 13,
+      "status": "completed"
     },
     "e1": {
       "total": 47,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "e2": {
       "total": 16,
@@ -1461,9 +1461,17 @@
       "target_folder": "E-New",
       "completed_at": "2026-08-09T14:28:35Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BJVgxITa#TJKCg3hW2mxSCBVQt8idsVv9OGGioedEjLqVYffABnU",
+      "filename": "EPORNER.COM - [wwTtkcV2wTr] Sexy Petite Blonde Doll Foot Fetish (1080).mp4",
+      "size": 1015921044,
+      "target_folder": "E-New",
+      "completed_at": "2026-08-09T14:31:58Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "E-New",
+  "current_folder": "e1",
   "oversized": {
     "total": 0,
     "done": 0,
