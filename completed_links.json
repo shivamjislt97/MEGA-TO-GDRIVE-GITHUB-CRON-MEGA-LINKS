@@ -47,13 +47,13 @@
     },
     "Bts Interview": {
       "total": 3,
-      "done": 0,
-      "status": "active"
+      "done": 3,
+      "status": "completed"
     },
     "E SPELCIAL": {
       "total": 6,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "E-New": {
       "total": 13,
@@ -1290,9 +1290,33 @@
       "target_folder": "adultdvdempire 11",
       "completed_at": "2026-08-09T13:10:55Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/Yd1xRJDI#aUOX6v6LHVb36nPeilGPJv9KSva6ET8-D99DnuD7KS8",
+      "filename": "Cute Little Things 1 - Interviews.mp4",
+      "size": 38380315,
+      "target_folder": "Bts Interview",
+      "completed_at": "2026-08-09T13:11:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/AZM1QIYB#kpeOsI7ll0Y4T0mnh_c86-U_joF5SvU0yRRcm51M2HI",
+      "filename": "HOG.TV College girl bound 2 - interviews.mp4",
+      "size": 47573882,
+      "target_folder": "Bts Interview",
+      "completed_at": "2026-08-09T13:11:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/Rd9AwLzD#c00p4A8-yfmtGTOu5kJ_wZGj7s6_keiEp3HWTTH5Kas",
+      "filename": "Pequena boneca 2 - Entrevistas.mp4",
+      "size": 78258617,
+      "target_folder": "Bts Interview",
+      "completed_at": "2026-08-09T13:12:01Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "Bts Interview",
+  "current_folder": "E SPELCIAL",
   "oversized": {
     "total": 0,
     "done": 0,
