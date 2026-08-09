@@ -42,13 +42,13 @@
     },
     "adultdvdempire 11": {
       "total": 15,
-      "done": 14,
-      "status": "active"
+      "done": 15,
+      "status": "completed"
     },
     "Bts Interview": {
       "total": 3,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "E SPELCIAL": {
       "total": 6,
@@ -1282,9 +1282,17 @@
       "target_folder": "adultdvdempire 11",
       "completed_at": "2026-08-09T11:40:37Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RB9BFDbI#4f5BUA7iiXbCLJjWb2wWDhJAjjnqshKlgomSjcC82vk",
+      "filename": "Adult DVD Empire Award-Winning Retailer of Adult DVDs Porn Video-12.mp4",
+      "size": 387600371,
+      "target_folder": "adultdvdempire 11",
+      "completed_at": "2026-08-09T13:10:55Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "adultdvdempire 11",
+  "current_folder": "Bts Interview",
   "oversized": {
     "total": 0,
     "done": 0,
