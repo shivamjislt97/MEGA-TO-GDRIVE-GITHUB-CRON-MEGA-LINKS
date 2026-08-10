@@ -7,13 +7,13 @@
     },
     "elsa22": {
       "total": 4,
-      "done": 3,
-      "status": "active"
+      "done": 4,
+      "status": "completed"
     },
     "elsa23": {
       "total": 4,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "elsa24": {
       "total": 19,
@@ -327,12 +327,12 @@
       "filename": "EPORNER.COM - [RipAL7hqaLC] Elsa Besties (2160).mp4",
       "size": 5699237409,
       "target_folder": "elsa22",
-      "completed_at": "2026-08-10T16:09:40Z",
-      "status": "unupload",
+      "completed_at": "2026-08-10T16:58:34Z",
+      "status": "uploaded",
       "oversized": true
     }
   ],
-  "current_folder": "elsa22",
+  "current_folder": "elsa23",
   "oversized": {
     "total": 0,
     "done": 0,
