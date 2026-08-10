@@ -1,0 +1,80 @@
+{
+  "videos": [
+    {
+      "url": "https://mega.nz/file/JM1jEDgZ#WE9WGx0toWg70gIZsc8y6E0mHlBi1Qr25_qBYuV72nw",
+      "filename": "MonstersOfCock - 20 04 12 Elsa Jean_@Nud3Cloud.mp4",
+      "target_folder": "SiteRip",
+      "file_id": "JM1jEDgZ",
+      "total_size": 6123782343,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
+          "status": "done",
+          "artifact_name": "ck_jm1jedgz_01",
+          "actual_size": 5261334928,
+          "sha256": "a34f1dc965c52ecda076989322755a0ebd0c3d7e8c4dd6f35a4bfcb27e35a06c"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 6123782342,
+          "expected_size": 862447415,
+          "status": "done",
+          "artifact_name": "ck_jm1jedgz_02",
+          "actual_size": 862447415,
+          "sha256": "dd2e7e094b3e1d278a05e4956809e2ac8bb0ddbe9783301a40a9ae1673dc7a7d"
+        }
+      ],
+      "status": "gdrive_uploaded",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pJdUmKJa#WNR5Ges0vDxsqoxqzm25pz5Vvb4kWJhIUQYXHPl1h9w",
+      "filename": "MonstersOfCock - 20 05 10 Elsa Jean_@Nud3Cloud.mp4",
+      "target_folder": "SiteRip",
+      "file_id": "pJdUmKJa",
+      "total_size": 7420579431,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
+          "status": "done",
+          "artifact_name": "ck_pjdumkja_01",
+          "actual_size": 5261334928,
+          "sha256": "c69ce675e6910a7377ea7a273dda5c25b8e04f4627e074b76fb3136e08b0a8dc"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 7420579430,
+          "expected_size": 2159244503,
+          "status": "done",
+          "artifact_name": "ck_pjdumkja_02",
+          "actual_size": 2159244503,
+          "sha256": "e850e0d82f747b10a7804bf6f6282d9512414cf723b31f74a90ba24c1786f78f"
+        }
+      ],
+      "status": "gdrive_uploaded",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    }
+  ],
+  "current_index": 2,
+  "version": 3,
+  "summary": {
+    "total": 2,
+    "gdrive_uploaded": 2,
+    "concat_ready": 0,
+    "downloading": 0,
+    "pending": 0,
+    "status": "completed"
+  }
+}
