@@ -72,7 +72,7 @@
     },
     "e3 Elsa 1080p": {
       "total": 28,
-      "done": 5,
+      "done": 10,
       "status": "active"
     }
   },
@@ -2016,6 +2016,46 @@
       "size": 896814088,
       "target_folder": "e3 Elsa 1080p",
       "completed_at": "2026-08-10T01:32:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RRNRBRgb#t00TplCqaCl66ZSE_dylQmD4wWf1rAbT7Y1Cr3uSnaA",
+      "filename": "836570909325.mp4",
+      "size": 902422880,
+      "target_folder": "e3 Elsa 1080p",
+      "completed_at": "2026-08-10T01:48:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gYUCSQab#s4U2tJzp7IvVquMmtqq7PA31BjbMUEmm1iDZ1QotIJQ",
+      "filename": "856153524945.mp4",
+      "size": 1205709549,
+      "target_folder": "e3 Elsa 1080p",
+      "completed_at": "2026-08-10T01:50:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/YY0XUApb#WcnWMcalBx5j2WMZ3vXhVqvPPGTRFeb09nspzy_zYCM",
+      "filename": "864198527632.mp4",
+      "size": 843617006,
+      "target_folder": "e3 Elsa 1080p",
+      "completed_at": "2026-08-10T01:51:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/lR1WlCiC#3eFL_9LM_YavyGp6_l0sUhZRQSEl35svW6QYRpkt2Kg",
+      "filename": "907698637539.mp4",
+      "size": 1228074563,
+      "target_folder": "e3 Elsa 1080p",
+      "completed_at": "2026-08-10T01:53:02Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/9YtAAKbA#rBbDL5DrN8yWF3wtPDtztJZNj7kDmXZ3o6IBtzNXa4w",
+      "filename": "6108318862075.mp4",
+      "size": 624301016,
+      "target_folder": "e3 Elsa 1080p",
+      "completed_at": "2026-08-10T01:55:48Z",
       "status": "uploaded"
     }
   ],
