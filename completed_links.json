@@ -2,13 +2,13 @@
   "folders": {
     "SiteRip": {
       "total": 30,
-      "done": 29,
-      "status": "active"
+      "done": 30,
+      "status": "completed"
     },
     "elsa22": {
       "total": 4,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "elsa23": {
       "total": 4,
@@ -286,9 +286,17 @@
       "completed_at": "2026-08-10T16:04:43Z",
       "status": "uploaded",
       "oversized": true
+    },
+    {
+      "url": "https://mega.nz/file/FRM12LQZ#3WzESo4LKGDy-uz-wO6XfywUSSyW7UkiceU9OdIcVQg",
+      "filename": "VRHush - 17 12 22 Richelle Ryan Elsa Jean A Daughters Strap-On Approval_@Nud3Cloud.mp4",
+      "size": 4597102948,
+      "target_folder": "SiteRip",
+      "completed_at": "2026-08-10T16:09:35Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "SiteRip",
+  "current_folder": "elsa22",
   "oversized": {
     "total": 0,
     "done": 0,
