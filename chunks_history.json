@@ -13,23 +13,19 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
-          "artifact_name": "ck_jm1jedgz_01",
-          "actual_size": 5261334928,
-          "sha256": "a34f1dc965c52ecda076989322755a0ebd0c3d7e8c4dd6f35a4bfcb27e35a06c"
+          "status": "pending",
+          "artifact_name": "ck_jm1jedgz_01"
         },
         {
           "index": 2,
           "start_byte": 5261334928,
           "end_byte": 6123782342,
           "expected_size": 862447415,
-          "status": "done",
-          "artifact_name": "ck_jm1jedgz_02",
-          "actual_size": 862447415,
-          "sha256": "dd2e7e094b3e1d278a05e4956809e2ac8bb0ddbe9783301a40a9ae1673dc7a7d"
+          "status": "pending",
+          "artifact_name": "ck_jm1jedgz_02"
         }
       ],
-      "status": "gdrive_uploaded",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -46,20 +42,49 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
-          "artifact_name": "ck_pjdumkja_01",
-          "actual_size": 5261334928,
-          "sha256": "c69ce675e6910a7377ea7a273dda5c25b8e04f4627e074b76fb3136e08b0a8dc"
+          "status": "pending",
+          "artifact_name": "ck_pjdumkja_01"
         },
         {
           "index": 2,
           "start_byte": 5261334928,
           "end_byte": 7420579430,
           "expected_size": 2159244503,
+          "status": "pending",
+          "artifact_name": "ck_pjdumkja_02"
+        }
+      ],
+      "status": "downloading",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sFthCZ7J#m-n7N-gZvjyjapIFlLGkzyhWXER_NzgOPo0beBCcoFg",
+      "filename": "VirtualRealPorn - 19 09 16 Elsa Jean Flight Cancellation_@Nud3Cloud.mp4",
+      "target_folder": "SiteRip",
+      "file_id": "sFthCZ7J",
+      "total_size": 9872713951,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
           "status": "done",
-          "artifact_name": "ck_pjdumkja_02",
-          "actual_size": 2159244503,
-          "sha256": "e850e0d82f747b10a7804bf6f6282d9512414cf723b31f74a90ba24c1786f78f"
+          "artifact_name": "ck_sfthcz7j_01",
+          "actual_size": 5261334928,
+          "sha256": "1d34d543b723ad25291313ba4f810fe739164cf13406aba04b5ed7077e821812"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 9872713950,
+          "expected_size": 4611379023,
+          "status": "done",
+          "artifact_name": "ck_sfthcz7j_02",
+          "actual_size": 4611379023,
+          "sha256": "08700aa794698e4d7de9cc96757c0314e3f44eee151278ba91ff053a79cd1fd3"
         }
       ],
       "status": "gdrive_uploaded",
@@ -67,11 +92,11 @@
       "gdrive_status": "uploaded"
     }
   ],
-  "current_index": 2,
+  "current_index": 3,
   "version": 3,
   "summary": {
-    "total": 2,
-    "gdrive_uploaded": 2,
+    "total": 3,
+    "gdrive_uploaded": 3,
     "concat_ready": 0,
     "downloading": 0,
     "pending": 0,
