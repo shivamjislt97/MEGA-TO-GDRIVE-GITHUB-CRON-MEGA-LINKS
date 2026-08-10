@@ -72,7 +72,7 @@
     },
     "e3 Elsa 1080p": {
       "total": 28,
-      "done": 0,
+      "done": 5,
       "status": "active"
     }
   },
@@ -1976,6 +1976,46 @@
       "size": 601323016,
       "target_folder": "e2",
       "completed_at": "2026-08-10T01:14:37Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8AMWzQpZ#tEGEkzqW_b3AckkkGVLfRGRT8TNRwchJwIglOpkAvtA",
+      "filename": "2.2 Elsa jean Malaysia 2.2.mp4",
+      "size": 1286016894,
+      "target_folder": "e3 Elsa 1080p",
+      "completed_at": "2026-08-10T01:26:26Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FBUGFBjZ#RKmSbb_7IQ34zZ48tX76BYsLwuIKtAqPtI6T1cB_2K8",
+      "filename": "686444317312.mp4",
+      "size": 914058575,
+      "target_folder": "e3 Elsa 1080p",
+      "completed_at": "2026-08-10T01:29:57Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gIdVXaZA#iWE8c3v6Im42UjjSmdo3ytW18PL9Ix-b8UIWri70WYA",
+      "filename": "687893645954.mp4",
+      "size": 900671857,
+      "target_folder": "e3 Elsa 1080p",
+      "completed_at": "2026-08-10T01:30:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sZ0i3Igb#zbpUQ9oRpTIWqGxVCCE1Z5EJEKTD0roXEu2b3KshrUk",
+      "filename": "698538461730.mp4",
+      "size": 1112980171,
+      "target_folder": "e3 Elsa 1080p",
+      "completed_at": "2026-08-10T01:31:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BA1jTR7A#3DExG2d3GPj7O40UzJVucFvmwdcO7gL4HrEBgV0scvA",
+      "filename": "715137223391.mp4",
+      "size": 896814088,
+      "target_folder": "e3 Elsa 1080p",
+      "completed_at": "2026-08-10T01:32:49Z",
       "status": "uploaded"
     }
   ],
