@@ -74,6 +74,11 @@
       "total": 28,
       "done": 28,
       "status": "completed"
+    },
+    "pics Part 1": {
+      "total": 460,
+      "done": 0,
+      "status": "active"
     }
   },
   "completed": [
@@ -2203,7 +2208,7 @@
       "status": "uploaded"
     }
   ],
-  "current_folder": null,
+  "current_folder": "pics Part 1",
   "oversized": {
     "total": 0,
     "done": 0,
