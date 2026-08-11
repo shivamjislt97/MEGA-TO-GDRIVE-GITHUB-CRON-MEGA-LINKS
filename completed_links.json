@@ -42,13 +42,13 @@
     },
     "elsa29": {
       "total": 5,
-      "done": 4,
-      "status": "active"
+      "done": 5,
+      "status": "completed"
     },
     "elsa30": {
       "total": 2,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     }
   },
   "completed": [
@@ -1145,9 +1145,17 @@
       "target_folder": "elsa29",
       "completed_at": "2026-08-11T03:58:59Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/EcMGDZqC#1jLt60Ys7DWIv12qiZ-LNBtyTFwU_PTfumY7VezeZ4s",
+      "filename": "elsa-jean-my-sisters-not-home_1080p.mp4",
+      "size": 1135664618,
+      "target_folder": "elsa29",
+      "completed_at": "2026-08-11T04:18:55Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "elsa29",
+  "current_folder": "elsa30",
   "oversized": {
     "total": 0,
     "done": 0,
