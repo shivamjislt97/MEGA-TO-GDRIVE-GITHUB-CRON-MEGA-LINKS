@@ -37,7 +37,7 @@
     },
     "elsa28": {
       "total": 23,
-      "done": 21,
+      "done": 22,
       "status": "active"
     },
     "elsa29": {
@@ -1102,8 +1102,8 @@
       "filename": "treat-for-you_2160p.mp4",
       "size": 8307307221,
       "target_folder": "elsa28",
-      "completed_at": "2026-08-11T02:49:41Z",
-      "status": "unupload",
+      "completed_at": "2026-08-11T03:02:35Z",
+      "status": "uploaded",
       "oversized": true
     }
   ],
