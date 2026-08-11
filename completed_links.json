@@ -47,7 +47,7 @@
     },
     "elsa30": {
       "total": 2,
-      "done": 0,
+      "done": 1,
       "status": "active"
     }
   },
@@ -1152,6 +1152,14 @@
       "size": 1135664618,
       "target_folder": "elsa29",
       "completed_at": "2026-08-11T04:18:55Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gBsRyK4b#upTkbQIvHRCYExoYXsKMcnRNcv2HPsnXU60zvC61tzw",
+      "filename": "atkg-elsa-jean-toys_1080p.mp4",
+      "size": 851945913,
+      "target_folder": "elsa30",
+      "completed_at": "2026-08-11T04:19:43Z",
       "status": "uploaded"
     }
   ],
