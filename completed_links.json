@@ -32,13 +32,13 @@
     },
     "elsa27": {
       "total": 15,
-      "done": 14,
-      "status": "active"
+      "done": 15,
+      "status": "completed"
     },
     "elsa28": {
       "total": 23,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "elsa29": {
       "total": 5,
@@ -919,9 +919,17 @@
       "target_folder": "elsa27",
       "completed_at": "2026-08-11T00:13:27Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/REkkgbwI#_KzSX0UQ-xnauPHcTpWMNNAxe6GM8nzL13i6Un13iv8",
+      "filename": "elsa-jean-horny-babysitter2_1080p.mp4",
+      "size": 1004709309,
+      "target_folder": "elsa27",
+      "completed_at": "2026-08-11T01:19:00Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "elsa27",
+  "current_folder": "elsa28",
   "oversized": {
     "total": 0,
     "done": 0,
