@@ -42,7 +42,7 @@
     },
     "elsa29": {
       "total": 5,
-      "done": 0,
+      "done": 4,
       "status": "active"
     },
     "elsa30": {
@@ -1112,6 +1112,38 @@
       "size": 683292969,
       "target_folder": "elsa28",
       "completed_at": "2026-08-11T03:27:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cQE2FSpI#mp-nPZ7_u8hpwSffqGi51bAxAjXIWqyv5PhDTVdB4OA",
+      "filename": "4.10 hawaii 4.10.mp4",
+      "size": 2515102315,
+      "target_folder": "elsa29",
+      "completed_at": "2026-08-11T03:38:28Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gVVD1aBJ#kzwgyxS88KFKz6iKkIhquTB5mZhU-JFkFt7MJcaYpjM",
+      "filename": "elsa-jean-toys-els004jsp-318397001-hd_1080p.mp4",
+      "size": 305044517,
+      "target_folder": "elsa29",
+      "completed_at": "2026-08-11T03:48:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4UtDGIzK#YluXMFmNluw96PbCeZgGcXQDMkh5mA72k1fW1Az6R54",
+      "filename": "elsa-jean46_1080p.mp4",
+      "size": 647977687,
+      "target_folder": "elsa29",
+      "completed_at": "2026-08-11T03:56:35Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/IM9QESzL#Fzw4vh4hfrdJ00Jt1vEm9x1SQMTPMVFqpiYZ55plvpQ",
+      "filename": "elsajeanffd_1080p.mp4",
+      "size": 717650416,
+      "target_folder": "elsa29",
+      "completed_at": "2026-08-11T03:58:59Z",
       "status": "uploaded"
     }
   ],
