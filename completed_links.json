@@ -37,13 +37,13 @@
     },
     "elsa28": {
       "total": 23,
-      "done": 22,
-      "status": "active"
+      "done": 23,
+      "status": "completed"
     },
     "elsa29": {
       "total": 5,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "elsa30": {
       "total": 2,
@@ -1105,9 +1105,17 @@
       "completed_at": "2026-08-11T03:02:35Z",
       "status": "uploaded",
       "oversized": true
+    },
+    {
+      "url": "https://mega.nz/file/5UNlRCCY#HHlcvhJhBJOd4sfDmhf0oj3U-Giygf_aYS3QX85Hr68",
+      "filename": "cumeatingcuckold-male-stripper_1080p.mp4",
+      "size": 683292969,
+      "target_folder": "elsa28",
+      "completed_at": "2026-08-11T03:27:40Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "elsa28",
+  "current_folder": "elsa29",
   "oversized": {
     "total": 0,
     "done": 0,
