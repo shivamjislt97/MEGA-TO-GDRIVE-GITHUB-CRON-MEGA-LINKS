@@ -13,7 +13,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_jm1jedgz_01"
         },
         {
@@ -21,11 +21,11 @@
           "start_byte": 5261334928,
           "end_byte": 6123782342,
           "expected_size": 862447415,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_jm1jedgz_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -42,7 +42,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_pjdumkja_01"
         },
         {
@@ -50,11 +50,11 @@
           "start_byte": 5261334928,
           "end_byte": 7420579430,
           "expected_size": 2159244503,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_pjdumkja_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -71,7 +71,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_sfthcz7j_01"
         },
         {
@@ -79,11 +79,11 @@
           "start_byte": 5261334928,
           "end_byte": 9872713950,
           "expected_size": 4611379023,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_sfthcz7j_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -100,7 +100,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_sucuzzab_01"
         },
         {
@@ -108,11 +108,11 @@
           "start_byte": 5261334928,
           "end_byte": 6007884858,
           "expected_size": 746549931,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_sucuzzab_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -129,7 +129,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_uid0sabb_01"
         },
         {
@@ -137,11 +137,11 @@
           "start_byte": 5261334928,
           "end_byte": 5590530877,
           "expected_size": 329195950,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_uid0sabb_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -158,7 +158,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_ne9hizac_01"
         },
         {
@@ -166,11 +166,11 @@
           "start_byte": 5261334928,
           "end_byte": 6858773433,
           "expected_size": 1597438506,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_ne9hizac_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -187,7 +187,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_kruiuaac_01"
         },
         {
@@ -195,11 +195,11 @@
           "start_byte": 5261334928,
           "end_byte": 5699237408,
           "expected_size": 437902481,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_kruiuaac_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -216,7 +216,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_ccnhqbqa_01"
         },
         {
@@ -224,11 +224,11 @@
           "start_byte": 5261334928,
           "end_byte": 6808433428,
           "expected_size": 1547098501,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_ccnhqbqa_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -245,7 +245,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_eaettyid_01"
         },
         {
@@ -253,11 +253,11 @@
           "start_byte": 5261334928,
           "end_byte": 7296694397,
           "expected_size": 2035359470,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_eaettyid_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -274,7 +274,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_anfxfjlr_01"
         },
         {
@@ -282,11 +282,11 @@
           "start_byte": 5261334928,
           "end_byte": 7296694397,
           "expected_size": 2035359470,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_anfxfjlr_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -303,20 +303,49 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
-          "artifact_name": "ck_gnnjulyk_01",
-          "actual_size": 5261334928,
-          "sha256": "9d4fbeabf804628841c5160bd42113835736b0ffef1d79f7a8e32a08ccc2fb8d"
+          "status": "pending",
+          "artifact_name": "ck_gnnjulyk_01"
         },
         {
           "index": 2,
           "start_byte": 5261334928,
           "end_byte": 6061558277,
           "expected_size": 800223350,
+          "status": "pending",
+          "artifact_name": "ck_gnnjulyk_02"
+        }
+      ],
+      "status": "downloading",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4Q1kxDQC#LrSYow9MLEjkxVvMtjs0vURiRVARsTb0tUth5RbnxT0",
+      "filename": "treat-for-you_2160p.mp4",
+      "target_folder": "elsa28",
+      "file_id": "4Q1kxDQC",
+      "total_size": 8307307221,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
           "status": "done",
-          "artifact_name": "ck_gnnjulyk_02",
-          "actual_size": 800223350,
-          "sha256": "821bfcff727fe169c2edda553bc8595a9de442dc6509233bd75290472178ee32"
+          "artifact_name": "ck_4q1kxdqc_01",
+          "actual_size": 5261334928,
+          "sha256": "9c719cdc306e1864dd50711bb9c80ea8380e2d1693b6a4aa6bb572d75843651b"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 8307307220,
+          "expected_size": 3045972293,
+          "status": "done",
+          "artifact_name": "ck_4q1kxdqc_02",
+          "actual_size": 3045972293,
+          "sha256": "b9a4db5670d1e9cdb0df50db997ee394535da2802f1ca596a77c6f1d826bc36c"
         }
       ],
       "status": "gdrive_uploaded",
@@ -324,11 +353,11 @@
       "gdrive_status": "uploaded"
     }
   ],
-  "current_index": 11,
+  "current_index": 12,
   "version": 3,
   "summary": {
-    "total": 11,
-    "gdrive_uploaded": 11,
+    "total": 12,
+    "gdrive_uploaded": 12,
     "concat_ready": 0,
     "downloading": 0,
     "pending": 0,
