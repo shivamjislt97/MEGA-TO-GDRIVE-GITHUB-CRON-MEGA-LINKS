@@ -52,7 +52,7 @@
     },
     "elsa47": {
       "total": 6,
-      "done": 0,
+      "done": 2,
       "status": "active"
     },
     "elsa48": {
@@ -2135,6 +2135,22 @@
       "completed_at": "2026-08-12T13:30:05Z",
       "status": "uploaded",
       "oversized": true
+    },
+    {
+      "url": "https://mega.nz/file/1AU1jIiC#hEBSZ82BoLGiDnCQHy6fvkiCPIuxxufsTZRiOkmKDxQ",
+      "filename": "elsa-jean-05_2160p.mp4",
+      "size": 5142482981,
+      "target_folder": "elsa47",
+      "completed_at": "2026-08-12T13:50:28Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sV0wTSbD#7h2bfAfDasZpCPeTss21T8WdlS11qmU-TGMsEWRM-NQ",
+      "filename": "elsa-jean-give-me-your-sword_1080p.mp4",
+      "size": 84298724,
+      "target_folder": "elsa47",
+      "completed_at": "2026-08-12T13:50:43Z",
+      "status": "uploaded"
     }
   ],
   "current_folder": "elsa47",
