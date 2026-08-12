@@ -32,13 +32,13 @@
     },
     "elsa42": {
       "total": 51,
-      "done": 50,
-      "status": "active"
+      "done": 51,
+      "status": "completed"
     },
     "elsa43": {
       "total": 35,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "elsa44": {
       "total": 20,
@@ -1668,9 +1668,17 @@
       "target_folder": "elsa42",
       "completed_at": "2026-08-12T11:10:00Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RQ0RgZ7J#0jCi4oEe9kgVs7TYSUwrRBnWLIlJMOUO0lQPzFzrB7w",
+      "filename": "Pornisity - Elsa Jean Monique Alexander PornMedium com.mp4",
+      "size": 537634013,
+      "target_folder": "elsa42",
+      "completed_at": "2026-08-12T11:13:56Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "elsa42",
+  "current_folder": "elsa43",
   "oversized": {
     "total": 0,
     "done": 0,
