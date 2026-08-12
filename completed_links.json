@@ -42,7 +42,7 @@
     },
     "elsa44": {
       "total": 20,
-      "done": 0,
+      "done": 2,
       "status": "active"
     },
     "elsa46": {
@@ -1956,6 +1956,22 @@
       "size": 271734126,
       "target_folder": "elsa43",
       "completed_at": "2026-08-12T12:05:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/hB0xzQpJ#YeBr20TBzxGo1haxouPHfCr6hI-BDhTjm9aIbabHMtA",
+      "filename": "elsa-jean-1_2160p.mp4",
+      "size": 2624480018,
+      "target_folder": "elsa44",
+      "completed_at": "2026-08-12T12:08:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/xMUUUQCK#d5xzRKCMZ0Wd4aLDAIQNZeKcgsdACqvcYLT_iDvw7NE",
+      "filename": "elsa-jean-02_1080p.mp4",
+      "size": 1002688396,
+      "target_folder": "elsa44",
+      "completed_at": "2026-08-12T12:16:54Z",
       "status": "uploaded"
     }
   ],
