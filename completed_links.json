@@ -97,7 +97,7 @@
     },
     "forum1": {
       "total": 10,
-      "done": 1,
+      "done": 3,
       "status": "active"
     },
     "forum2": {
@@ -3957,6 +3957,22 @@
       "size": 2522836311,
       "target_folder": "forum1",
       "completed_at": "2026-08-12T22:37:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gVUGjaaY#NlwFJDaOIV7-gAHSj5v9teUoAZpR8EBfVk7spUYlU04",
+      "filename": "50863828668.mp4",
+      "size": 3729575116,
+      "target_folder": "forum1",
+      "completed_at": "2026-08-12T22:40:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/dI0GjDAK#Z3Q1MSgggD0717J7ng_9RJpw_gs8Jf0iXFjV1UEgf0g",
+      "filename": "95795903354.mp4.mp4",
+      "size": 1399321054,
+      "target_folder": "forum1",
+      "completed_at": "2026-08-12T22:41:58Z",
       "status": "uploaded"
     }
   ],
