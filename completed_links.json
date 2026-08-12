@@ -32,7 +32,7 @@
     },
     "elsa42": {
       "total": 51,
-      "done": 16,
+      "done": 17,
       "status": "active"
     },
     "elsa43": {
@@ -1393,8 +1393,8 @@
       "filename": "Elsa Jean Elsa Tlhc Download AI upscaled video HqCollect.mp4",
       "size": 5458657675,
       "target_folder": "elsa42",
-      "completed_at": "2026-08-12T09:53:53Z",
-      "status": "unupload",
+      "completed_at": "2026-08-12T10:01:38Z",
+      "status": "uploaded",
       "oversized": true
     },
     {
