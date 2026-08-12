@@ -27,7 +27,7 @@
     },
     "elsa41": {
       "total": 30,
-      "done": 28,
+      "done": 29,
       "status": "active"
     },
     "elsa42": {
@@ -1250,6 +1250,14 @@
       "size": 96856959,
       "target_folder": "elsa41",
       "completed_at": "2026-08-12T08:55:43Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/Ac0wkazI#Ojmp4PhHxS47k2bwZU0pgMdx1V2rQVUUBgQJzTjPEFE",
+      "filename": "the-virgin-part2-chad-alva-elsa-jean_1080p.mp4",
+      "size": 554071390,
+      "target_folder": "elsa41",
+      "completed_at": "2026-08-12T09:08:50Z",
       "status": "uploaded"
     }
   ],
