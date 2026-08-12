@@ -37,7 +37,7 @@
     },
     "elsa43": {
       "total": 35,
-      "done": 0,
+      "done": 7,
       "status": "active"
     },
     "elsa44": {
@@ -1675,6 +1675,62 @@
       "size": 537634013,
       "target_folder": "elsa42",
       "completed_at": "2026-08-12T11:13:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/oIsEhYQY#FtZizzjrbigEJOE7S7RrCTLaQfJfmQpFs2rKyNZCLXI",
+      "filename": "4d37f00976ce06f0aef379227e2c2026_2.mp4",
+      "size": 347256531,
+      "target_folder": "elsa43",
+      "completed_at": "2026-08-12T11:14:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/9VU1lKBb#hdJaFFUFL6bkLB3GB43f4nXXEK-a7BA25Nghk_zHBSY",
+      "filename": "046f0dd4f5b570b5ad79d8796c7bf993_2.mp4",
+      "size": 343059652,
+      "target_folder": "elsa43",
+      "completed_at": "2026-08-12T11:15:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/IB1iCKjK#RM7QTQIsAmKUBVDvirA9CPgmev4ujToU0ceW75Jlt74",
+      "filename": "1080 (6).mp4",
+      "size": 784320617,
+      "target_folder": "elsa43",
+      "completed_at": "2026-08-12T11:16:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZE8yUSjJ#mJIn81MKp00RN4aI2SiN4tp-SCyyAgxGskiGdfQz5-s",
+      "filename": "1080 (7).mp4",
+      "size": 784320617,
+      "target_folder": "elsa43",
+      "completed_at": "2026-08-12T11:17:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FVUGzT7Y#mfNAsZ5r5AEwcQNA2ULser5r-Ul7XQjuTb34SM8T-KE",
+      "filename": "1080 (8).mp4",
+      "size": 784320617,
+      "target_folder": "elsa43",
+      "completed_at": "2026-08-12T11:18:54Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BUth3Sba#UMw5B7LOj-Kzd_bpdSGkcm9pFS1jbQa1mLFlkG-eULM",
+      "filename": "1080 (10).mp4",
+      "size": 896714245,
+      "target_folder": "elsa43",
+      "completed_at": "2026-08-12T11:19:58Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/xNcxmKaB#MZHcYDTiDv5zK4zivx2Z9t8ZbzQyX7gXae22q2uxd1k",
+      "filename": "1080 (11).mp4",
+      "size": 896714245,
+      "target_folder": "elsa43",
+      "completed_at": "2026-08-12T11:21:50Z",
       "status": "uploaded"
     }
   ],
