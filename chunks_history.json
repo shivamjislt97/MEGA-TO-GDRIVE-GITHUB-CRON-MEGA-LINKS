@@ -13,8 +13,37 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
+          "status": "pending",
+          "artifact_name": "ck_wc13eyqi_01"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 5458657674,
+          "expected_size": 197322747,
+          "status": "pending",
+          "artifact_name": "ck_wc13eyqi_02"
+        }
+      ],
+      "status": "downloading",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sAdUzZaD#_ZHpvcGAS3GWUdOppebOLXrmlvKosJgE4iXZ2bfR454",
+      "filename": "Elsa Jean Elsa Tlhc Download AI upscaled video HqCollect.mp4",
+      "target_folder": "elsa43",
+      "file_id": "sAdUzZaD",
+      "total_size": 5458657675,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
           "status": "done",
-          "artifact_name": "ck_wc13eyqi_01",
+          "artifact_name": "ck_saduzzad_01",
           "actual_size": 5261334928,
           "sha256": "6d080f8ad8f3379a901bedfa818b1e56ec809b6cd104b608366d012adfbbad3c"
         },
@@ -24,7 +53,7 @@
           "end_byte": 5458657674,
           "expected_size": 197322747,
           "status": "done",
-          "artifact_name": "ck_wc13eyqi_02",
+          "artifact_name": "ck_saduzzad_02",
           "actual_size": 197322747,
           "sha256": "177f5105de66676c1b6d15695418729b86d9aba67bd4ac22b996275038b27362"
         }
@@ -34,11 +63,11 @@
       "gdrive_status": "uploaded"
     }
   ],
-  "current_index": 1,
+  "current_index": 2,
   "version": 3,
   "summary": {
-    "total": 1,
-    "gdrive_uploaded": 1,
+    "total": 2,
+    "gdrive_uploaded": 2,
     "concat_ready": 0,
     "downloading": 0,
     "pending": 0,
