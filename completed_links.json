@@ -22,7 +22,7 @@
     },
     "elsa40": {
       "total": 19,
-      "done": 17,
+      "done": 18,
       "status": "active"
     },
     "elsa41": {
@@ -1010,6 +1010,14 @@
       "size": 530283627,
       "target_folder": "elsa40",
       "completed_at": "2026-08-12T05:17:59Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/hRM3jCrA#evTAQ5-t7fPPm0zvltLLIjk2y8IwAQ3ELydEU-PgnPA",
+      "filename": "Elsa Jean Elsa Homework Download AI upscaled video HqCollect.mp4",
+      "size": 3378177372,
+      "target_folder": "elsa40",
+      "completed_at": "2026-08-12T05:57:36Z",
       "status": "uploaded"
     }
   ],
