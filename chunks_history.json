@@ -13,7 +13,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_wc13eyqi_01"
         },
         {
@@ -21,11 +21,11 @@
           "start_byte": 5261334928,
           "end_byte": 5458657674,
           "expected_size": 197322747,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_wc13eyqi_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -42,20 +42,82 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
-          "artifact_name": "ck_saduzzad_01",
-          "actual_size": 5261334928,
-          "sha256": "6d080f8ad8f3379a901bedfa818b1e56ec809b6cd104b608366d012adfbbad3c"
+          "status": "pending",
+          "artifact_name": "ck_saduzzad_01"
         },
         {
           "index": 2,
           "start_byte": 5261334928,
           "end_byte": 5458657674,
           "expected_size": 197322747,
+          "status": "pending",
+          "artifact_name": "ck_saduzzad_02"
+        }
+      ],
+      "status": "downloading",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8U9HSaZY#cV_HEqsuOF_CQr0pZi0sNYES9oe18ZQHuDZVoTuMNHc",
+      "filename": "Elsa Jean Elsa Bex Riley Download AI upscaled video HqCollect.mp4",
+      "target_folder": "elsa46",
+      "file_id": "8U9HSaZY",
+      "total_size": 7499431120,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
           "status": "done",
-          "artifact_name": "ck_saduzzad_02",
-          "actual_size": 197322747,
-          "sha256": "177f5105de66676c1b6d15695418729b86d9aba67bd4ac22b996275038b27362"
+          "artifact_name": "ck_8u9hsazy_01",
+          "actual_size": 5261334928,
+          "sha256": "9485cfccf460f851a681a33843efc8f383cb056e9ed359a34e69f51a949892d6"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 7499431119,
+          "expected_size": 2238096192,
+          "status": "done",
+          "artifact_name": "ck_8u9hsazy_02",
+          "actual_size": 2238096192,
+          "sha256": "98729cdf92589b4745aa8ab938424d2ca4b090ead9e4cb70e51f3b592fcd563f"
+        }
+      ],
+      "status": "gdrive_uploaded",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pEFiAZgC#C3Wkzc0iWlax74fO0LxZuYSQVpi9WnjTD6wmotv2Zz4",
+      "filename": "Elsa jean oil sex porn brother.mp4",
+      "target_folder": "elsa46",
+      "file_id": "pEFiAZgC",
+      "total_size": 7974858869,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
+          "status": "done",
+          "artifact_name": "ck_pefiazgc_01",
+          "actual_size": 5261334928,
+          "sha256": "695e072f5c99c83c538106206b47d3d94d839abdb4e6e5aa75f69580cc52032f"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 7974858868,
+          "expected_size": 2713523941,
+          "status": "done",
+          "artifact_name": "ck_pefiazgc_02",
+          "actual_size": 2713523941,
+          "sha256": "fa05457d3326278d2fa8f80586cc68bf2062674600df9393aff0aab3f390b0d7"
         }
       ],
       "status": "gdrive_uploaded",
@@ -63,11 +125,11 @@
       "gdrive_status": "uploaded"
     }
   ],
-  "current_index": 2,
+  "current_index": 4,
   "version": 3,
   "summary": {
-    "total": 2,
-    "gdrive_uploaded": 2,
+    "total": 4,
+    "gdrive_uploaded": 4,
     "concat_ready": 0,
     "downloading": 0,
     "pending": 0,
