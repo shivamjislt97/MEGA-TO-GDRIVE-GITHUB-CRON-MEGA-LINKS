@@ -72,7 +72,7 @@
     },
     "elsa51": {
       "total": 23,
-      "done": 0,
+      "done": 3,
       "status": "active"
     },
     "elsa52": {
@@ -2890,6 +2890,30 @@
       "size": 332297402,
       "target_folder": "elsa50",
       "completed_at": "2026-08-12T17:13:33Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/QF0GkabC#G1Eo7QTwdsjYGq8wCJEv5C3jpy6PU2c0I9CSHWkMGSs",
+      "filename": "619d78e540d4b (2).mp4",
+      "size": 408838548,
+      "target_folder": "elsa51",
+      "completed_at": "2026-08-12T17:15:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VB0nyRhZ#GwguwkpVYjwKv8vYtp2XFFJJiPHyh8otW7zUqHJC5Is",
+      "filename": "97398 mp4.mp4",
+      "size": 253453758,
+      "target_folder": "elsa51",
+      "completed_at": "2026-08-12T17:16:43Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8JkCTTpY#nPZH35gik9j9aY6saur7S7M4nsXMfgPkAdv7vc6Op9c",
+      "filename": "400102 mp4.mp4",
+      "size": 238056185,
+      "target_folder": "elsa51",
+      "completed_at": "2026-08-12T17:18:52Z",
       "status": "uploaded"
     }
   ],
