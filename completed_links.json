@@ -27,13 +27,13 @@
     },
     "elsa41": {
       "total": 30,
-      "done": 29,
-      "status": "active"
+      "done": 30,
+      "status": "completed"
     },
     "elsa42": {
       "total": 51,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "elsa43": {
       "total": 35,
@@ -1259,9 +1259,17 @@
       "target_folder": "elsa41",
       "completed_at": "2026-08-12T09:08:50Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/MENGSJoK#iPHwTcaVMr3dX4oQk-l0i_NGkXssPsMt2HCoETIF1X0",
+      "filename": "elsa-jean-virtual-handjob-blowjob-footjob_1080p.mp4",
+      "size": 650350645,
+      "target_folder": "elsa41",
+      "completed_at": "2026-08-12T09:34:48Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "elsa41",
+  "current_folder": "elsa42",
   "oversized": {
     "total": 0,
     "done": 0,
