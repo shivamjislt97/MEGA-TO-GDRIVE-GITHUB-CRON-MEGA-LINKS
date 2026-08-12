@@ -13,7 +13,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_wc13eyqi_01"
         },
         {
@@ -21,11 +21,11 @@
           "start_byte": 5261334928,
           "end_byte": 5458657674,
           "expected_size": 197322747,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_wc13eyqi_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -42,7 +42,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_saduzzad_01"
         },
         {
@@ -50,11 +50,11 @@
           "start_byte": 5261334928,
           "end_byte": 5458657674,
           "expected_size": 197322747,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_saduzzad_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -71,7 +71,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_8u9hsazy_01"
         },
         {
@@ -79,11 +79,11 @@
           "start_byte": 5261334928,
           "end_byte": 7499431119,
           "expected_size": 2238096192,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_8u9hsazy_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -100,7 +100,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_pefiazgc_01"
         },
         {
@@ -108,11 +108,11 @@
           "start_byte": 5261334928,
           "end_byte": 7974858868,
           "expected_size": 2713523941,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_pefiazgc_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -129,7 +129,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_dbfkadqs_01"
         },
         {
@@ -137,11 +137,11 @@
           "start_byte": 5261334928,
           "end_byte": 6175628071,
           "expected_size": 914293144,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_dbfkadqs_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -158,7 +158,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_qrsrczyd_01"
         },
         {
@@ -166,11 +166,11 @@
           "start_byte": 5261334928,
           "end_byte": 7974858828,
           "expected_size": 2713523901,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_qrsrczyd_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -187,7 +187,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_jcsvmaoz_01"
         },
         {
@@ -195,11 +195,11 @@
           "start_byte": 5261334928,
           "end_byte": 7714573932,
           "expected_size": 2453239005,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_jcsvmaoz_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -216,7 +216,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_ca1evjij_01"
         },
         {
@@ -224,11 +224,11 @@
           "start_byte": 5261334928,
           "end_byte": 6175628071,
           "expected_size": 914293144,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_ca1evjij_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -245,23 +245,19 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
-          "artifact_name": "ck_qu1rnyak_01",
-          "actual_size": 5261334928,
-          "sha256": "c5c6a90748e1759bdf9787d4b8f23dcd54134726d1ceb632dd12974161e00391"
+          "status": "pending",
+          "artifact_name": "ck_qu1rnyak_01"
         },
         {
           "index": 2,
           "start_byte": 5261334928,
           "end_byte": 7974858828,
           "expected_size": 2713523901,
-          "status": "done",
-          "artifact_name": "ck_qu1rnyak_02",
-          "actual_size": 2713523901,
-          "sha256": "8864b347e55e094f356a7c5462b56b16af7edcedcc29d344c555fa32727a9035"
+          "status": "pending",
+          "artifact_name": "ck_qu1rnyak_02"
         }
       ],
-      "status": "gdrive_uploaded",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -278,8 +274,45 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
+          "status": "pending",
+          "artifact_name": "ck_aa8lbzry_01"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 10522669855,
+          "expected_size": 5261334928,
+          "status": "pending",
+          "artifact_name": "ck_aa8lbzry_02"
+        },
+        {
+          "index": 3,
+          "start_byte": 10522669856,
+          "end_byte": 11017199089,
+          "expected_size": 494529234,
+          "status": "pending",
+          "artifact_name": "ck_aa8lbzry_03"
+        }
+      ],
+      "status": "downloading",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/1VFTkAqY#lY243xNcxXkAqNOYBQP60-9w84KArMUs_r6PT5V0Nqw",
+      "filename": "jillian-janson-julia-ann-na_2160p.mp4",
+      "target_folder": "elsa53",
+      "file_id": "1VFTkAqY",
+      "total_size": 11017199090,
+      "total_chunks": 3,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
           "status": "done",
-          "artifact_name": "ck_aa8lbzry_01",
+          "artifact_name": "ck_1vftkaqy_01",
           "actual_size": 5261334928,
           "sha256": "5a723fee27f0e9b557aac38c2182a398e25e4c60e8761a55fc29bb4d0c253a0a"
         },
@@ -289,7 +322,7 @@
           "end_byte": 10522669855,
           "expected_size": 5261334928,
           "status": "done",
-          "artifact_name": "ck_aa8lbzry_02",
+          "artifact_name": "ck_1vftkaqy_02",
           "actual_size": 5261334928,
           "sha256": "9228052bdb4b210e720575f14ff9ab498374bbe57e94c0f9d881513893523425"
         },
@@ -299,7 +332,7 @@
           "end_byte": 11017199089,
           "expected_size": 494529234,
           "status": "done",
-          "artifact_name": "ck_aa8lbzry_03",
+          "artifact_name": "ck_1vftkaqy_03",
           "actual_size": 494529234,
           "sha256": "0454123b3f7ca97aa540853f474edeec669a8c424f3ed86e04a52aabf08dd814"
         }
@@ -309,11 +342,11 @@
       "gdrive_status": "uploaded"
     }
   ],
-  "current_index": 10,
+  "current_index": 11,
   "version": 3,
   "summary": {
-    "total": 10,
-    "gdrive_uploaded": 10,
+    "total": 11,
+    "gdrive_uploaded": 11,
     "concat_ready": 0,
     "downloading": 0,
     "pending": 0,
