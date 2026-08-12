@@ -13,7 +13,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_wc13eyqi_01"
         },
         {
@@ -21,11 +21,11 @@
           "start_byte": 5261334928,
           "end_byte": 5458657674,
           "expected_size": 197322747,
-          "status": "done",
+          "status": "pending",
           "artifact_name": "ck_wc13eyqi_02"
         }
       ],
-      "status": "done",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -42,7 +42,7 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_saduzzad_01"
         },
         {
@@ -50,11 +50,11 @@
           "start_byte": 5261334928,
           "end_byte": 5458657674,
           "expected_size": 197322747,
-          "status": "pending",
+          "status": "done",
           "artifact_name": "ck_saduzzad_02"
         }
       ],
-      "status": "downloading",
+      "status": "done",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -71,23 +71,19 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
-          "artifact_name": "ck_8u9hsazy_01",
-          "actual_size": 5261334928,
-          "sha256": "9485cfccf460f851a681a33843efc8f383cb056e9ed359a34e69f51a949892d6"
+          "status": "pending",
+          "artifact_name": "ck_8u9hsazy_01"
         },
         {
           "index": 2,
           "start_byte": 5261334928,
           "end_byte": 7499431119,
           "expected_size": 2238096192,
-          "status": "done",
-          "artifact_name": "ck_8u9hsazy_02",
-          "actual_size": 2238096192,
-          "sha256": "98729cdf92589b4745aa8ab938424d2ca4b090ead9e4cb70e51f3b592fcd563f"
+          "status": "pending",
+          "artifact_name": "ck_8u9hsazy_02"
         }
       ],
-      "status": "gdrive_uploaded",
+      "status": "downloading",
       "concat_fail_count": 0,
       "gdrive_status": "uploaded"
     },
@@ -104,20 +100,82 @@
           "start_byte": 0,
           "end_byte": 5261334927,
           "expected_size": 5261334928,
-          "status": "done",
-          "artifact_name": "ck_pefiazgc_01",
-          "actual_size": 5261334928,
-          "sha256": "695e072f5c99c83c538106206b47d3d94d839abdb4e6e5aa75f69580cc52032f"
+          "status": "pending",
+          "artifact_name": "ck_pefiazgc_01"
         },
         {
           "index": 2,
           "start_byte": 5261334928,
           "end_byte": 7974858868,
           "expected_size": 2713523941,
+          "status": "pending",
+          "artifact_name": "ck_pefiazgc_02"
+        }
+      ],
+      "status": "downloading",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/dBFkADQS#HDLkmH9VK6kBvg3Cdgo-MjGNZTJhwPHpOpfTKeEG1wU",
+      "filename": "elsa-jean-stepbro-blackmails-stepsis-over-secret-tattoo-uhd_2160p.mp4",
+      "target_folder": "elsa47",
+      "file_id": "dBFkADQS",
+      "total_size": 6175628072,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
           "status": "done",
-          "artifact_name": "ck_pefiazgc_02",
-          "actual_size": 2713523941,
-          "sha256": "fa05457d3326278d2fa8f80586cc68bf2062674600df9393aff0aab3f390b0d7"
+          "artifact_name": "ck_dbfkadqs_01",
+          "actual_size": 5261334928,
+          "sha256": "ee5b9d4d8e1431de4a93ddb1cb4596374951ff51dfe7e4f2349f8c8042e3916f"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 6175628071,
+          "expected_size": 914293144,
+          "status": "done",
+          "artifact_name": "ck_dbfkadqs_02",
+          "actual_size": 914293144,
+          "sha256": "ca2f273457e676ae2002f96f9727387308ec46c047ceecf1a7691beed550d7b9"
+        }
+      ],
+      "status": "gdrive_uploaded",
+      "concat_fail_count": 0,
+      "gdrive_status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/QRsRCZYD#xebVT3eF9bCcr5cfzczc61l8gOjVnqgH0R3feIRcrpM",
+      "filename": "elsa-jean-stepbro-oils-up-sorority-stepsis-uhd_2160p.mp4",
+      "target_folder": "elsa47",
+      "file_id": "QRsRCZYD",
+      "total_size": 7974858829,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
+          "status": "done",
+          "artifact_name": "ck_qrsrczyd_01",
+          "actual_size": 5261334928,
+          "sha256": "c5c6a90748e1759bdf9787d4b8f23dcd54134726d1ceb632dd12974161e00391"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 7974858828,
+          "expected_size": 2713523901,
+          "status": "done",
+          "artifact_name": "ck_qrsrczyd_02",
+          "actual_size": 2713523901,
+          "sha256": "8864b347e55e094f356a7c5462b56b16af7edcedcc29d344c555fa32727a9035"
         }
       ],
       "status": "gdrive_uploaded",
@@ -125,11 +183,11 @@
       "gdrive_status": "uploaded"
     }
   ],
-  "current_index": 4,
+  "current_index": 6,
   "version": 3,
   "summary": {
-    "total": 4,
-    "gdrive_uploaded": 4,
+    "total": 6,
+    "gdrive_uploaded": 6,
     "concat_ready": 0,
     "downloading": 0,
     "pending": 0,
