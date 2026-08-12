@@ -52,13 +52,13 @@
     },
     "elsa47": {
       "total": 6,
-      "done": 5,
-      "status": "active"
+      "done": 6,
+      "status": "completed"
     },
     "elsa48": {
       "total": 21,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "elsa49": {
       "total": 52,
@@ -2174,8 +2174,8 @@
       "filename": "elsa-jean-stepbro-oils-up-sorority-stepsis-uhd_2160p.mp4",
       "size": 7974858829,
       "target_folder": "elsa47",
-      "completed_at": "2026-08-12T13:55:40Z",
-      "status": "unupload",
+      "completed_at": "2026-08-12T14:29:34Z",
+      "status": "uploaded",
       "oversized": true
     },
     {
@@ -2187,7 +2187,7 @@
       "status": "uploaded"
     }
   ],
-  "current_folder": "elsa47",
+  "current_folder": "elsa48",
   "oversized": {
     "total": 0,
     "done": 0,
