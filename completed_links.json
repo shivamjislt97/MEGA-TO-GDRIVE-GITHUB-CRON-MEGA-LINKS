@@ -82,13 +82,13 @@
     },
     "elsa53": {
       "total": 15,
-      "done": 14,
-      "status": "active"
+      "done": 15,
+      "status": "completed"
     },
     "elsa54": {
       "total": 47,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "elsa55": {
       "total": 22,
@@ -3347,8 +3347,8 @@
       "filename": "jillian-janson-julia-ann-na_2160p.mp4",
       "size": 11017199090,
       "target_folder": "elsa53",
-      "completed_at": "2026-08-12T19:44:38Z",
-      "status": "unupload",
+      "completed_at": "2026-08-12T20:04:48Z",
+      "status": "uploaded",
       "oversized": true
     },
     {
@@ -3400,7 +3400,7 @@
       "status": "uploaded"
     }
   ],
-  "current_folder": "elsa53",
+  "current_folder": "elsa54",
   "oversized": {
     "total": 0,
     "done": 0,
