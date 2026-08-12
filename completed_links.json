@@ -97,7 +97,7 @@
     },
     "forum1": {
       "total": 10,
-      "done": 0,
+      "done": 1,
       "status": "active"
     },
     "forum2": {
@@ -3949,6 +3949,14 @@
       "size": 3809264064,
       "target_folder": "elsa55",
       "completed_at": "2026-08-12T22:35:30Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/oR0VCBSb#MjD-t3OZ45KJ10L0-hTICAukUQborVJLao8Hgs1cWAM",
+      "filename": "28065957.mp4.mp4",
+      "size": 2522836311,
+      "target_folder": "forum1",
+      "completed_at": "2026-08-12T22:37:36Z",
       "status": "uploaded"
     }
   ],
