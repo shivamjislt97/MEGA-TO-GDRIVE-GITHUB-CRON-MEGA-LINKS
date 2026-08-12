@@ -72,7 +72,7 @@
     },
     "elsa51": {
       "total": 23,
-      "done": 3,
+      "done": 4,
       "status": "active"
     },
     "elsa52": {
@@ -2914,6 +2914,14 @@
       "size": 238056185,
       "target_folder": "elsa51",
       "completed_at": "2026-08-12T17:18:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gN9UEZbS#X2_zXFS1pf3x2TCSKJc3WyGx7lwTUkRIAynDYH92X3M",
+      "filename": "atkgirlfriends-elsa-jane-05-4k_2160p.mp4",
+      "size": 4852428011,
+      "target_folder": "elsa51",
+      "completed_at": "2026-08-12T17:32:58Z",
       "status": "uploaded"
     }
   ],
