@@ -92,13 +92,13 @@
     },
     "elsa55": {
       "total": 22,
-      "done": 21,
-      "status": "active"
+      "done": 22,
+      "status": "completed"
     },
     "forum1": {
       "total": 10,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "forum2": {
       "total": 9,
@@ -3942,9 +3942,17 @@
       "target_folder": "elsa55",
       "completed_at": "2026-08-12T21:54:40Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/lEl3FSbJ#eKiuGLc7RMVzBJVv579dG2utXY3OI3IUXD4M2PjeRv0",
+      "filename": "elsa-jean-4_2160p.mp4",
+      "size": 3809264064,
+      "target_folder": "elsa55",
+      "completed_at": "2026-08-12T22:35:30Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "elsa55",
+  "current_folder": "forum1",
   "oversized": {
     "total": 0,
     "done": 0,
