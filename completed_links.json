@@ -102,13 +102,13 @@
     },
     "forum2": {
       "total": 9,
-      "done": 8,
-      "status": "active"
+      "done": 9,
+      "status": "completed"
     },
     "forums data": {
       "total": 11,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "gamelink1": {
       "total": 23,
@@ -4094,9 +4094,17 @@
       "target_folder": "forum2",
       "completed_at": "2026-08-13T02:26:30Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BFNjGDJA#1X2dAUfPq2dqn4l_oMIjxcsJy1hzMdyBMJieZSuzALo",
+      "filename": "ElsaJean.SlimTeen'sCuteBlue&#8230;Bikini.mp4",
+      "size": 2438148915,
+      "target_folder": "forum2",
+      "completed_at": "2026-08-13T03:00:37Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "forum2",
+  "current_folder": "forums data",
   "oversized": {
     "total": 0,
     "done": 0,
