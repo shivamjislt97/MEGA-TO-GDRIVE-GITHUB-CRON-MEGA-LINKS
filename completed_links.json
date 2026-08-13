@@ -112,13 +112,13 @@
     },
     "gamelink1": {
       "total": 23,
-      "done": 22,
-      "status": "active"
+      "done": 23,
+      "status": "completed"
     },
     "gamelink2": {
       "total": 17,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "gamelink3": {
       "total": 29,
@@ -4366,9 +4366,17 @@
       "target_folder": "gamelink1",
       "completed_at": "2026-08-13T07:25:52Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/9UFVBA6C#htqmYQXLawx2SolvyTnKfRynl2ZDfZiddC17lptTY0U",
+      "filename": "Gina Valentina Gia Paige and Elsa Jean Share His Cock from Young.mp4",
+      "size": 1060080955,
+      "target_folder": "gamelink1",
+      "completed_at": "2026-08-13T08:33:33Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "gamelink1",
+  "current_folder": "gamelink2",
   "oversized": {
     "total": 0,
     "done": 0,
