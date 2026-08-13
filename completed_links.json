@@ -102,7 +102,7 @@
     },
     "forum2": {
       "total": 9,
-      "done": 0,
+      "done": 2,
       "status": "active"
     },
     "forums data": {
@@ -4029,6 +4029,22 @@
       "size": 2097152000,
       "target_folder": "forum1",
       "completed_at": "2026-08-13T00:52:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wZkTBKCD#HV_lnYuJKQgKrXr6zv8UXwmj0mxGLWMDBh31NUBbrdM",
+      "filename": "15178393.mp4.mp4",
+      "size": 2748986137,
+      "target_folder": "forum2",
+      "completed_at": "2026-08-13T01:06:27Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/JcETjAKI#qhTHrBRH_UvO_470sihu9NAFVinXXjwrL3m4dklfL9k",
+      "filename": "ElJeCreCanta.mp4",
+      "size": 1575380582,
+      "target_folder": "forum2",
+      "completed_at": "2026-08-13T01:29:38Z",
       "status": "uploaded"
     }
   ],
