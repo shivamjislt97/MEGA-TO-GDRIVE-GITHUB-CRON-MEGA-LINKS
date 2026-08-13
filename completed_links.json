@@ -97,13 +97,13 @@
     },
     "forum1": {
       "total": 10,
-      "done": 9,
-      "status": "active"
+      "done": 10,
+      "status": "completed"
     },
     "forum2": {
       "total": 9,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "forums data": {
       "total": 11,
@@ -4022,9 +4022,17 @@
       "target_folder": "forum1",
       "completed_at": "2026-08-13T00:25:56Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/1Q9UyA4A#KbDa-1xZZ32nDchutEFinKbR0IxJuCQQCMaStbzb33Y",
+      "filename": "Elsa_Jean_Is_A_Goddess_WEB_DL_20&#8230.mp4",
+      "size": 2097152000,
+      "target_folder": "forum1",
+      "completed_at": "2026-08-13T00:52:36Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "forum1",
+  "current_folder": "forum2",
   "oversized": {
     "total": 0,
     "done": 0,
