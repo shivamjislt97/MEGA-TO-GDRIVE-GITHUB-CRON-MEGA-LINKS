@@ -107,13 +107,13 @@
     },
     "forums data": {
       "total": 11,
-      "done": 10,
-      "status": "active"
+      "done": 11,
+      "status": "completed"
     },
     "gamelink1": {
       "total": 23,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "gamelink2": {
       "total": 17,
@@ -4182,9 +4182,17 @@
       "target_folder": "forums data",
       "completed_at": "2026-08-13T04:12:25Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZdEkHKoC#smgH8h0_HPJtqwB1kHLM-L0dxeKVDVC5fj2quO_OpeQ",
+      "filename": "ElsaJean-I'mAcLikeMom3.mp4",
+      "size": 1191496908,
+      "target_folder": "forums data",
+      "completed_at": "2026-08-13T04:37:46Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "forums data",
+  "current_folder": "gamelink1",
   "oversized": {
     "total": 0,
     "done": 0,
