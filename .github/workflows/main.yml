@@ -24,23 +24,65 @@ jobs:
         with:
           persist-credentials: true
 
+      - name: Check all transfers complete
+        id: guard
+        run: |
+          ALL_DONE=$(python - <<'PYEOF'
+          import json, os
+          def is_done():
+              # Once the transfer finishes, auto_trigger writes a done marker
+              # so we never restart/duplicate work even if state files vanish.
+              if os.path.exists('.transfer-done'):
+                  return True
+              try:
+                  d = json.load(open('completed_links.json'))
+              except Exception:
+                  return False
+              for f in d.get('folders', {}).values():
+                  if f.get('status') != 'completed' or f.get('done', 0) < f.get('total', 0):
+                      return False
+              ov = d.get('oversized', [])
+              if isinstance(ov, dict):
+                  if ov.get('status') != 'completed':
+                      return False
+              elif ov:
+                  return False
+              try:
+                  ch = json.load(open('chunks_history.json'))
+              except Exception:
+                  return True
+              for v in ch.get('videos', []):
+                  if v.get('status') not in ('gdrive_uploaded', 'done'):
+                      return False
+              return True
+          print('true' if is_done() else 'false')
+          PYEOF
+          )
+          echo "all_done=$ALL_DONE" >> "$GITHUB_OUTPUT"
+          echo "All transfers complete: $ALL_DONE"
+
       - name: Set up Python
+        if: steps.guard.outputs.all_done != 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install megatools
+        if: steps.guard.outputs.all_done != 'true'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y megatools -qq
 
       - name: Install mega.py
+        if: steps.guard.outputs.all_done != 'true'
         run: pip install async-mega.py --break-system-packages -q
 
       - name: Install rclone
+        if: steps.guard.outputs.all_done != 'true'
         run: curl -s https://rclone.org/install.sh | sudo bash
 
       - name: Debug rclone config
+        if: steps.guard.outputs.all_done != 'true'
         run: |
           echo "=== rclone version ==="
           rclone version
@@ -50,6 +92,7 @@ jobs:
           rclone lsd gdrive:MEGA_Transfer/ 2>&1 || echo "WARNING: gdrive remote not accessible - check RCLONE_CONF secret"
 
       - name: Run transfer
+        if: steps.guard.outputs.all_done != 'true'
         env:
           MEGA_LINKS: ${{ secrets.MEGA_LINKS }}
           RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
@@ -64,12 +107,12 @@ jobs:
           retention-days: 90
 
       - name: Install ffmpeg
-        if: always()
+        if: steps.guard.outputs.all_done != 'true'
         run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
 
       - name: Process oversized videos
         id: oversized
-        if: always()
+        if: steps.guard.outputs.all_done != 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: python oversized_processor.py
@@ -97,6 +140,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add completed_links.json 2>/dev/null || true
           [ -f chunks_history.json ] && git add chunks_history.json || true
+          [ -f .transfer-done ] && git add .transfer-done || true
           if ! git diff --staged --quiet; then
             git commit -m "update state [skip ci]"
           fi
