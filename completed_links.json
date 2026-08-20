@@ -12,13 +12,13 @@
     },
     "/MEGA imports": {
       "total": 3,
-      "done": 2,
-      "status": "active"
+      "done": 3,
+      "status": "completed"
     },
     "/MEGA imports/Dinosaur king S1": {
       "total": 49,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "/MEGA imports/Dinosaur king S2": {
       "total": 30,
@@ -897,9 +897,17 @@
       "target_folder": "/MEGA imports",
       "completed_at": "2026-08-20T18:08:55Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FMU1gQKJ#czj3ARZJM6icPoztPbq4UX2A3-6liPbC72w4afY7Yj4",
+      "filename": "[DeadToonsIndia] Ben 10 Alien Force Season 2 1080p Dual Audio Web-DL.zip",
+      "size": 5157128898,
+      "target_folder": "/MEGA imports",
+      "completed_at": "2026-08-20T18:23:30Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "/MEGA imports",
+  "current_folder": "/MEGA imports/Dinosaur king S1",
   "oversized": {
     "total": 0,
     "done": 0,
