@@ -7,13 +7,13 @@
     },
     "/MEGA imports/Dinosaur King Japanese": {
       "total": 8,
-      "done": 0,
-      "status": "active"
+      "done": 8,
+      "status": "completed"
     },
     "/MEGA imports": {
       "total": 3,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "/MEGA imports/Dinosaur king S1": {
       "total": 49,
@@ -817,9 +817,73 @@
       "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
       "completed_at": "2026-08-20T17:52:37Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4EUQABLZ#Kc5lBG75dVJtoPdILwL0J_HtzwtqJLK2Rb6RZASBfLU",
+      "filename": "\u53e4\u4ee3\u738b\u8005\u6050\u7adc\u30ad\u30f3\u30b0\u7ffc\u7adc\u4f1d\u8aac \u7b2c11\u8a71.mp4",
+      "size": 466570230,
+      "target_folder": "/MEGA imports/Dinosaur King Japanese",
+      "completed_at": "2026-08-20T17:52:59Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/MdUWTCoK#0xIJm70V_CoAgiCFhE1DhbLvlBHS7TI_LHtan4yJOCc",
+      "filename": "\u53e4\u4ee3\u738b\u8005\u6050\u7adc\u30ad\u30f3\u30b0\u7ffc\u7adc\u4f1d\u8aac \u7b2c05\u8a71.mp4",
+      "size": 470583573,
+      "target_folder": "/MEGA imports/Dinosaur King Japanese",
+      "completed_at": "2026-08-20T17:53:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ABUXlRJR#35Hpo91Oy2v2vGqe1c_8RimHEJi4hFBxUWgXwqwOQgQ",
+      "filename": "\u53e4\u4ee3\u738b\u8005\u6050\u7adc\u30ad\u30f3\u30b0\u7ffc\u7adc\u4f1d\u8aac \u7b2c19\u8a71.mp4",
+      "size": 473149851,
+      "target_folder": "/MEGA imports/Dinosaur King Japanese",
+      "completed_at": "2026-08-20T17:55:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FR1BwDTa#9xKpgiAjKgfF6idRtruqjSMuTZdFk-p2xYTzId_11AI",
+      "filename": "\u53e4\u4ee3\u738b\u8005\u6050\u7adc\u30ad\u30f3\u30b0\u7ffc\u7adc\u4f1d\u8aac \u7b2c27\u8a71.mp4",
+      "size": 468045186,
+      "target_folder": "/MEGA imports/Dinosaur King Japanese",
+      "completed_at": "2026-08-20T17:58:59Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/QA0mTbwJ#35Hpo91Oy2v2vGqe1c_8RimHEJi4hFBxUWgXwqwOQgQ",
+      "filename": "\u53e4\u4ee3\u738b\u8005\u6050\u7adc\u30ad\u30f3\u30b0\u7ffc\u7adc\u4f1d\u8aac \u7b2c19\u8a71.mp4",
+      "size": 473149851,
+      "target_folder": "/MEGA imports/Dinosaur King Japanese",
+      "completed_at": "2026-08-20T17:59:37Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/xUdxXJoI#9xKpgiAjKgfF6idRtruqjSMuTZdFk-p2xYTzId_11AI",
+      "filename": "\u53e4\u4ee3\u738b\u8005\u6050\u7adc\u30ad\u30f3\u30b0\u7ffc\u7adc\u4f1d\u8aac \u7b2c27\u8a71.mp4",
+      "size": 468045186,
+      "target_folder": "/MEGA imports/Dinosaur King Japanese",
+      "completed_at": "2026-08-20T18:04:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/tUs10YiJ#0xIJm70V_CoAgiCFhE1DhbLvlBHS7TI_LHtan4yJOCc",
+      "filename": "\u53e4\u4ee3\u738b\u8005\u6050\u7adc\u30ad\u30f3\u30b0\u7ffc\u7adc\u4f1d\u8aac \u7b2c05\u8a71.mp4",
+      "size": 470583573,
+      "target_folder": "/MEGA imports/Dinosaur King Japanese",
+      "completed_at": "2026-08-20T18:07:37Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cYtQVLAS#Kc5lBG75dVJtoPdILwL0J_HtzwtqJLK2Rb6RZASBfLU",
+      "filename": "\u53e4\u4ee3\u738b\u8005\u6050\u7adc\u30ad\u30f3\u30b0\u7ffc\u7adc\u4f1d\u8aac \u7b2c11\u8a71.mp4",
+      "size": 466570230,
+      "target_folder": "/MEGA imports/Dinosaur King Japanese",
+      "completed_at": "2026-08-20T18:07:59Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "/MEGA imports/Dinosaur King Japanese",
+  "current_folder": "/MEGA imports",
   "oversized": {
     "total": 0,
     "done": 0,
