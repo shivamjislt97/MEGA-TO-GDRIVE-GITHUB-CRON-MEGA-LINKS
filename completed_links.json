@@ -37,7 +37,7 @@
     },
     "/MEGA imports/Haridwar Memories": {
       "total": 381,
-      "done": 0,
+      "done": 141,
       "status": "active"
     }
   },
@@ -1960,6 +1960,1134 @@
       "size": 410609664,
       "target_folder": "/MEGA imports/Dinosaur king Japanese",
       "completed_at": "2026-08-20T22:20:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8ZUGSaQa#rr6vMgd0T0pBq2c14cxfIikfk6O_4XvPc-FeaCTqmWo",
+      "filename": "IMG_20230627_083135.jpg",
+      "size": 5234590,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:21:00Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/tJdXAQRL#oKZP3Z4gtoamyS7hzIwmg75ubZsjBkdykDOsiokNFNY",
+      "filename": "IMG_20230627_063846_1.jpg",
+      "size": 3156450,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:21:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/YF1wAbAC#g-V1U0-kvc12ardNcQABnpgY0DDZxNehyMNt3eXTSR0",
+      "filename": "IMG_20230627_043416.jpg",
+      "size": 2239105,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:21:54Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VZUQzbBb#nvXRSgY3QLU8UUXrzSpO8-aWvLT6xZOb7ZR9dJpYN5A",
+      "filename": "IMG_20230627_074105.jpg",
+      "size": 3759464,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:22:41Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wAdESZBI#-DM00wz45HISz3HpLr2vCPASg2efmja9Wc0IaXDb4JI",
+      "filename": "IMG_20230627_102748.jpg",
+      "size": 3932392,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:22:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/kFkQGJhS#2FVQYySgqfZ5Eo3SjDLFHmZ-55qEZoUOr8zHc4pz7FE",
+      "filename": "IMG_20230627_063028.jpg",
+      "size": 2607322,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:23:25Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/INFlEBwL#xse7uY0zhIVCN9NFXXLhpQ7SN6XFf3H6ZfZYSynPgx8",
+      "filename": "IMG_20230627_075648.jpg",
+      "size": 6695967,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:23:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wYVB3CiT#O-BJ8Pqhxhdf01CHALDjUx1UblJ-oraQXr-EUQGYz2k",
+      "filename": "IMG_20230627_081053.jpg",
+      "size": 4049954,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:23:50Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/McFm3IgT#407LZRbD_7HQ6irfwDSgAlLsJj9cRnI-OTS3AD9oFvc",
+      "filename": "IMG_20230627_062728.jpg",
+      "size": 3562888,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:24:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/AQMmhR6b#AQI4Ilr9FURvY46NXjFlWxCW8yZHu7zPy6NIRC0E3cA",
+      "filename": "IMG_20230627_125054.jpg",
+      "size": 2807956,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:24:41Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/YJ91gLiS#m2MCPfXBO737euTNhbXrv3g8xZY8FgCj77OSqz8CeAk",
+      "filename": "IMG_20230627_124233.jpg",
+      "size": 2271626,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:24:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VVESURxR#UYIk6dOglqpO2tRTe4PPyvlDFWzHdQ44bHgsn1ieCt4",
+      "filename": "IMG_20230627_074040.jpg",
+      "size": 3984712,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:25:03Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RNszAJAZ#PrJzLCRVymfDORixVzV-EdbDVhCrMGahP7vZruH5fek",
+      "filename": "VID_20230627_053022.mp4",
+      "size": 57841577,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:25:34Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8cUlnYRZ#2iEdcZmEBnuz4xq-kQGjKW4CvgWVhqPPj1K2Od0Ig1c",
+      "filename": "IMG_20230627_173758.jpg",
+      "size": 4367634,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:25:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/kRMTQKLS#dmDbOPbs-lv-bjDtvD5dzLgBkW1Cj1cF5kXMjvt_ODc",
+      "filename": "VID_20230627_063654.mp4",
+      "size": 78557044,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:26:00Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/xcdUTZjI#dt9Ddt4nauf9NKWlgh5-JpAZmaTWq7GTivLI8vIwGSE",
+      "filename": "IMG_20230627_102816.jpg",
+      "size": 4067719,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:26:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sIV3UCJC#pim33U7Pucb6DcsZhcTS_9QcqZ7AKVTY4Pj2CjiLAJg",
+      "filename": "VID_20230627_170111.mp4",
+      "size": 174486390,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:26:59Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/oBckhahI#VxIyZjpjpJ_HBMEx5RRWSQPq7P7300j12lBP5FfyBR0",
+      "filename": "IMG_20230627_080123.jpg",
+      "size": 6317770,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:27:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VQFhHRyQ#moISzUQWtTXbMQy6AQD_XliSYO9GTa3sPHe-BlKmW1w",
+      "filename": "IMG_20230627_063933.jpg",
+      "size": 3395647,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:27:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cdchDZCJ#7gq5xknCEZZafWijld_uT0uqijbcPfy-GEt5znLMtvg",
+      "filename": "IMG_20230627_124025.jpg",
+      "size": 2115192,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:28:02Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/YVsE1KLI#uJkfLWZBEOmJsnOqiU3b_JjYidD7YKFKIEj0eu1lssI",
+      "filename": "IMG_20230627_064209.jpg",
+      "size": 2455718,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:28:33Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/0R0HCAJB#5wOskbDBHo3iKz7XSF03wWfh9hY-0NwneVxfM3kjZF8",
+      "filename": "IMG_20230627_152255.jpg",
+      "size": 3365564,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:28:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/0M1VUA7I#YVEGnfqJzpGygTqe_xAKrUNt7jViWPXed321v0pYQIQ",
+      "filename": "IMG_20230627_080128.jpg",
+      "size": 7145706,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:29:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FV81iToK#uFYJoQa76wH56EYZE9LjsiSlFWnFdqY9ARV3-U3dPb4",
+      "filename": "IMG_20230627_102726.jpg",
+      "size": 5114760,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:29:31Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gd83mDQK#l3ehcnX-GbDsOcHaWaS9saCKVlQcPqLGkZBRtZy2hQM",
+      "filename": "IMG_20230627_123535.jpg",
+      "size": 2669920,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:29:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pM1DhKiC#MKzL6RA9DN3ONNWeBChK1GueFwKiyZeD0ZPRTOlWbio",
+      "filename": "IMG_20230627_083119.jpg",
+      "size": 6994323,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:29:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/NAVDhLID#Yl_WVjvYfnpdheem6wjq9YEI2hGYjY48U2v1fQBqoq0",
+      "filename": "IMG_20230627_064035.jpg",
+      "size": 2285377,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:30:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cEEGXQRD#SArOCM1Lg9uBIjoxO8DjyOeCpjka4cCLxiZf887Cvik",
+      "filename": "IMG_20230627_003700.jpg",
+      "size": 3979537,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:30:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/dck0CJZY#tyVhXhMoG0k15kk37QHVeL7DRfkY_KZKt028UvTlky4",
+      "filename": "IMG_20230627_064056.jpg",
+      "size": 2384449,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:31:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BRN3kJCA#Kfihe55uqkqNIpd6ys5ymOUI93OOEeWIgMqmelafKRc",
+      "filename": "IMG_20230627_122702.jpg",
+      "size": 2156770,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:31:50Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/UcclSC7R#DDYd69uD0jzVgqFkCVXBAYgbPL3rVnONiErM2DFEmRM",
+      "filename": "IMG_20230627_063931.jpg",
+      "size": 3427389,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:32:37Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wFkDBCyB#alN2Ld2y642IDvNu2SYQg1EGBjophLMcZz-HUYVWqKg",
+      "filename": "IMG_20230627_124237.jpg",
+      "size": 2265127,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:32:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/UUEHVAoQ#Kl0v5McjuZQwJ3ccxyHoJLjaMOfHj-ATh2pp9jProII",
+      "filename": "VID_20230627_081226.mp4",
+      "size": 79843910,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:33:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/xYM1GCyD#GmhqKC5MdgjjZ8DzWK-LRDAwgR3CCXV9VHB066hUdig",
+      "filename": "IMG_20230627_064058.jpg",
+      "size": 2361162,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:33:50Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RVlBRCIZ#_kiMVXXAC5MirajsxhUDmsWA2Ys28kzNOxGXca6klfM",
+      "filename": "IMG_20230627_082026.jpg",
+      "size": 4896999,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:34:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gEM1HQ4J#zsCDj3_Twdtwes2jrwrmL8gZ4IP4mFaGpXFJq9iUr9M",
+      "filename": "IMG_20230627_123520.jpg",
+      "size": 3086375,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:34:33Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/NAFHGAYQ#TjDq9EaKXdOsgpUoywI-QNlJ1COl5-GJ_0s0hkBNddI",
+      "filename": "VID_20230627_065633.mp4",
+      "size": 143485982,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:34:48Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZEN3zTqI#UZn9nIZgWjVQJB4gfTQmqtJlZ6nymFF7U-Lh6Y_H45M",
+      "filename": "IMG_20230627_082451.jpg",
+      "size": 4536056,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:34:59Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RA81WbDL#XpfcWMOWB8QvWcjOX1jut-GnZwFCv-Z3l-SziI7-G-Q",
+      "filename": "VID_20230627_152510.mp4",
+      "size": 90338826,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:35:33Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/IYEAQQJC#8__W_V-rW_rePJLDZJe73G9-3uwuHxB_XSloQGPpnp0",
+      "filename": "IMG_20230627_124917.jpg",
+      "size": 3604779,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:35:44Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/0dNVSCAZ#-YMAScKXC1LbWQsOTXaetlanm3XYkCjaSPbWYGlacAM",
+      "filename": "IMG_20230627_063026.jpg",
+      "size": 2586764,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:35:55Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/kMMB1QJT#aGHUVmMR0PI1CrzRXusSW2Mjrm6JbZEeAfrQn9akWws",
+      "filename": "IMG_20230627_064236.jpg",
+      "size": 2425141,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:36:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/MV9FzRYT#Y5LwjDlXRJWz1TbxKAiA_ugHCWV0Y6JyVLc6V33tXa4",
+      "filename": "IMG_20230627_064200.jpg",
+      "size": 2401618,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:36:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/IYVDSaCS#agFexoyxRU9vz-8tAir6gjgP57A3xnM_Q-AusgUBsxk",
+      "filename": "VID_20230627_103627.mp4",
+      "size": 1287931461,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:37:50Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pBETUAaC#nOoDjgN-2ONJisWbnD3KuzwG_5Um2Q5oiH4JYYUIqOI",
+      "filename": "IMG_20230627_123619.jpg",
+      "size": 2132081,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:38:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/0I81hLjS#Y7-5x3Viw7mDeaO_plMBBSav-BsxazuObU0irZgcrco",
+      "filename": "IMG_20230627_123024.jpg",
+      "size": 2140164,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:38:34Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/odsGULYL#fYfcDKYqZLTZoYtd1cCAD9igLtxSvUSefLEs1EDbXjM",
+      "filename": "IMG_20230627_063825_1.jpg",
+      "size": 3331047,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:38:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/QVUVQLQS#9Do4GG_aVpedPbTLGgnLvn0EnHBIK4kZhY4yLNf6Ak4",
+      "filename": "IMG_20230627_122650.jpg",
+      "size": 2098959,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:38:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VdVwUCLQ#dmfPlsa8NlGcd9nl6ev4SVJKInRksy-s6zhmE27WUXc",
+      "filename": "VID_20230627_164049.mp4",
+      "size": 898378708,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:39:41Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/tIdmAaab#ZqqPZrs3DwrbAozDm2-v7aYOV4wLit9wj1aHUnNN918",
+      "filename": "VID_20230627_165209.mp4",
+      "size": 28102568,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:39:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/EJUlgIQT#QsFnP-PgeKIkYnZpfnezy2f84XBM1OtvP7Efj2FS8yE",
+      "filename": "IMG_20230627_123753.jpg",
+      "size": 4209192,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:40:13Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sUcAyI6T#fGzfOUTxiLmUJJSfbquWVuAY-vcMP9DiKMNpyXUAjVo",
+      "filename": "IMG_20230627_062902.jpg",
+      "size": 2939065,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:40:41Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/9EkEnBiB#Xz20UWFETviMWEEnRPeXhNOZqLrOeyMH-AAmYLq_2zE",
+      "filename": "IMG_20230627_063049.jpg",
+      "size": 2705026,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:40:54Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pd1UUQBa#yDrdUv3pLoT6uLbbLf6bYU0RRFFJ-I-EoUFdSAFhlac",
+      "filename": "IMG_20230627_063052.jpg",
+      "size": 2681682,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:42:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BY0wAAbZ#ZVqVl8r8kIjWUU2kbiYjJLO1eObFBDRo23leWvEqWuQ",
+      "filename": "IMG_20230627_064253.jpg",
+      "size": 2620720,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:42:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/NEcVDBRS#dl0RPvjKnbiA4waCE27i5aqOe1_NVVP0h3Skv6Nx96Y",
+      "filename": "IMG_20230627_104531.jpg",
+      "size": 2479632,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:43:02Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/1NNWCJrD#nevszKW6PcRRdZ4AA5oA66c5buYs0bPuJ0sWHsg9Khk",
+      "filename": "IMG_20230627_045259.jpg",
+      "size": 2520108,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:43:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/kE9gyCQJ#24oG6OKwiVsvr60KvvwzwS-AvmxCsjX5xNJ8ONgrZ8k",
+      "filename": "IMG_20230627_064045.jpg",
+      "size": 2299573,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:43:47Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/9NdQ2LSC#Y2vEwmG5k2erO2YP4dgx9L1NCCBacXmzmyKWfkuy-_M",
+      "filename": "IMG_20230627_173747.jpg",
+      "size": 4694014,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:43:58Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/Mc9n3LIb#PxwyFnu7rGP-XkAdJkm8dJqJz3EwrHYCbWrrk2QjJTE",
+      "filename": "IMG_20230627_063950.jpg",
+      "size": 3244233,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:44:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pN9xwT7S#AFqkcASrWyMjFjMk7Hh0MxiJRCvEkle19lMVzfzM3yY",
+      "filename": "IMG_20230627_074111.jpg",
+      "size": 3762080,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:44:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BI8UnSrC#8Po8jw_6qKqFt9rR3-KD6keSF9huGnsFeiBwOoD7G98",
+      "filename": "IMG_20230627_062916.jpg",
+      "size": 3129058,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:45:00Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gM1CAJiR#lBKEJ5ZG3V3KfLyf1em0I4fuvWCmxhsdkpdJxZvrUYc",
+      "filename": "IMG_20230627_064443.jpg",
+      "size": 2605112,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:45:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/MId1XAJA#j36zKyyxFIx3QAYzVVjpC6YwESTLcecIdL52zVWXGnI",
+      "filename": "IMG_20230627_082328.jpg",
+      "size": 4955674,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:45:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/tJ9H0ZiB#v0rM2DCAHjI-qstKmgjE-4ZAbdXtoZ0C0RkzP4XxnqQ",
+      "filename": "IMG_20230627_064002.jpg",
+      "size": 2490871,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:46:34Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/QdkhzASZ#KrAXNgGNG-79frppawJ5QH6BJ8RebA0gbSh6PH0TyC4",
+      "filename": "IMG_20230627_062838.jpg",
+      "size": 2927518,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:46:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sItRjCga#euHY2sbH5eyN9Gr90KqtzWzAOm9lTAIv9ic5pr25YMw",
+      "filename": "IMG_20230627_124704.jpg",
+      "size": 3701754,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:46:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/dY9UVL5A#RIZwrIHl6hFjTmW3lVhAzNggcm7VNHgdqKogs9ajoOc",
+      "filename": "IMG_20230627_064504.jpg",
+      "size": 2239723,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:47:33Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sIUEjCIa#xiUPy63_5Do1wLmt9IiHxfenRWrQ75sJmV2PZ36gmNc",
+      "filename": "IMG_20230627_083319.jpg",
+      "size": 5369826,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:47:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4dtGBBgJ#z-4eMxLAPgE7Fn0lAqADNtbI_ZCOtW2_1DcI3DyITYs",
+      "filename": "IMG_20230627_074221.jpg",
+      "size": 3269645,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:47:57Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/9VMQwS5A#D-Zmc4lrsuEhGXY-Mc-IQlwl-o_Xe7tPOUdIEuaARk8",
+      "filename": "IMG_20230627_152301.jpg",
+      "size": 3541763,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:48:31Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/Nd1xwQbR#DWQU9_iXdIUhB2jDXpUQMV30ItNtdbQH23_Yl8G_ezE",
+      "filename": "IMG_20230627_063642.jpg",
+      "size": 4415210,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:48:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cUUyyLxI#gMR7t8Kmc742HwU5OWiPcRzJiuZ9-Fph7LpivEtN9GU",
+      "filename": "IMG_20230627_044907.jpg",
+      "size": 2560423,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:48:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BVVDgaCL#xYOjnNa2g9tBeCGbWwESqJitRNQ_zJNFQJZpJ5h_aU0",
+      "filename": "IMG_20230627_123856.jpg",
+      "size": 3960596,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:49:26Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/NVlA3a4I#OK-w818hG0zxTNg3KkkmhAr1D_9oU1v3LkQEX4nMsIE",
+      "filename": "IMG_20230627_082159.jpg",
+      "size": 4699379,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:49:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cU9FxLjB#nzq03DTSMmGxfk3lcTR0uvpB1scOtqAaxdxWd1zmMRU",
+      "filename": "IMG_20230627_063940_1.jpg",
+      "size": 3200737,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:49:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/IcsHGD5Q#ZP2yTW-bD3l0sLTolP8J3fI18OCAa3DnpsDjUWy-ork",
+      "filename": "VID_20230627_053003.mp4",
+      "size": 35398137,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:50:00Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gMlVVDCI#pjb-Y_fn8j4Z5Hc-XrWQHGv9oZUKXSxMMk8rHrBrfQE",
+      "filename": "VID_20230627_081314.mp4",
+      "size": 14758840,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:50:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/lR1ywDrS#IFGO0iGEJ3c7nV_VFluejeCobuAS7AVVLraQefRhnNA",
+      "filename": "VID_20230627_045831.mp4",
+      "size": 133017572,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:50:55Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/oVEESJzK#jFHwcMCJcq7rvh_g2bXP7P3AdK04bIhS2Sm2G2Vr9tM",
+      "filename": "IMG_20230627_083138.jpg",
+      "size": 6638578,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:51:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/xMUmjCzB#Pcn9u07yfrlTMVvf2pHtAQIr_v_pOOSoTgMadM81ojI",
+      "filename": "IMG_20230627_062835.jpg",
+      "size": 2658420,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:51:54Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cdkTXTKT#Rsd8MH1An8F0hdn31zsoLD_hZlOtQc3Wi4UlWCJR08g",
+      "filename": "IMG_20230627_064139.jpg",
+      "size": 2378822,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:52:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/NcEAWSLI#l3-jozbP-nHUt7eFmgK-O9AaYUZ9hBkoAxAYNwnaT24",
+      "filename": "IMG_20230627_124939.jpg",
+      "size": 2213139,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:52:50Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/1E1ijYYR#wh7-zexXhFVEHCJYGzrTf9nEh9ud15AmkZuwLf1gP_U",
+      "filename": "IMG_20230627_062911.jpg",
+      "size": 3027259,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:53:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4IdVSQyS#gxN58IPGNik4CQu7GJejjmVes1ep9M5Hwp0YfdzGrcA",
+      "filename": "IMG_20230627_062859.jpg",
+      "size": 2948427,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:53:41Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZU0EVJzB#VXTpS3SiVwTtmd4u5dvPobFyaDejRMGYlvpiPbEHJec",
+      "filename": "IMG_20230627_125350.jpg",
+      "size": 2760388,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:53:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/0ElnAJ7B#76BHeaKK0ouIo2VkHndQv1WP66G0DXoawNG5-B2yd9c",
+      "filename": "VID_20230627_082134.mp4",
+      "size": 1514758,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:54:03Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/JQsmQDoY#q85YRpldX796Od0eCH8WZbuyScfs8O406n1r7FXaoOo",
+      "filename": "VID_20230627_050023.mp4",
+      "size": 392639844,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:54:43Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/IJEhEIjT#tOzgIOPHALwDQCZEaTLiOYFQyQ2zhKMhSzkvLH7y2zU",
+      "filename": "VID_20230627_081419.mp4",
+      "size": 80521476,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:54:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZckDBIoZ#lhyJJ6VfdjM1SteS02zdkzzG5Uiip4T00CSMIY1dXg4",
+      "filename": "IMG_20230627_081054.jpg",
+      "size": 4091048,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:55:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/kAMiDZJB#0j6Il03jNjZ5KbGGf9EBe523en1lXiS2lox-jHSrdXI",
+      "filename": "IMG_20230627_081934.jpg",
+      "size": 4414104,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:55:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pVMVEQhL#dZgvbtfTiDkhYfFvuoonBwI7ZTRbjXQdLEKBlRpJdwQ",
+      "filename": "IMG_20230627_110639.jpg",
+      "size": 4012700,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:56:08Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gccD3TKD#hcRvJaUyHDNhEViqPRgniMZ0kmCZxp2JVQF4K0ShEdg",
+      "filename": "IMG_20230627_074034.jpg",
+      "size": 4158602,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:56:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/9V0kDCbT#45xmVNViRfAFsRwVCo27k56tW3tgEV9PYiesmEbxcyE",
+      "filename": "IMG_20230627_074246.jpg",
+      "size": 3060960,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:56:47Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZVdTSLoY#7RO4VIPgX8Leulk3KzHsCFDGa56J0quKqAS10rxbdDU",
+      "filename": "IMG_20230627_125124.jpg",
+      "size": 3029427,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:56:58Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/MUtEBJqT#BdiWcG-UBYL_GS9U5l4nB-T-wD8fx0oyrDTcg8e05K4",
+      "filename": "IMG_20230627_060312.jpg",
+      "size": 4112505,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:57:29Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wdM0lQzQ#wXA3dQWggtvQJ0IwQF9aHSq8GbDLVMdsTUN3_hqRIVc",
+      "filename": "IMG_20230627_080135.jpg",
+      "size": 5479382,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:57:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pF1WECwK#AsJlsZR75m0mdFbhUSv1hy8svtdKWNkueqnE5ZEhmRY",
+      "filename": "VID_20230627_064549.mp4",
+      "size": 35648313,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:57:55Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/MV03nBIT#-OIzc6reysOoHsmrhf81QQ2-yy88vDrrxSHVz9rj7ns",
+      "filename": "IMG_20230627_064502.jpg",
+      "size": 2284327,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:58:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wR0UTYoB#f8wPyJMzAAAF8eeRcLmr9ARkAmy1Rh4wMAANCrEDw3g",
+      "filename": "VID_20230627_104707.mp4",
+      "size": 29825607,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T22:58:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pY9SSYTa#ndMpTbDsk81dSrdGHB6ydN3Ljh00bBCDFPZox1h4jfc",
+      "filename": "VID_20230627_165535.mp4",
+      "size": 228510525,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:00:54Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VAlGhBxY#X8XhpSeUuf8PIVbTaHAHGG4Y0MC2_XWIHGaljScAydY",
+      "filename": "IMG_20230627_062606.jpg",
+      "size": 2785307,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:01:34Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/UEdUDS4J#aFSU2mfkIFTN9zD_M6yVw2_AEmGliCqWz4oYh8yCErs",
+      "filename": "IMG_20230627_075939.jpg",
+      "size": 3868546,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:01:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/oVtFzaJB#kClQxi_-SgZ9vXx9nlLusC9u6kuHqv1mp4I3wCb9_gQ",
+      "filename": "IMG_20230627_123936.jpg",
+      "size": 3946666,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:01:57Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sclAnYhI#LzeuS7plpM6rU9YIiZ44sNRHp74cUNRroxpiovM32N8",
+      "filename": "IMG_20230627_125019.jpg",
+      "size": 2831558,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:02:37Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/9ccQjLxa#psygfr4MjFyFj0feDCu8v7j6zkPiBS5s7w8fdxCE3NM",
+      "filename": "IMG_20230627_062908.jpg",
+      "size": 3027833,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:02:48Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/dNtziI7J#q3Ek-1_tVCB1W5Y5Q89e79llMu2NFCf1hm1fEScCu_s",
+      "filename": "IMG_20230627_124235.jpg",
+      "size": 2275432,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:02:59Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/IEVAwZDT#LkiplDNLdZikFfCfLkRs8jAhnMq_eKmR1242oD3wddg",
+      "filename": "IMG_20230627_173103.jpg",
+      "size": 2846826,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:03:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/hF8QzRaZ#OVJacTgR7yQLtWfEAyqH8Zh4XM2PFox_e910Hy3FJ38",
+      "filename": "VID_20230627_073758.mp4",
+      "size": 174497056,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:03:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8VcGXLxZ#wDS9eCTmiGSbOuU3jEjtQ4zbz2YpPbTBld3ql4z5AyU",
+      "filename": "IMG_20230627_110605.jpg",
+      "size": 2818413,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:04:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8EkTDQAT#zQ6kKSh8lZVEli3ad9aCUA5XRJbsDw9VUTQ5AWHdu6c",
+      "filename": "IMG_20230627_122654.jpg",
+      "size": 2117451,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:04:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4EMUHBqL#moRanitNAEV6rnYvmaVopIyZEMA2aB66FnWuWqhPJvo",
+      "filename": "VID_20230627_044814.mp4",
+      "size": 48492745,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:05:22Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/YU8hWLqZ#pKgpTCM4x_3JqLCCDUE1ArzZp1LVTA1twtiDMQOzing",
+      "filename": "IMG_20230627_064030.jpg",
+      "size": 2305943,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:05:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZM1lQLBL#UVJkRFF0WyHEPDusQ3-ZTNDACpnMLXDiVLgzbYFhTWo",
+      "filename": "VID_20230627_064623.mp4",
+      "size": 32760027,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:05:47Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/MJsXFSpY#waoxAwE4ia6qZUcT8KaR99EDe1XvXxPQEecMQEtxuZM",
+      "filename": "IMG_20230627_074046.jpg",
+      "size": 4186537,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:05:58Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ddUkXLCa#7Rn3zE1WGfAbU2LHJuix9t_W33yE21lp-fki-1F6SZU",
+      "filename": "IMG_20230627_064709.jpg",
+      "size": 2457855,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:06:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FZdlRTAZ#Wv8In_gkVZbeZdM-v2vDwnfPQmpmmQX-BcJDXlPTlUA",
+      "filename": "IMG_20230627_062505.jpg",
+      "size": 2718727,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:06:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/UV0iCbJb#UenqVmBhzGPW_qW2lHjxa296tjmUiRemmGMDSZX5O_E",
+      "filename": "IMG_20230627_045307.jpg",
+      "size": 2595240,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:07:00Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/hQM2SA7S#yaM5W7kKEFus99UQPFuMRt_Y5IrZ8dqbHZsWMdCP6B4",
+      "filename": "IMG_20230627_173749.jpg",
+      "size": 4585104,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:07:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gENwjJ4T#OxlYjhaIyRa8OgNJ_qCMJ07okHUl6mtVlIbHKl9cu20",
+      "filename": "IMG_20230627_102746.jpg",
+      "size": 4119229,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:07:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/1EdV2IAb#3bMxoJOsJ-twVw-Q0DRTiPs_Denaotiyzhgjxjqgr2g",
+      "filename": "IMG_20230627_064047.jpg",
+      "size": 2234869,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:08:17Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/QFkn1IAa#_br3Ay2f98nQgNaZr9mrrIikA5zvbhVDEXTzrOQ83c8",
+      "filename": "IMG_20230627_063038.jpg",
+      "size": 2874737,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:08:34Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cUNVxZIR#URo6kHqqT_hqG3mZ0gqLtZM_PpgKcK-Q04Q5TSzZEY0",
+      "filename": "IMG_20230627_062655.jpg",
+      "size": 2451036,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:08:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/hAsAhZLb#z114AXmDhF9Vf5KSxwgMArpnAlvZ4-3x-coOOQBLeA4",
+      "filename": "IMG_20230627_125133.jpg",
+      "size": 2930807,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:08:57Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/hcsAGYYB#hjJgpdH9_LPhaCStwMGkepk3Bj2kQBrVUSROfd9S1h0",
+      "filename": "IMG_20230627_074244.jpg",
+      "size": 3060089,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:09:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BR1VxR6J#jpgbBVtAV89g6-0735x0OHEpIWY6SG6u0bv9f_610D0",
+      "filename": "IMG_20230627_083054.jpg",
+      "size": 5744188,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:09:57Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/xBMWhCAY#eEYE_2bCccuh-2nz2mTNgui48iPTAlr_QjToP95T6FM",
+      "filename": "IMG_20230627_102745.jpg",
+      "size": 4032000,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:10:44Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sBNhmShT#3xQQIZlovFzHi_5pej6R-QmCW8HVUlOtGa_46BLmVFs",
+      "filename": "IMG_20230627_123931.jpg",
+      "size": 4261716,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:10:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/NV1SDToJ#VtVD4bkoHiDbAuEl_ZX3D06XoTsC8NoB41uGLDslaqc",
+      "filename": "IMG_20230627_104526.jpg",
+      "size": 2870346,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:11:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/1ZEGyAZY#P4TccEcF44GCh0IWR1VGBea0yGBHobQdPI9-V9r9Di0",
+      "filename": "IMG_20230627_110522.jpg",
+      "size": 3828434,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:11:47Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/oYERXA7S#Hba3qPjlalBtk_SW8bgBBQPdgWkR-FxhcdH6oYEDbYQ",
+      "filename": "IMG_20230627_121857.jpg",
+      "size": 2105628,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:11:58Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/hcNSBL6R#iN56ovg-9ZuxWv1Fv8f8-8A57oTYpdBglpERvX5Z-PI",
+      "filename": "IMG_20230627_125016.jpg",
+      "size": 2834382,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:12:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gc8TgIqC#sfm3mMGgWYeGNry6S0GfJUMkAx48A2rAtCo7XFHa5zo",
+      "filename": "IMG_20230627_110722.jpg",
+      "size": 2378728,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:12:50Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/lEMmSYaZ#4rb0ztQwlUL_nmyoI3a18lkqzqOyZNoryI8wd1M4hjU",
+      "filename": "IMG_20230627_110720.jpg",
+      "size": 2421752,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:13:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FNdiHJAI#OI6JJAiBAOsCkRheCgtu82o2n_O4mMlV_jz-j3PixEA",
+      "filename": "IMG_20230627_062839.jpg",
+      "size": 3003568,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:13:32Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RBEzkRSZ#jRVYiJtecP-0vaDOUyjf8qYBYjOA11jgZSVZf3Gsp4k",
+      "filename": "IMG_20230627_124019.jpg",
+      "size": 2167368,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:13:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pdVCyTJY#kCzdoFEqo-Cw5AD0XgnYu9Jvx3foSIoU6z1dgSzLDPM",
+      "filename": "IMG_20230627_063624.jpg",
+      "size": 4100045,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:13:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/kRFyjb4Q#Pn_gwerNEPyrYGJA8xaOJ6wIPeNvmE0TrzJ-uvN-Csk",
+      "filename": "IMG_20230627_073946.jpg",
+      "size": 5378911,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:14:27Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/AEFyiTpI#cLrRZBj_YCJsCreDSVXOcg3iFDYc-KtUN9SiebBffkM",
+      "filename": "IMG_20230627_064059.jpg",
+      "size": 2307368,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:14:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4B9S3JTD#l6n4eVhsk46M6lXWvLQu9nNyQ9FLprQOgHX9Icce178",
+      "filename": "IMG_20230627_083247.jpg",
+      "size": 4883920,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:14:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/kB9TRLQQ#MErcxAriba0l7d0HDnWOaXve9XteRzWlDqy_9Ksw6s0",
+      "filename": "IMG_20230627_124225.jpg",
+      "size": 2296249,
+      "target_folder": "/MEGA imports/Haridwar Memories",
+      "completed_at": "2026-08-20T23:15:04Z",
       "status": "uploaded"
     }
   ],
