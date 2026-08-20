@@ -32,13 +32,13 @@
     },
     "/MEGA imports/Dinosaur king Japanese": {
       "total": 49,
-      "done": 45,
-      "status": "active"
+      "done": 49,
+      "status": "completed"
     },
     "/MEGA imports/Haridwar Memories": {
       "total": 381,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     }
   },
   "completed": [
@@ -1929,9 +1929,41 @@
       "target_folder": "/MEGA imports/Dinosaur king Japanese",
       "completed_at": "2026-08-20T22:16:37Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BAkEBT4C#ce8KW0uXENdgiPEUZRv6Ay3xjCYoQTmODSS7JNdleS0",
+      "filename": "Kodai Ouja Kyouryuu King - 23 - [S^M][C93EFA33].avi",
+      "size": 292229120,
+      "target_folder": "/MEGA imports/Dinosaur king Japanese",
+      "completed_at": "2026-08-20T22:17:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gRNUlDQT#ayY-qKPulhqZABda58HofCQUMJU1apX8y192oHbJv8g",
+      "filename": "Kodai Ouja Kyouryuu King - 25 - [S^M][AC6DFECC].avi",
+      "size": 292335616,
+      "target_folder": "/MEGA imports/Dinosaur king Japanese",
+      "completed_at": "2026-08-20T22:18:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wcMVAb6R#6ba9yZpHurKYRXUonAKMnl3EEFDoAsOR4n57O1UdAKY",
+      "filename": "Kodai Ouja Kyouryuu King - 43 - [FEC92D82].avi",
+      "size": 505034752,
+      "target_folder": "/MEGA imports/Dinosaur king Japanese",
+      "completed_at": "2026-08-20T22:19:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cQ0gmLBB#MvFQsTcFmwP7kr-M7Ejk6o4rQpMt1YjBblmyAEaRWJo",
+      "filename": "Kodai Ouja Kyouryuu King - 44 - [DD8B9EE0].avi",
+      "size": 410609664,
+      "target_folder": "/MEGA imports/Dinosaur king Japanese",
+      "completed_at": "2026-08-20T22:20:46Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "/MEGA imports/Dinosaur king Japanese",
+  "current_folder": "/MEGA imports/Haridwar Memories",
   "oversized": {
     "total": 0,
     "done": 0,
