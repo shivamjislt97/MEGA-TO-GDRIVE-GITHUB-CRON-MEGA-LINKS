@@ -27,13 +27,13 @@
     },
     "/MEGA imports/testing": {
       "total": 4,
-      "done": 0,
-      "status": "active"
+      "done": 4,
+      "status": "completed"
     },
     "/MEGA imports/Dinosaur king Japanese": {
       "total": 49,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "/MEGA imports/Haridwar Memories": {
       "total": 381,
@@ -1537,9 +1537,41 @@
       "target_folder": "/MEGA imports/Dinosaur king S2",
       "completed_at": "2026-08-20T20:23:56Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/UcdzFYaA#G1955Ahx33Zd4UEPW-RnOc-pSAy4QJdCScJ_nZic9lE",
+      "filename": "Dinosaur King Vol. 1 2010 Paperback Yohei Sakai.pdf-0116.jpg",
+      "size": 2252798,
+      "target_folder": "/MEGA imports/testing",
+      "completed_at": "2026-08-20T20:24:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/0ZFn2QjL#4-91A_miSYvG7gejDh2fwjqPIwEefrPNBkW_ki0wO3c",
+      "filename": "Dinosaur King Vol. 1 2010 Paperback Yohei Sakai.pdf-0067.jpg",
+      "size": 2085101,
+      "target_folder": "/MEGA imports/testing",
+      "completed_at": "2026-08-20T20:24:54Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/lB9SnBzK#x2HAWa-RGcG9JR3NHMNWcChNlWtSWXzHY3puz2R6CtM",
+      "filename": "VID_intro20240613_195809.mp4",
+      "size": 142834185,
+      "target_folder": "/MEGA imports/testing",
+      "completed_at": "2026-08-20T20:25:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gQkRWJbY#Zut_OkY7kfohDtVETncC6rjQZd8TT1I-TKCe1GArd4U",
+      "filename": "VID_intro20240613_195919.mp4",
+      "size": 24329375,
+      "target_folder": "/MEGA imports/testing",
+      "completed_at": "2026-08-20T20:26:00Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "/MEGA imports/testing",
+  "current_folder": "/MEGA imports/Dinosaur king Japanese",
   "oversized": {
     "total": 0,
     "done": 0,
