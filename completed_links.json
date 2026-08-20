@@ -12,7 +12,7 @@
     },
     "/MEGA imports": {
       "total": 3,
-      "done": 0,
+      "done": 2,
       "status": "active"
     },
     "/MEGA imports/Dinosaur king S1": {
@@ -880,6 +880,22 @@
       "size": 466570230,
       "target_folder": "/MEGA imports/Dinosaur King Japanese",
       "completed_at": "2026-08-20T18:07:59Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/dYdH1SDI#huBQ93eLuI4Nu6lWc-YSuEs-K-Gb-Cd8Teu5aebDcQQ",
+      "filename": "Dinosaur king Season 3 Episode 17 in Hindi INTRO-Copy.kine",
+      "size": 550000273,
+      "target_folder": "/MEGA imports",
+      "completed_at": "2026-08-20T18:08:41Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/1RkSxIKB#3cmi1UDskK72vRFHRxfXyl3iVWeptNgQrvghJrIhN_U",
+      "filename": "New Project 4 [A4F32A7].mp4",
+      "size": 48729576,
+      "target_folder": "/MEGA imports",
+      "completed_at": "2026-08-20T18:08:55Z",
       "status": "uploaded"
     }
   ],
