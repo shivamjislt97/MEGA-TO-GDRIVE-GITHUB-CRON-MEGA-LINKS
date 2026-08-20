@@ -1,0 +1,829 @@
+{
+  "folders": {
+    "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga": {
+      "total": 97,
+      "done": 97,
+      "status": "completed"
+    },
+    "/MEGA imports/Dinosaur King Japanese": {
+      "total": 8,
+      "done": 0,
+      "status": "active"
+    },
+    "/MEGA imports": {
+      "total": 3,
+      "done": 0,
+      "status": "pending"
+    },
+    "/MEGA imports/Dinosaur king S1": {
+      "total": 49,
+      "done": 0,
+      "status": "pending"
+    },
+    "/MEGA imports/Dinosaur king S2": {
+      "total": 30,
+      "done": 0,
+      "status": "pending"
+    },
+    "/MEGA imports/testing": {
+      "total": 4,
+      "done": 0,
+      "status": "pending"
+    },
+    "/MEGA imports/Dinosaur king Japanese": {
+      "total": 49,
+      "done": 0,
+      "status": "pending"
+    },
+    "/MEGA imports/Haridwar Memories": {
+      "total": 381,
+      "done": 0,
+      "status": "pending"
+    }
+  },
+  "completed": [
+    {
+      "url": "https://mega.nz/file/sVMRBBwC#uHJ69C7LIo_LNhwBHAZzhQrYgYYOtAQdlai8zqik0Dw",
+      "filename": "Image (01).jpg",
+      "size": 602526,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:21:41Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FQ0UnKRa#svlICKa7Kcx2WJ5GAbVIFh8HBIxQLZrPgMX9oVYwxUc",
+      "filename": "Image (77,5).jpg",
+      "size": 911265,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:21:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/lYNzQCbJ#FQPZu83Ozn4rtpOZS0Zyb6ID1oxpODyK4AfnPLHUfBE",
+      "filename": "Image (89).jpg",
+      "size": 926789,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:21:57Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BcNXgKLQ#oq9U-GzBWs9G9WisXIQ3XoCzEcaPPtaAELyVWYLlRrU",
+      "filename": "Image (07).jpg",
+      "size": 929122,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:22:29Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/JM0RVCTB#16qzYhUXlhRqEVUDjmfSC2c-S37M5TIJGMy2n7U6Nok",
+      "filename": "Image (69).jpg",
+      "size": 900212,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:22:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/9cFkSaSR#y0Iy9PQh9R2nmw9eSmxmk7Ndtwo7sTQUUgUmdxc7Hzw",
+      "filename": "Image (57).jpg",
+      "size": 1026361,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:22:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cR112YxA#Jj7lsTMwmMhO3q9oCCAX-EXGNP-MHUpsj_PSfrZEBCA",
+      "filename": "Image (46).jpg",
+      "size": 1097731,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:22:54Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/AQs3WQQa#pt3JVFujfOShuIRnJrQHnj5UGS6qEcZBt2_y5QIn45Y",
+      "filename": "Image (26).jpg",
+      "size": 1072307,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:23:07Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/0J1DBJ7K#-ZAz6yoc9cwOgfIs_EM2ojI4p8AE7MyaFD2Mn3yy-_4",
+      "filename": "Image (28).jpg",
+      "size": 1150147,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:23:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FY9DFIIb#IGsrSY2zkLRMNFGhIKbHlhd1eJ1TBhipPX7sfBiy7FA",
+      "filename": "Image (81).jpg",
+      "size": 929725,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:23:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4UFH2B6Z#1U6t9fY_osDfxLY8xSzNjEGNW9UQr7PFBGDYeokPrSs",
+      "filename": "Image (91).jpg",
+      "size": 868873,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:24:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VI1SVZjR#M3-MeFs_qTv8ziK55YaGlKRgquOATGhFdRWrYMqDTg8",
+      "filename": "Image (36).jpg",
+      "size": 1058514,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:24:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FE92XaxT#qLBRzlVB1xfnW7ulD4KihugFKxiKVOFoATX02drBUnM",
+      "filename": "Image (20).jpg",
+      "size": 947399,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:24:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wVd21B7I#mWWi2bUvQ77HOgr7eeDto_KeTELiBBdxZPtGUl6sOWs",
+      "filename": "Image (33).jpg",
+      "size": 1002498,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:24:54Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gV0nlRLJ#D6Q27phX9IqoY8-guHgEX7Mm2QhEXRbRGcD497lWW0M",
+      "filename": "Image (39).jpg",
+      "size": 1062105,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:25:31Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gY1yzDQR#m-4Wsy_uGiwC9yTfM0tehH0VoBoEFbVzG--VktIYlIw",
+      "filename": "Image (38).jpg",
+      "size": 1088269,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:25:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/xRdWQaZa#Ph-YsB8X7_sa4HXrhD8QtTqm4KKCOT6UBc8R84obvvc",
+      "filename": "Image (04).jpg",
+      "size": 1093856,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:25:47Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/UZlBgKDK#nMCKaqwCyGiwko18dNRh6vJSNyxBsdjrpn3nNn8jnAk",
+      "filename": "Image (66).jpg",
+      "size": 828950,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:25:55Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/hctSCAgI#e-tVrOdMDx5_-1AqBnOgOkbEekIJQzpDGwuPh1PMnnc",
+      "filename": "Image (61).jpg",
+      "size": 937649,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:26:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/kNsggIZY#IBcVvXUFUtLLbThgDroqiAcpnXGnlw8ONJsLIi5Prl4",
+      "filename": "Image (35,5).jpg",
+      "size": 1142746,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:26:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/UQ8HjRCC#O1H4dpkfJBsxVPyY9Ho9VzxJqe3A9fSqrXQLr1fyx-E",
+      "filename": "Image (52).jpg",
+      "size": 449191,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:26:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/YFNnhYwC#0JNqHvWgs3ENq3iu37jqT4Jy8lQ2l4Eq8T8B7fO2OE0",
+      "filename": "Image (09).jpg",
+      "size": 1099704,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:27:10Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RRkQBQDL#VpikeBrxvjp7mgACczfK_rMMZZ8gWMAqbkpAYmDJtgY",
+      "filename": "Image (29).jpg",
+      "size": 1083864,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:27:50Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RRUgxK4B#KKk4EiPf9LLIOhM8KMaBDWTBxwKI1ntEBI8PN9Qrh6Q",
+      "filename": "Image (18).jpg",
+      "size": 697312,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:28:00Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4BlgBBib#J0NlItDAI8AqU23VRisZyviJHB2PtJ3LX7vyYQ4M_Ak",
+      "filename": "Image (51).jpg",
+      "size": 843539,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:28:37Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/UdUWXCZR#qKrqoBrXyAJSHpxDMXNTvIxy2X0sUB3rVcClKg13kYA",
+      "filename": "Image (22).jpg",
+      "size": 804174,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:28:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/1d8EBaqC#_sKt67PuGyC9u9n-XBf_cYmkB6-mpXpxZ4kosihri1w",
+      "filename": "Image (03).jpg",
+      "size": 1105710,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:28:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/UUEGUJYD#6-Lg_anGfXyB3OpfJga7y_afqoL7gHSi2fsOq5keMyk",
+      "filename": "Image (62).jpg",
+      "size": 752957,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:29:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cccWgC5D#uoIqFgU7z-SzCXpb2mXc6CsFTHWc4kfgWVsZAl5Z0CU",
+      "filename": "Image (13).jpg",
+      "size": 1004279,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:29:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/tZ9lmQrQ#T-zqNEY21upaDEbRBtZoD2s0SKBiYKwyF7m3iuvjxa8",
+      "filename": "Image (74).jpg",
+      "size": 997786,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:29:47Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wNERVbrB#LNyWvwB9bIW-xLwicbbN1jieryEtjMJFAEVNGOexQlk",
+      "filename": "Image (60).jpg",
+      "size": 1033729,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:29:55Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/dZ1yiZQY#mxp8ntN88T_NzKH-Ep46R-mnE7_IVxii2M_I-TXSk4M",
+      "filename": "Image (27).jpg",
+      "size": 1041825,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:30:37Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gB9QQKrT#ansBfXk6V7L5UcJnzpP6zbDnsbaIfh5ik1Gtnh2OvTA",
+      "filename": "Image (84).jpg",
+      "size": 1123853,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:30:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pRk3GDIY#WRjYPQ4XBiXbxvbYJkTYbgsA3qQxIdD88srkErPgOks",
+      "filename": "Image (45).jpg",
+      "size": 1016609,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:30:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sVtRnYAa#Y3-2zOj39hCosR_SaOSsxXClPbtCAJfZZbDEMuIyhOo",
+      "filename": "Image (59).jpg",
+      "size": 931326,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:31:35Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VQkHkJqY#v-CRdjCTv7gXQYOamRIwtKKgSGEdnVpT5QqHWiaGUFU",
+      "filename": "Image (78).jpg",
+      "size": 893434,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:31:43Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/YVMWhCSZ#arlI20nI5nDvJ8VIlRgdNWOGY08gfQ8I3sfCKNXb_zU",
+      "filename": "Image (17).jpg",
+      "size": 884010,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:31:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/9QlgWDyA#o23yThLTSTkQCs5501ajfUfwl-uBa_q5h-eFp3Nn06Y",
+      "filename": "Image (11).jpg",
+      "size": 915940,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:32:35Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZAsznazT#XB-gSwcW36egvbHqeiCnr_vhQsgHyHoOguwr-hBB4fY",
+      "filename": "Image (30).jpg",
+      "size": 1037984,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:32:43Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RJtUCCxR#UMoeY59FYMFfbHIAT8BzgH5Dq1FRZFF18sbvp3YYeqI",
+      "filename": "Image (41).jpg",
+      "size": 893221,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:32:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/MRsUwRYA#uXime-vt7nlh0VocdQmuUmm-hmo7eOLR38v3PdiTEUQ",
+      "filename": "Image (12).jpg",
+      "size": 1122000,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:33:27Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cYESXKqZ#SEZ3JbYZ5eJOaqT8s37yi7FKuGYGOB_aV4aZq12CwUA",
+      "filename": "Image (73).jpg",
+      "size": 1036660,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:33:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VI9VnaxD#ChG6jNYWNE-xHD0C9E5PPqsuoqITvdwyf6k2FEyzu7U",
+      "filename": "Image (82).jpg",
+      "size": 1098774,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:33:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/tBs1SR7A#oY3kM3LXIKEWgOK566jFk06tx3bUbcsk8BspDjT6VcQ",
+      "filename": "Image (47).jpg",
+      "size": 972173,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:33:54Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/td0QCaKB#aSMEbQCGrdLXJNkroVrnqsaGJLTUnwHIlbKnXzy53Y4",
+      "filename": "Image (85).jpg",
+      "size": 943148,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:34:28Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8FtETICJ#0vvQm07xGXhco1m-MobpMnYncpEZuIk0_uQAs9s23wA",
+      "filename": "Image (08).jpg",
+      "size": 880250,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:34:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZZ1kgBaK#o6zdNEtofqeit02xVpQg16yHAY__VjfyFXPkIxf0VkU",
+      "filename": "Image (43).jpg",
+      "size": 959076,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:34:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/AR8SXbZD#Y5JOf8-O80UEbIbb0fqKRDXrNJzvj-5pOZS9p708Ejc",
+      "filename": "Image (40).jpg",
+      "size": 1049786,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:34:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/dBsXzRyR#oCRVtczBnq61bAcL8rA9vt8z_42JWQTlf-xgj13N1R4",
+      "filename": "Image (49,5).jpg",
+      "size": 895162,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:35:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/kJkVFJ4D#eqUKa7SkVQJ3j8tHoAmKPO791LBaAif5DwwwEvQNf9I",
+      "filename": "Image (32).jpg",
+      "size": 605070,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:35:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/xEdBwJJB#OMSIClHN_S8p0c-EF-PmlqOUPHkWCgXwQ88VdffKnZE",
+      "filename": "Image (31).jpg",
+      "size": 913893,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:35:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sRNAHZRZ#9QpYp7C0QnJGW4Yz0MuCOz3Be2Nz-CcZlk6DqiShBGc",
+      "filename": "Image (55).jpg",
+      "size": 878031,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:35:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZFUWjKQR#waNRSWT2jseOmryEw9NKL9ZyrPcmtjGay-rhNhsUjGs",
+      "filename": "Image (49).jpg",
+      "size": 1054162,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:36:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VAF32AYb#Ec2zAgt9Ql5dFT-UGKKe6UlMeQA9Rjm7GgDrKKbMZvM",
+      "filename": "Image (75).jpg",
+      "size": 963377,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:36:47Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VU1lEJZY#HrCuqmWx_ie7Dwiem7HEtPWhmU7nbONDFHa_XcNl_L0",
+      "filename": "Image (64).jpg",
+      "size": 1016871,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:36:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/YddH2Tzb#iNWHbUrq-awE7ax94PVueHNf9021TIUlDWe07-12EYk",
+      "filename": "Image (54).jpg",
+      "size": 762251,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:37:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/MFE3XApQ#NE5Hb4B7cpgkL2Zr4O-Wo0AxB9JXB4_fgHFz1S1CH4c",
+      "filename": "Image (63).jpg",
+      "size": 907915,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:37:46Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/JYkBSQxA#lSnscZ3bh0TkQX7lrRxNSg3pj2ysc77ZHqiPg_GH18M",
+      "filename": "Image (02).jpg",
+      "size": 645931,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:37:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cRUFhBxL#4waVn1IJJqkjCU9xfPUpVMbRaiqlxcFM8FjyxoLfYpQ",
+      "filename": "Image (06).jpg",
+      "size": 807527,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:38:33Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RUtX3L7D#Sc3jvOkxp6whVb7AzzLaxeLO4D86DhpOruLHvPjU4sI",
+      "filename": "Image (23).jpg",
+      "size": 897457,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:38:42Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/tdlFgK5L#iKCCO-kcIbi3VNcu99EKvPT-T_jhy6_uJifat2NE_LE",
+      "filename": "Image (48).jpg",
+      "size": 983309,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:38:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/EUsS0DiC#Ys-jupSqbAwLz4z6FrKKTnT7cL-p4i2w9LQkMVMtqi8",
+      "filename": "Image (87).jpg",
+      "size": 1082976,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:38:59Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cJdjnRRB#uYI6L8_HeJkEz6qM8KuCjpLgxcxjXDuubk4Gq5GLtG8",
+      "filename": "Image (67).jpg",
+      "size": 1050452,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:39:30Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RdsE2JKB#u2bQVLELsEyQnUIqMPA3LkiYTd_y9sGTlqNlmVOb9E8",
+      "filename": "Image (14).jpg",
+      "size": 1065937,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:39:41Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/tAEGWYoR#NoX1iYdbNx1ywtf0v53APCTiRpbLYwNBbyjDrInPO74",
+      "filename": "Image (25).jpg",
+      "size": 1064878,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:39:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/BAdyCbTS#wxEwU9iMWfybVPoxmKdG4d4rgu9cIcIVoTNxPQwU3mY",
+      "filename": "Image (76).jpg",
+      "size": 1061418,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:39:57Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4U8iQTrA#VVI23XKJ9pqXd0L5ecT3sY4jLaG-42yN2i7a0oLPxvA",
+      "filename": "Image (70).jpg",
+      "size": 830006,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:40:50Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8QcFzTCY#n8kswS7hSyz9dTS3B3uibu8ywrf9WH6qaMuUjxsJ_2E",
+      "filename": "Image (15).jpg",
+      "size": 1019128,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:41:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/dBc33JSQ#VZmJmho2OBw_BGht13XZ-8kuJazFiRd-wGcdn-KabxU",
+      "filename": "Image (80).jpg",
+      "size": 952741,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:41:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8QcSWQ7K#1pLgYUEw9UUMHIbS70WFftDrEUEvYQHH64MvQsPHrEw",
+      "filename": "Image (56).jpg",
+      "size": 993417,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:41:57Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/0VMkASgL#Ln8ZVt8WsJIXx9VEeAd7_IRTS0GSIcjDObvEeCMWjpk",
+      "filename": "Image (86).jpg",
+      "size": 1101414,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:42:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RMEVQASR#EzVyXL_IwhLwfcKqwNACA5Sub0JrzxbjPGRyRrl32bc",
+      "filename": "Image (71).jpg",
+      "size": 905825,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:42:44Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/lQNijIbQ#tbYW4XrQSn9axFhVzIngBekuziyDeh1OwxfX-tqWZ4o",
+      "filename": "Image (10).jpg",
+      "size": 1039153,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:42:52Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/xBUAXTII#qH032LuZCEjZL1YeApCTFNSRNtEHf1fVNhPmXrqHM44",
+      "filename": "Image (34).jpg",
+      "size": 897081,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:43:35Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/4NcVVSgb#pwQM7aaGjb3cpdQOeuIsK4r0dgZIHGYsTLnUlcqH-ag",
+      "filename": "Image (92).jpg",
+      "size": 288797,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:43:41Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/8MUEXQIT#M3w125UffabfxhUIh0DnxGlwmg0wdEfUmPOWXAm57io",
+      "filename": "Image (88).jpg",
+      "size": 929055,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:43:49Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/gdV22KhY#ovnR7plsLXhTw2YbKiWi7lqacZORFA83pVKQP3hcyRE",
+      "filename": "Image (79).jpg",
+      "size": 573614,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:43:57Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ZRNXkKhA#7FoSM0tTN29IJvPcFnE_FrWzI9kuFyj5RO871SrBx2g",
+      "filename": "Image (19).jpg",
+      "size": 1007681,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:44:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/oRMymDZa#SneohA5N8VzOcN64EKRrfmcd0r_k-9ipu0Gwk8ZST1A",
+      "filename": "Image (58).jpg",
+      "size": 1024812,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:44:48Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/MQdnUD6T#LcM-T6g98xQ6WkTZE-xJWKJmeR0svNW4BBqnaWECZSI",
+      "filename": "Image (44).jpg",
+      "size": 969240,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:44:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/tBcURbCI#fM2bcHFeOFrYRcKDhpw3L8d3m0AT42Pl2y2w0PqWvp8",
+      "filename": "Image (16).jpg",
+      "size": 958308,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:45:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/QZ8wBIQK#xNxgO2t7A4_R4RUeD4Huj6LaWrfwP2oGgKa_DPrENU8",
+      "filename": "Image (35).jpg",
+      "size": 962233,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:45:47Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sVFgxLAR#6A28beWGcc5nJXNbXMt-g2Lnt3zCIakB20CAt6mXK2k",
+      "filename": "Image (42).jpg",
+      "size": 562919,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:45:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/cVFVnYjK#TL_hsXAVDwWM6hVODevL2tzo0wYNHYq3-fz6c_BmOvk",
+      "filename": "Image (61,5).jpg",
+      "size": 809022,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:47:53Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VZc3mIYY#W46A4RmLdaZWRdpetYFNC0bPr7vIeKCBYaylx5z-ZGE",
+      "filename": "Image (37).jpg",
+      "size": 1058007,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:48:43Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/wYMmUSrZ#ZhNny-BOCmwsx7HUi7VKxC_0cgrOZR85rDSWmC8LpfU",
+      "filename": "Image (68).jpg",
+      "size": 899871,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:48:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/EANiEAwD#DyPSqentjejv6XHAUqqooiKmXhXUkEIOpaUN4h0ZnVg",
+      "filename": "Image (72).jpg",
+      "size": 982695,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:49:01Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/pIFjQYSQ#DkpyAyHRRFAHBU4LO9ELMUb-5pNOpKcRQkXVkhBzeUA",
+      "filename": "Image (53).jpg",
+      "size": 893624,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:49:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FBVGXDQA#XHcEjGxpNMJzVEJvp5lF6nIaVFnVFHFSx8e_7WNsMVo",
+      "filename": "Image (83).jpg",
+      "size": 1009572,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:49:47Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/lVVEUb7Y#dKNHx_uHKpQbqpdw6k2RKu52p4vVgrn35Y7KawUiDWU",
+      "filename": "Image (77).jpg",
+      "size": 948649,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:49:55Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/RckBwIRB#nr4vE5LfLBd5yGfbTVPpfsctjQvitgGeb91u1rkVkuY",
+      "filename": "Image (24).jpg",
+      "size": 886760,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:50:36Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/FA0k1b4Z#5eUIXUpNPXZ7j5PPvPvrCTNVDMhKD0xKP5OlrcmxL-A",
+      "filename": "Image (05).jpg",
+      "size": 969736,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:50:48Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VUEWkAxI#Q3D5_MuyCD_0llykytiXhMneqNviqHGxxY2QqFEdm3E",
+      "filename": "Image (21).jpg",
+      "size": 883622,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:51:33Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/dVUWWCYb#bx-P43i04G0bPnrXJsQK-xEVG3ExYx6dm65nbMdYGnU",
+      "filename": "Image (65).jpg",
+      "size": 918203,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:51:41Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/VcsWyDCD#Lbh4U3vy8jX8bvVx1tVwxTXeDBseJd7_-T70P6yhd7U",
+      "filename": "Image (50).jpg",
+      "size": 1008044,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:51:50Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/sV92TYzT#LyMTJwdiCmqj2YMrALCYVvQGZJ81YjG6Ts-wTCp5yS8",
+      "filename": "Image (90).jpg",
+      "size": 951136,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:52:00Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ddEDDLYZ#dSjxKM8WU5YbnyY94Ra4MYyoldBGpCG-klhBATYDus0",
+      "filename": "Image (64,5).jpg",
+      "size": 901324,
+      "target_folder": "/MEGA imports/manga s3 dk/Dinosaur king Season 3 Manga",
+      "completed_at": "2026-08-20T17:52:37Z",
+      "status": "uploaded"
+    }
+  ],
+  "current_folder": "/MEGA imports/Dinosaur King Japanese",
+  "oversized": {
+    "total": 0,
+    "done": 0,
+    "status": "completed",
+    "items": []
+  }
+}
