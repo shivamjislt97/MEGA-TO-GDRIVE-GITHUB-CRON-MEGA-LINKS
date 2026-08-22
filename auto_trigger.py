@@ -5,6 +5,12 @@ WORKFLOW_FILE = '.github/workflows/main.yml'
 DONE_MARKER = '.transfer-done'
 
 
+def mega_links_configured():
+    """Check if MEGA_LINKS secret/env is set and non-empty."""
+    links = os.environ.get('MEGA_LINKS', '').strip()
+    return bool(links)
+
+
 def git_remote_base():
     r = subprocess.run(['git', 'remote', 'get-url', 'origin'], capture_output=True, text=True)
     url = (r.stdout or '').strip()
@@ -85,6 +91,12 @@ except Exception:
 folders = d.get('folders', {})
 oversized_raw = d.get('oversized', [])
 done_marker = os.path.exists(DONE_MARKER)
+
+# ---------- Early exit: MEGA_LINKS not configured ----------
+if not mega_links_configured():
+    print('  MEGA_LINKS secret not set or empty - disabling cron', flush=True)
+    disable_cron()
+    sys.exit(0)
 
 # ---------- progress tracking (persisted inside completed_links.json so it
 # survives across runs - the old .auto_trigger_progress file was never

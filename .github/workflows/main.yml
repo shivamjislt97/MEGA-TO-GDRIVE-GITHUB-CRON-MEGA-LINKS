@@ -151,4 +151,5 @@ jobs:
         if: success() || failure()
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
+          MEGA_LINKS: ${{ secrets.MEGA_LINKS }}
         run: python auto_trigger.py
