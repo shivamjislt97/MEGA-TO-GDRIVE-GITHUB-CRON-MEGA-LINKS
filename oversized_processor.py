@@ -431,7 +431,7 @@ def git_push(quiet=True):
         subprocess.run(["git", "config", "user.email",
                         "github-actions[bot]@users.noreply.github.com"],
                        capture_output=True, timeout=5)
-        subprocess.run(["git", "add", "completed_links.json"],
+        subprocess.run(["git", "add", "completed_links.json", "chunks_history.json"],
                        check=True, capture_output=True, timeout=15)
         r = subprocess.run(
             ["git", "commit", "-m", "update state [skip ci]"],
@@ -825,6 +825,7 @@ def process_chunk_download(video, video_idx, chunk, state):
         log(f"\n  Chunk {idx} done ({done_count}/{len(video['chunks'])})")
 
     save_chunks_history(state)
+    git_push()  # live state after every single chunk (workflow uploads the .bin artifact)
     return True
 
 
@@ -1121,6 +1122,7 @@ def main():
             save_chunks_history(state)
 
         all_ok = True
+        downloaded_this_run = 0
         while all_ok:
             pending_chunk = None
             for ch in video["chunks"]:
@@ -1135,17 +1137,34 @@ def main():
                 print(f"::notice::All chunks done for {clean_filename(video['filename'])} — concat ready", flush=True)
                 break
 
+            # MEGA free quota is ~5GB per run/IP: download max ONE chunk per run.
+            # First chunk of the run is always allowed (max chunk 4.9GB < quota);
+            # a second chunk in the same run would exceed the quota and fail.
+            if downloaded_this_run > 0 and downloaded_this_run + pending_chunk["expected_size"] > QUOTA_SAFE:
+                log(f"  Quota guard: next chunk would exceed 4.5GB this run — stopping, next run continues")
+                break
+
             ok = process_chunk_download(video, idx, pending_chunk, state)
             if not ok:
                 log(f"  Chunk download failed, will retry next run")
                 all_ok = False
                 break
 
+            downloaded_this_run += pending_chunk.get("actual_size", pending_chunk["expected_size"])
+
             remaining = sum(1 for ch in video["chunks"] if ch["status"] == "pending")
             if remaining > 0:
-                log(f"  {remaining} chunks remaining for this video — continuing...")
+                # ONE chunk per run: artifact uploads via workflow, next run takes the next chunk
+                log(f"  One chunk per run — {remaining} chunk(s) left, next run continues...")
+                save_chunks_history(state)
+                break
 
         if video["status"] == "concat_ready" and video.get("gdrive_status") != "uploaded":
+            if downloaded_this_run > 0:
+                # Chunks finished in THIS run — concat runs fresh next cycle
+                # (clean runner, full 60-min timeout for concat + GDrive upload)
+                log(f"  All chunks done — concat + upload will run fresh next cycle...")
+                break
             log(f"  All chunks done, attempting concat + upload...")
             ok = process_concat_run(video, idx, state)
             if ok:
