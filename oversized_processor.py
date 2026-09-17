@@ -489,15 +489,19 @@ def upload_to_gdrive(filepath, target_folder):
         log("  Warning: rclone mkdir timed out, continuing anyway")
     file_size = os.path.getsize(filepath)
     log(f"  Uploading {os.path.basename(filepath)} ({fmt_size(file_size)}) to GDrive...")
-    proc = subprocess.Popen(
-        ["rclone", "copy", filepath, target,
+    rclone_cmd = ["rclone", "copy", filepath, target,
          "--multi-thread-streams=16",
          "--multi-thread-cutoff=50M",
          "--drive-chunk-size=64M",
          "--buffer-size=128M",
          "--tpslimit=10",
          "--tpslimit-burst=10",
-         "--stats=3s", "--stats-one-line"],
+         "--stats=3s", "--stats-one-line"]
+    if shutil.which("stdbuf"):
+        # Unbuffered stderr so rclone --stats lines arrive in real time
+        rclone_cmd = ["stdbuf", "-o0", "-e0"] + rclone_cmd
+    proc = subprocess.Popen(
+        rclone_cmd,
         stderr=subprocess.PIPE, stdout=subprocess.DEVNULL, text=True, bufsize=1
     )
     collected = []
@@ -505,6 +509,7 @@ def upload_to_gdrive(filepath, target_folder):
     reader = threading.Thread(target=_read_stderr_thread, args=(proc, collected), daemon=True)
     reader.start()
     last_log = 0
+    last_real_stats = 0.0
     start_time = time.time()
     last_line = ""
     while reader.is_alive():
@@ -524,21 +529,15 @@ def upload_to_gdrive(filepath, target_folder):
                     log(line_text)
                     last_line = line_text
                     last_log = now
+                    last_real_stats = now
                 continue
-        # Manual progress: estimate based on elapsed time
-        if elapsed > 3 and file_size > 0:
-            pct = min(int(elapsed * 100 / max(elapsed + 60, 1)), 99)
-            done_mb = file_size * pct / 100 / (1024 * 1024)
-            total_mb = file_size / (1024 * 1024)
-            spd = done_mb / elapsed if elapsed > 0 else 0
-            eta = max(int((total_mb - done_mb) / spd), 0) if spd > 0 else 0
-            eta_m = eta // 60
-            eta_s = eta % 60
-            line_text = f"  UPLOAD: {done_mb:.0f} MB / {total_mb:.0f} MB ({pct}%) @ {spd:.1f} MB/s ETA {eta_m}m{eta_s:02d}s"
-            if line_text != last_line:
-                log(line_text)
-                last_line = line_text
-                last_log = now
+        # Honest heartbeat only: never fabricate MB/% (fake estimates mislead).
+        # Real numbers come from rclone --stats lines above.
+        if elapsed > 10 and now - last_log >= 15 and now - last_real_stats > 15:
+            line_text = f"  UPLOAD: {os.path.basename(filepath)} ({fmt_size(file_size)}) uploading... elapsed {int(elapsed)}s"
+            log(line_text)
+            last_line = line_text
+            last_log = now
         time.sleep(2)
     proc.wait(timeout=3600)
     elapsed = time.time() - start_time

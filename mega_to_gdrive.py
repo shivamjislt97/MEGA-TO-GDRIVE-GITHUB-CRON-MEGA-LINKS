@@ -207,7 +207,7 @@ def upload_file(filepath, folder_name, quota_used=0, quota_max=0):
     file_size = os.path.getsize(filepath)
 
     process = subprocess.Popen(
-        [
+        (["stdbuf", "-o0", "-e0"] if shutil.which("stdbuf") else []) + [
             "rclone", "copy", filepath, target,
             "--multi-thread-streams=16",
             "--multi-thread-cutoff=50M",
@@ -225,6 +225,8 @@ def upload_file(filepath, folder_name, quota_used=0, quota_max=0):
     )
 
     last_line = ""
+    last_log = 0.0
+    last_real_stats = 0.0
     collected = []
 
     def reader():
@@ -242,8 +244,6 @@ def upload_file(filepath, folder_name, quota_used=0, quota_max=0):
     thread.start()
 
     start_time = time.time()
-    last_speed = 0
-    last_eta = ""
 
     try:
         while thread.is_alive():
@@ -260,20 +260,15 @@ def upload_file(filepath, folder_name, quota_used=0, quota_max=0):
                     if line_text != last_line:
                         log(line_text)
                         last_line = line_text
+                        last_real_stats = now
                     continue
-            # Manual progress: estimate based on elapsed time and file size
-            if elapsed > 3 and file_size > 0:
-                pct = min(int(elapsed * 100 / max(elapsed + 60, 1)), 99)
-                done_mb = file_size * pct / 100 / (1024 * 1024)
-                total_mb = file_size / (1024 * 1024)
-                spd = done_mb / elapsed if elapsed > 0 else 0
-                eta = max(int((total_mb - done_mb) / spd), 0) if spd > 0 else 0
-                eta_m = eta // 60
-                eta_s = eta % 60
-                line_text = f"   UPLOAD: {done_mb:.0f} MB / {total_mb:.0f} MB ({pct}%) @ {spd:.1f} MB/s ETA {eta_m}m{eta_s:02d}s"
-                if line_text != last_line:
-                    log(line_text)
-                    last_line = line_text
+            # Honest heartbeat only: never fabricate MB/% (fake estimates mislead).
+            # Real numbers come from rclone --stats lines above.
+            if elapsed > 10 and now - last_log >= 15 and now - last_real_stats > 15:
+                line_text = f"   UPLOADING: \"{os.path.basename(filepath)}\" ({fmt_size(file_size)}) ... elapsed {int(elapsed)}s"
+                log(line_text)
+                last_line = line_text
+                last_log = now
             time.sleep(2)
 
         process.wait(timeout=3600)
