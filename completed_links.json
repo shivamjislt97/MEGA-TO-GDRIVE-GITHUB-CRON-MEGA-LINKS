@@ -1,0 +1,27 @@
+{
+  "folders": {
+    "images": {
+      "total": 14,
+      "done": 0,
+      "status": "active"
+    },
+    "RootFiles": {
+      "total": 2,
+      "done": 0,
+      "status": "pending"
+    },
+    "iso": {
+      "total": 1,
+      "done": 0,
+      "status": "pending"
+    }
+  },
+  "completed": [],
+  "current_folder": "images",
+  "oversized": {
+    "total": 0,
+    "done": 0,
+    "status": "completed",
+    "items": []
+  }
+}
