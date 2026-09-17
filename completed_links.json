@@ -7,13 +7,13 @@
     },
     "RootFiles": {
       "total": 2,
-      "done": 0,
-      "status": "active"
+      "done": 2,
+      "status": "completed"
     },
     "iso": {
       "total": 1,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     }
   },
   "completed": [
@@ -128,9 +128,25 @@
       "target_folder": "images",
       "completed_at": "2026-09-17T13:40:47Z",
       "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ugR0EJ5a#HneNOeWILGWaWy5Z9pWfPUorq1dDOrh2-2Sl60rYfFI",
+      "filename": "Confluence-Confluence1.0.6.apks",
+      "size": 43622315,
+      "target_folder": "RootFiles",
+      "completed_at": "2026-09-17T13:41:34Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/SlZmQTbD#4swUe2t-vB_jHNEW1hSubFGsUre3B6bmUFurESgXhcg",
+      "filename": "Windows 11.png",
+      "size": 10262,
+      "target_folder": "RootFiles",
+      "completed_at": "2026-09-17T13:41:40Z",
+      "status": "uploaded"
     }
   ],
-  "current_folder": "RootFiles",
+  "current_folder": "iso",
   "oversized": {
     "total": 0,
     "done": 0,
