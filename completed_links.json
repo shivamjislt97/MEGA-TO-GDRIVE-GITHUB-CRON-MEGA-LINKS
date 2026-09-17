@@ -1,0 +1,145 @@
+{
+  "folders": {
+    "IMAGES": {
+      "total": 14,
+      "done": 14,
+      "status": "completed"
+    },
+    "RootFiles": {
+      "total": 3,
+      "done": 0,
+      "status": "active"
+    },
+    "VIDEO 800 MB": {
+      "total": 1,
+      "done": 0,
+      "status": "pending"
+    },
+    "VIDEO 6GB +": {
+      "total": 1,
+      "done": 0,
+      "status": "pending"
+    }
+  },
+  "completed": [
+    {
+      "url": "https://mega.nz/file/OkwF3TjS#OTL6Urg3W_4LII0_P1gv6OjZTnefLPzT2Q-PKOZU424",
+      "filename": "images (1).jpg",
+      "size": 73671,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:32:33Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/H0hBBSYb#iriD8wPikfElhoZCS4M_fo0wUS42hLx1hvoLJjrKFis",
+      "filename": "images (2).jpg",
+      "size": 28715,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:32:40Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/v4xwwZJY#Cced3T_KDOGekZxh1lC47Z2APXBLU50APv48T6gKvEY",
+      "filename": "images (3).jpg",
+      "size": 32685,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:32:45Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/CwBykB7b#0rnVbKvRTRqIJhHK51OxL8zOLvliAWSlPIjJryaBp4w",
+      "filename": "images (4).jpg",
+      "size": 35158,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:32:51Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/S54lQTaS#woPE86sLjTrHnz3kN752J9-mMJ8i5HKJ1QQ1cKZrS-c",
+      "filename": "images (5).jpg",
+      "size": 34510,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:32:56Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/DhYGmTZT#mROVwCJiDiq9kCW5l0Gu3sgbNU3u7oPJp9z9xYD96KI",
+      "filename": "images (6).jpg",
+      "size": 30708,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:33:31Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/HsJmjaxJ#1pD4UWWEVvaRA99iFT0wn4olCWIrxgoFpOxUBESqT-k",
+      "filename": "images (7).jpg",
+      "size": 13616,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:33:38Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/zpghSagQ#px-OWGG4EDZC0WfQ4OKH6ee-qeiOoTibaYRhvfHrn5w",
+      "filename": "images (8).jpg",
+      "size": 46387,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:33:43Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/XghxkISQ#aGgdC6w2Elpt4lgTNvKl4v2rS-UVLNGPzk0JnVYl1_o",
+      "filename": "images (9).jpg",
+      "size": 13703,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:33:48Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/n8YzAKQJ#NgsgSuJ7TlqIFL_z1iOqUP9S75gQ5IeWhH2eIKV7gl0",
+      "filename": "images (10).jpg",
+      "size": 17493,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:33:54Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/C5ByVCjK#bAlDMoMYdmMPWXpAoZR6Q6HyNIamnQX1Df5yh_N1nKU",
+      "filename": "images (11).jpg",
+      "size": 44459,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:34:29Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/u0ByURpL#pxNvn-dKmDxPIe2iGb7iAt4PFcnpR_Rq7YkaSyuecvo",
+      "filename": "images (12).jpg",
+      "size": 92557,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:34:34Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/T0gAEaKa#eeuJ11bBzWA2qhBI_1cqNRL1D5XHDjMXbFD6n7-Q88s",
+      "filename": "images.jpg",
+      "size": 32844,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:34:43Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/7ohxgCCA#-SXC3l9mSfGlmPvaGMfml18-zk2BrNYq7N2kac0mDFg",
+      "filename": "imgres.htm",
+      "size": 250488,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T14:34:49Z",
+      "status": "uploaded"
+    }
+  ],
+  "current_folder": "RootFiles",
+  "oversized": {
+    "total": 0,
+    "done": 0,
+    "status": "completed",
+    "items": []
+  }
+}
