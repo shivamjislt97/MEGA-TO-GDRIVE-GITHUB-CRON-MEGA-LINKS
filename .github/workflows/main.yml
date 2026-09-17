@@ -38,6 +38,8 @@ jobs:
                   d = json.load(open('completed_links.json'))
               except Exception:
                   return False
+              if not d.get('folders'):
+                  return False
               for f in d.get('folders', {}).values():
                   if f.get('status') != 'completed' or f.get('done', 0) < f.get('total', 0):
                       return False
