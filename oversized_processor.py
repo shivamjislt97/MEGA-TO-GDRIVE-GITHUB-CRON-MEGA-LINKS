@@ -501,6 +501,7 @@ def upload_to_gdrive(filepath, target_folder):
         stderr=subprocess.PIPE, stdout=subprocess.DEVNULL, text=True, bufsize=1
     )
     collected = []
+    err_tail = []  # last stderr lines for failure diagnosis (never swallow rclone errors)
     reader = threading.Thread(target=_read_stderr_thread, args=(proc, collected), daemon=True)
     reader.start()
     last_log = 0
@@ -513,6 +514,9 @@ def upload_to_gdrive(filepath, target_folder):
             line = collected.pop(0).strip().replace("\r", "")
             if not line:
                 continue
+            err_tail.append(line[-300:])
+            if len(err_tail) > 5:
+                err_tail.pop(0)
             m = re.search(r'Transferred:\s+([\d.]+\s*\w+)\s*/\s*([\d.]+\s*\w+),\s*(\d+)%,\s*([\d.]+\s*\w+/s),\s*ETA\s+(\S+)', line)
             if m:
                 line_text = f"  UPLOAD: {m.group(1)} / {m.group(2)} ({m.group(3)}%) @ {m.group(4)} ETA {m.group(5)}"
@@ -540,7 +544,8 @@ def upload_to_gdrive(filepath, target_folder):
     elapsed = time.time() - start_time
     log("")
     if proc.returncode != 0:
-        raise RuntimeError(f"rclone upload failed (exit {proc.returncode})")
+        detail = " ; ".join(err_tail[-3:]) if err_tail else "no stderr captured"
+        raise RuntimeError(f"rclone upload failed (exit {proc.returncode}): {detail[:600]}")
     # Clean up rclone temp files (tmp*.bin, tmp*.enc etc) from GDrive
     try:
         subprocess.run(
