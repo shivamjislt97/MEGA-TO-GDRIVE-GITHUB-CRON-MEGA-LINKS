@@ -148,7 +148,7 @@ jobs:
           git push || echo "git push failed (non-fatal)"
 
       - name: Auto-trigger next if files remain
-        if: success() || failure()
+        if: (success() || failure()) && steps.guard.outputs.all_done != 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
           MEGA_LINKS: ${{ secrets.MEGA_LINKS }}
