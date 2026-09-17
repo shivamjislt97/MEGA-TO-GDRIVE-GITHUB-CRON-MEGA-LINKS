@@ -7,7 +7,7 @@
     },
     "RootFiles": {
       "total": 3,
-      "done": 1,
+      "done": 2,
       "status": "active"
     },
     "VIDEO 800 MB": {
@@ -141,6 +141,14 @@
       "size": 43622315,
       "target_folder": "RootFiles",
       "completed_at": "2026-09-17T18:37:50Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/SlZmQTbD#4swUe2t-vB_jHNEW1hSubFGsUre3B6bmUFurESgXhcg",
+      "filename": "Windows 11.png",
+      "size": 10262,
+      "target_folder": "RootFiles",
+      "completed_at": "2026-09-17T18:38:33Z",
       "status": "uploaded"
     }
   ]
