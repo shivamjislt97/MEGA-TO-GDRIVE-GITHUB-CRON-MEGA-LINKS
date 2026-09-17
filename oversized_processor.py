@@ -544,8 +544,8 @@ def upload_to_gdrive(filepath, target_folder):
     elapsed = time.time() - start_time
     log("")
     if proc.returncode != 0:
-        detail = " ; ".join(err_tail[-3:]) if err_tail else "no stderr captured"
-        raise RuntimeError(f"rclone upload failed (exit {proc.returncode}): {detail[:600]}")
+        detail = " ; ".join(err_tail[-5:]) if err_tail else "no stderr captured"
+        raise RuntimeError(f"rclone upload failed (exit {proc.returncode}): {detail[:900]}")
     # Clean up rclone temp files (tmp*.bin, tmp*.enc etc) from GDrive
     try:
         subprocess.run(
