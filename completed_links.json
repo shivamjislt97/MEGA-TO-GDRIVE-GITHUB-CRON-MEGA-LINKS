@@ -7,7 +7,7 @@
     },
     "RootFiles": {
       "total": 3,
-      "done": 0,
+      "done": 1,
       "status": "active"
     },
     "VIDEO 800 MB": {
@@ -133,6 +133,14 @@
       "size": 250488,
       "target_folder": "IMAGES",
       "completed_at": "2026-09-17T16:01:39Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/ugR0EJ5a#HneNOeWILGWaWy5Z9pWfPUorq1dDOrh2-2Sl60rYfFI",
+      "filename": "Confluence-Confluence1.0.6.apks",
+      "size": 43622315,
+      "target_folder": "RootFiles",
+      "completed_at": "2026-09-17T16:03:45Z",
       "status": "uploaded"
     }
   ]
