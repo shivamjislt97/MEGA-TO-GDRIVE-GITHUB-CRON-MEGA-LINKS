@@ -7,7 +7,7 @@
     },
     "RootFiles": {
       "total": 3,
-      "done": 2,
+      "done": 3,
       "status": "active"
     },
     "VIDEO 800 MB": {
@@ -149,6 +149,14 @@
       "size": 10262,
       "target_folder": "RootFiles",
       "completed_at": "2026-09-17T18:38:33Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/y0R02YwL#CS2X_kQHIW4HlZXkXEhi6K1HD9kUZqyJyXLb7srNKgM",
+      "filename": "working.zip",
+      "size": 113501,
+      "target_folder": "RootFiles",
+      "completed_at": "2026-09-17T18:38:41Z",
       "status": "uploaded"
     }
   ]
