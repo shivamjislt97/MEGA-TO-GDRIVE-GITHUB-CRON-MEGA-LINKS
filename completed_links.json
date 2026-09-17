@@ -1,1 +1,35 @@
-{"folders": {}}
+{
+  "folders": {
+    "IMAGES": {
+      "total": 14,
+      "done": 1,
+      "status": "active"
+    },
+    "RootFiles": {
+      "total": 3,
+      "done": 0,
+      "status": "pending"
+    },
+    "VIDEO 800 MB": {
+      "total": 1,
+      "done": 0,
+      "status": "pending"
+    },
+    "VIDEO 6GB +": {
+      "total": 1,
+      "done": 0,
+      "status": "pending"
+    }
+  },
+  "current_folder": "IMAGES",
+  "completed": [
+    {
+      "url": "https://mega.nz/file/OkwF3TjS#OTL6Urg3W_4LII0_P1gv6OjZTnefLPzT2Q-PKOZU424",
+      "filename": "images (1).jpg",
+      "size": 73671,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T17:36:36Z",
+      "status": "uploaded"
+    }
+  ]
+}
