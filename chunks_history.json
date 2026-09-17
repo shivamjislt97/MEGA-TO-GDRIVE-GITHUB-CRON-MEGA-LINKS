@@ -1,0 +1,46 @@
+{
+  "videos": [
+    {
+      "url": "https://mega.nz/file/mgwyGD7Z#krvXLLSjhb0YRSZzyYtAK7JctH18ey3qYkzq0XbFCe0",
+      "filename": "Pinocchio Unstrung 2026 6GB.mkv",
+      "target_folder": "VIDEO 6GB +",
+      "file_id": "mgwyGD7Z",
+      "total_size": 6757415048,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
+          "status": "done",
+          "artifact_name": "ck_mgwygd7z_01",
+          "actual_size": 5261334928,
+          "sha256": "44f366f333d346165118f36a81868bf7e892299ac9e7d0d45b7bfdf5514fb761"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 6757415047,
+          "expected_size": 1496080120,
+          "status": "done",
+          "artifact_name": "ck_mgwygd7z_02",
+          "actual_size": 1496080120,
+          "sha256": "d76d0f6117bb7e5fff71684e6b11b36abe99a918b79fc56ade6c54d32f613339"
+        }
+      ],
+      "status": "concat_ready",
+      "gdrive_status": "pending"
+    }
+  ],
+  "current_index": 0,
+  "version": 3,
+  "summary": {
+    "total": 1,
+    "gdrive_uploaded": 0,
+    "concat_ready": 1,
+    "downloading": 0,
+    "pending": 0,
+    "status": "in_progress"
+  }
+}
