@@ -2,7 +2,7 @@
   "folders": {
     "IMAGES": {
       "total": 14,
-      "done": 4,
+      "done": 5,
       "status": "active"
     },
     "RootFiles": {
@@ -53,6 +53,14 @@
       "size": 35158,
       "target_folder": "IMAGES",
       "completed_at": "2026-09-17T17:37:37Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/S54lQTaS#woPE86sLjTrHnz3kN752J9-mMJ8i5HKJ1QQ1cKZrS-c",
+      "filename": "images (5).jpg",
+      "size": 34510,
+      "target_folder": "IMAGES",
+      "completed_at": "2026-09-17T17:37:48Z",
       "status": "uploaded"
     }
   ]
