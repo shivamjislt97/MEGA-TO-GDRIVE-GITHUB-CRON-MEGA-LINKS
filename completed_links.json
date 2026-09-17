@@ -12,7 +12,7 @@
     },
     "VIDEO 800 MB": {
       "total": 1,
-      "done": 0,
+      "done": 1,
       "status": "active"
     },
     "VIDEO 6GB +": {
@@ -157,6 +157,14 @@
       "size": 113501,
       "target_folder": "RootFiles",
       "completed_at": "2026-09-17T17:42:43Z",
+      "status": "uploaded"
+    },
+    {
+      "url": "https://mega.nz/file/KpRSWDYJ#RFsDoKPsASBTFsLSFP_3HstXdZPaywvSEhxBoNQlR0Y",
+      "filename": "Pinocchio Unstrung 2026 www.10xflix.com  Hindi ORG Dual Audio  720p BluRay  x264 ESubs.mkv",
+      "size": 844676881,
+      "target_folder": "VIDEO 800 MB",
+      "completed_at": "2026-09-17T17:43:55Z",
       "status": "uploaded"
     }
   ]
