@@ -1,0 +1,47 @@
+{
+  "videos": [
+    {
+      "url": "https://mega.nz/file/yhYhFBDL#iT073JAzY8U1Sn5yNGPA58j6oNog00xDw24_fDj40Cc",
+      "filename": "Win11_25H2_English_x64_v2.iso",
+      "target_folder": "iso",
+      "file_id": "yhYhFBDL",
+      "total_size": 8471603200,
+      "total_chunks": 2,
+      "chunks": [
+        {
+          "index": 1,
+          "start_byte": 0,
+          "end_byte": 5261334927,
+          "expected_size": 5261334928,
+          "status": "done",
+          "artifact_name": "ck_yhyhfbdl_01",
+          "actual_size": 5261334928,
+          "sha256": "1d7b34ff1a15cabd363512923da6b9a7d407eb93fbddbe322ef446f3f3198d47"
+        },
+        {
+          "index": 2,
+          "start_byte": 5261334928,
+          "end_byte": 8471603199,
+          "expected_size": 3210268272,
+          "status": "done",
+          "artifact_name": "ck_yhyhfbdl_02",
+          "actual_size": 3210268272,
+          "sha256": "0da224e5811fac44c3f5f0fd03d59fc5fc7db0b8afcf78701d8a4996ed4a4dc3"
+        }
+      ],
+      "status": "concat_ready",
+      "concat_fail_count": 1,
+      "gdrive_status": "pending"
+    }
+  ],
+  "current_index": 0,
+  "version": 3,
+  "summary": {
+    "total": 1,
+    "gdrive_uploaded": 0,
+    "concat_ready": 1,
+    "downloading": 0,
+    "pending": 0,
+    "status": "in_progress"
+  }
+}
