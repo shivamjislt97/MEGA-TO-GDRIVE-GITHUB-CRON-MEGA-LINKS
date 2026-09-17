@@ -1,0 +1,27 @@
+{
+  "folders": {
+    "VIDEO 6GB +": {
+      "total": 1,
+      "done": 0,
+      "status": "active"
+    }
+  },
+  "completed": [
+    {
+      "url": "https://mega.nz/file/mgwyGD7Z#krvXLLSjhb0YRSZzyYtAK7JctH18ey3qYkzq0XbFCe0",
+      "filename": "Pinocchio Unstrung 2026 6GB.mkv",
+      "size": 6757415048,
+      "target_folder": "VIDEO 6GB +",
+      "completed_at": "2026-09-17T15:28:38Z",
+      "status": "unupload",
+      "oversized": true
+    }
+  ],
+  "current_folder": "VIDEO 6GB +",
+  "oversized": {
+    "total": 0,
+    "done": 0,
+    "status": "completed",
+    "items": []
+  }
+}
