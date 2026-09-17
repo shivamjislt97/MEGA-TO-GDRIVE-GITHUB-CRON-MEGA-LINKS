@@ -27,9 +27,18 @@
           "artifact_name": "ck_mgwygd7z_02"
         }
       ],
-      "status": "downloading"
+      "status": "downloading",
+      "gdrive_status": "pending"
     }
   ],
   "current_index": 0,
-  "version": 3
+  "version": 3,
+  "summary": {
+    "total": 1,
+    "gdrive_uploaded": 0,
+    "concat_ready": 0,
+    "downloading": 1,
+    "pending": 0,
+    "status": "in_progress"
+  }
 }
