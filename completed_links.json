@@ -13,15 +13,15 @@
     "VIDEO 800 MB": {
       "total": 1,
       "done": 1,
-      "status": "active"
+      "status": "completed"
     },
     "VIDEO 6GB +": {
       "total": 1,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     }
   },
-  "current_folder": "VIDEO 800 MB",
+  "current_folder": "VIDEO 6GB +",
   "completed": [
     {
       "url": "https://mega.nz/file/OkwF3TjS#OTL6Urg3W_4LII0_P1gv6OjZTnefLPzT2Q-PKOZU424",
