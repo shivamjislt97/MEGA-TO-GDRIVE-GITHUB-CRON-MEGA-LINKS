@@ -8,12 +8,12 @@
     "RootFiles": {
       "total": 3,
       "done": 3,
-      "status": "active"
+      "status": "completed"
     },
     "VIDEO 800 MB": {
       "total": 1,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "VIDEO 6GB +": {
       "total": 1,
@@ -21,7 +21,7 @@
       "status": "pending"
     }
   },
-  "current_folder": "RootFiles",
+  "current_folder": "VIDEO 800 MB",
   "completed": [
     {
       "url": "https://mega.nz/file/OkwF3TjS#OTL6Urg3W_4LII0_P1gv6OjZTnefLPzT2Q-PKOZU424",
