@@ -580,10 +580,32 @@ def auto_trigger_next():
         log("  Auto-trigger failed — cron will pick up")
 
 
+def gdrive_free_bytes():
+    """Return free bytes on the GDrive remote, or None if unknowable (fail-open)."""
+    try:
+        r = subprocess.run(["rclone", "about", f"{GDRIVE_REMOTE}:", "--json"],
+                           capture_output=True, text=True, timeout=60)
+        if r.returncode != 0 or not r.stdout.strip():
+            return None
+        d = json.loads(r.stdout)
+        free = d.get("free")
+        return int(free) if free is not None else None
+    except Exception:
+        return None
+
+
 def process_concat_run(video, video_idx, state):
     log(f"\n{'=' * 55}")
     log(f"  CONCAT RUN: {clean_filename(video['filename'])}")
     log(f"{'=' * 55}")
+
+    # Pre-check: don't burn 10 min downloading+concat if Drive can't fit the file.
+    need = video.get("total_size", 0)
+    free = gdrive_free_bytes()
+    if need and free is not None and free < need:
+        log(f"  SKIP: Drive free {fmt_size(free)} < needed {fmt_size(need)} — free space and retry, no download attempted")
+        print(f"::warning::Drive space low: {fmt_size(free)} free, need {fmt_size(need)}", flush=True)
+        return False
 
     chunk_files = []
     for ch in video["chunks"]:

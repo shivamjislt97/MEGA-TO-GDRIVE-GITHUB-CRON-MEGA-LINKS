@@ -411,6 +411,18 @@ class TestEdgeCases(unittest.TestCase):
         chunks = ov.calculate_chunks(100)
         self.assertEqual(len(chunks), 1)
 
+    def test_gdrive_free_bytes_parses(self):
+        from types import SimpleNamespace
+        from unittest import mock
+        good = SimpleNamespace(returncode=0, stdout='{"total": 100, "used": 40, "free": 60}', stderr="")
+        with mock.patch.object(ov.subprocess, "run", return_value=good):
+            self.assertEqual(ov.gdrive_free_bytes(), 60)
+        bad = SimpleNamespace(returncode=1, stdout="", stderr="boom")
+        with mock.patch.object(ov.subprocess, "run", return_value=bad):
+            self.assertIsNone(ov.gdrive_free_bytes())
+        with mock.patch.object(ov.subprocess, "run", side_effect=RuntimeError("x")):
+            self.assertIsNone(ov.gdrive_free_bytes())
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
