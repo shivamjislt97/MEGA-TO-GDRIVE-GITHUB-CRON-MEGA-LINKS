@@ -266,26 +266,44 @@ def set_github_output(name, value):
     os.environ[name] = value
 
 
+def _query_artifact_ids(artifact_name, paginate):
+    """Return matching artifact IDs. Never raises — [] means missing/unreachable."""
+    repo = os.environ.get("GITHUB_REPOSITORY", "")
+    if not repo:
+        return []
+    cmd = ["gh", "api", f"/repos/{repo}/actions/artifacts?per_page=100",
+           "--jq", f'.artifacts[] | select(.name=="{artifact_name}") | .id']
+    if paginate:
+        cmd.append("--paginate")
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+    except Exception as e:
+        log(f"  warn: artifact query {artifact_name}: {type(e).__name__} (treating as missing)")
+        return []
+    if r.returncode != 0:
+        log(f"  warn: artifact query {artifact_name}: gh api failed: {r.stderr.strip()[:200]}")
+        return []
+    return [x.strip() for x in r.stdout.strip().split("\n") if x.strip() and x.strip() != "null"]
+
+
 def find_artifact_id(artifact_name):
     repo = os.environ.get("GITHUB_REPOSITORY", "")
     if not repo:
         return None
+    # Fast path: newest 100 artifacts in ONE api call (no --paginate).
+    # The repo can hold 10k+ stale artifacts; paginating all of them times out.
     for attempt in range(MAX_RETRIES):
-        r = subprocess.run(
-            ["gh", "api", f"/repos/{repo}/actions/artifacts?per_page=100",
-             "--jq", f'.artifacts[] | select(.name=="{artifact_name}") | .id',
-             "--paginate"],
-            capture_output=True, text=True, timeout=30
-        )
-        if r.returncode == 0:
-            ids = [x.strip() for x in r.stdout.strip().split("\n") if x.strip() and x.strip() != "null"]
+        ids = _query_artifact_ids(artifact_name, paginate=False)
+        if ids:
+            return ids[0]
+        if attempt == 0:
+            # Single full paginated search for older artifacts (slow but thorough)
+            ids = _query_artifact_ids(artifact_name, paginate=True)
             if ids:
                 return ids[0]
-            log(f"  warn: find artifact {artifact_name}: API ok but no match (artifact may be deleted/expired)")
-        else:
-            log(f"  warn: find artifact {artifact_name}: gh api failed: {r.stderr.strip()[:200]}")
         log(f"  [retry {attempt+1}/{MAX_RETRIES}] find artifact {artifact_name}")
         time.sleep(5)
+    log(f"  warn: find artifact {artifact_name}: API ok but no match (artifact may be deleted/expired)")
     return None
 
 
@@ -383,24 +401,24 @@ def delete_artifact(artifact_name):
     if not repo:
         log(f"  warn: delete_artifact: no GITHUB_REPOSITORY")
         return False
-    r = subprocess.run(
-        ["gh", "api",
-         f"/repos/{repo}/actions/artifacts?per_page=100",
-         "--jq", f'.artifacts[] | select(.name=="{artifact_name}") | .id',
-         "--paginate"],
-        capture_output=True, text=True, timeout=30
-    )
-    ids = [x.strip() for x in r.stdout.strip().split("\n") if x.strip()]
+    ids = _query_artifact_ids(artifact_name, paginate=False)
+    if not ids:
+        ids = _query_artifact_ids(artifact_name, paginate=True)
     if not ids:
         return False
     for aid in ids:
-        sub = subprocess.run(
-            ["gh", "api", "-X", "DELETE",
-             f"/repos/{repo}/actions/artifacts/{aid}"],
-            capture_output=True, timeout=30
-        )
+        try:
+            sub = subprocess.run(
+                ["gh", "api", "-X", "DELETE",
+                 f"/repos/{repo}/actions/artifacts/{aid}"],
+                capture_output=True, timeout=60
+            )
+        except Exception as e:
+            log(f"  warn: delete artifact {artifact_name} id={aid} failed: {type(e).__name__}")
+            continue
         if sub.returncode != 0:
-            log(f"  warn: delete artifact {artifact_name} id={aid} failed: {sub.stderr[:100]}")
+            err = sub.stderr[:100] if isinstance(sub.stderr, str) else sub.stderr
+            log(f"  warn: delete artifact {artifact_name} id={aid} failed: {err}")
         else:
             log(f"  Deleted artifact {artifact_name}")
     return True
