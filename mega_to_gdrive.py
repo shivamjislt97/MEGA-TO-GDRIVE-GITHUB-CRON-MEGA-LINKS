@@ -678,6 +678,13 @@ def main():
             log(f"   {idx}/{total}: Complete | Quota: {fmt_size(quota_used)}/{fmt_size(QUOTA_MAX)}")
             log(f"  {'-' * 50}")
 
+            # Live update: push state after EVERY upload so the completion
+            # list stays current mid-run (dashboard reads repo file)
+            state["folders"] = folders
+            state["completed"] = completed
+            save_completed(state)
+            git_push(quiet=True)
+
             if quota_exhausted:
                 log(f"  Quota exhausted — remaining files will be processed next run.")
                 break
