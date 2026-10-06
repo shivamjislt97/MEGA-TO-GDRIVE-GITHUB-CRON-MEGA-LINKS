@@ -17,8 +17,8 @@
     },
     "VIDEO 6GB +": {
       "total": 1,
-      "done": 0,
-      "status": "active"
+      "done": 1,
+      "status": "completed"
     }
   },
   "completed": [
@@ -171,12 +171,12 @@
       "filename": "Pinocchio Unstrung 2026 6GB.mkv",
       "size": 6757415048,
       "target_folder": "VIDEO 6GB +",
-      "completed_at": "2026-10-06T18:11:57Z",
-      "status": "unupload",
+      "completed_at": "2026-10-06T18:26:49Z",
+      "status": "uploaded",
       "oversized": true
     }
   ],
-  "current_folder": "VIDEO 6GB +",
+  "current_folder": null,
   "oversized": {
     "total": 0,
     "done": 0,
