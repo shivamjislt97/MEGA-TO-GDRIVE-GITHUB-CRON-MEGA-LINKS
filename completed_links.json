@@ -3,7 +3,7 @@
     "Manual farerra Elsa jean Coach": {
       "total": 2,
       "done": 2,
-      "status": "active"
+      "status": "completed"
     }
   },
   "completed": [
@@ -24,7 +24,7 @@
       "status": "uploaded"
     }
   ],
-  "current_folder": "Manual farerra Elsa jean Coach",
+  "current_folder": null,
   "oversized": {
     "total": 0,
     "done": 0,
