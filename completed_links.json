@@ -13,12 +13,12 @@
     "VIDEO 800 MB": {
       "total": 1,
       "done": 1,
-      "status": "active"
+      "status": "completed"
     },
     "VIDEO 6GB +": {
       "total": 1,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     }
   },
   "completed": [
@@ -167,7 +167,7 @@
       "status": "uploaded"
     }
   ],
-  "current_folder": "VIDEO 800 MB",
+  "current_folder": "VIDEO 6GB +",
   "oversized": {
     "total": 0,
     "done": 0,
