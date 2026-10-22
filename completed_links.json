@@ -3,12 +3,12 @@
     "IMAGES": {
       "total": 14,
       "done": 14,
-      "status": "active"
+      "status": "completed"
     },
     "RootFiles": {
       "total": 3,
       "done": 0,
-      "status": "pending"
+      "status": "active"
     },
     "VIDEO 800 MB": {
       "total": 1,
@@ -135,7 +135,7 @@
       "status": "uploaded"
     }
   ],
-  "current_folder": "IMAGES",
+  "current_folder": "RootFiles",
   "oversized": {
     "total": 0,
     "done": 0,
