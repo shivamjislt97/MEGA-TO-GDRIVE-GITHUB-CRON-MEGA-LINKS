@@ -23,11 +23,13 @@
           "start_byte": 5261334928,
           "end_byte": 6757415047,
           "expected_size": 1496080120,
-          "status": "pending",
-          "artifact_name": "ck_mgwygd7z_02"
+          "status": "done",
+          "artifact_name": "ck_mgwygd7z_02",
+          "actual_size": 1496080120,
+          "sha256": "d76d0f6117bb7e5fff71684e6b11b36abe99a918b79fc56ade6c54d32f613339"
         }
       ],
-      "status": "downloading",
+      "status": "concat_ready",
       "gdrive_status": "pending"
     }
   ],
