@@ -38,8 +38,8 @@
   "summary": {
     "total": 1,
     "gdrive_uploaded": 0,
-    "concat_ready": 0,
-    "downloading": 1,
+    "concat_ready": 1,
+    "downloading": 0,
     "pending": 0,
     "status": "in_progress"
   }
